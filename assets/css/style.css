@@ -1603,3 +1603,70 @@ input, textarea, select, button { font-size: 16px; } /* Evita zoom iOS */
    IMÁGENES EN CARDS DE HUBS (con imagen real)
 ══════════════════════════════════════════ */
 .card-bg-img { border-radius: 0; }  /* heredado del card */
+
+/* ══════════════════════════════════════════
+   FIX GLOBAL: todo el contenido por debajo del nav fijo
+   nav-h calculado:
+     desktop  → logo-row(~77px) + menu-row(~39px) = 116px
+     mobile   → solo logo-row = ~74px
+══════════════════════════════════════════ */
+:root {
+  --nav-h: 116px;
+}
+@media (max-width: 900px) {
+  :root { --nav-h: 74px; }
+}
+@media (max-width: 480px) {
+  :root { --nav-h: 68px; }
+}
+
+/* BODY: empuja TODO el contenido debajo del nav */
+body {
+  padding-top: var(--nav-h);
+}
+
+/* HERO-FULL (home): ocupa el viewport restante (sin el nav) */
+.hero-full {
+  min-height: calc(100vh - var(--nav-h));
+}
+
+/* HERO-SM / HERO-MED: aumentar mínimo para que el contenido tenga espacio */
+.hero-sm  { min-height: max(42vh, 280px); }
+.hero-med { min-height: max(58vh, 380px); }
+
+/* Eliminar padding-top heredado de la generación anterior
+   (ya lo maneja el body padding-top) */
+.hero { padding-top: 0 !important; }
+
+/* BREADCRUMB dentro del hero: posición relativa al inicio de la section
+   (que ahora empieza justo debajo del nav gracias al body padding-top) */
+.hero-breadcrumb {
+  top: .75rem !important;  /* pegado al tope de la section */
+}
+
+/* SCROLL indicator: anclado al final de la section */
+.hero-scroll { z-index: 3; }
+
+/* ── Responsive general ─────────────────────── */
+@media (max-width: 900px) {
+  .hero-full  { min-height: calc(100vh - var(--nav-h)); }
+  .hero-sm    { min-height: max(38vh, 240px); }
+  .service-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+  .contact-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+}
+@media (max-width: 600px) {
+  .hero-sm  { min-height: max(35vh, 220px); }
+  .hero-med { min-height: max(48vh, 300px); }
+  .cards-grid { grid-template-columns: 1fr !important; }
+  .reviews-grid { grid-template-columns: 1fr !important; }
+  .novios-split { grid-template-columns: 1fr !important; }
+  .section-inner { padding-left: 1.2rem; padding-right: 1.2rem; }
+  section { padding-left: 1.2rem !important; padding-right: 1.2rem !important; }
+}
+@media (max-width: 400px) {
+  .hero-title { font-size: 2.2rem !important; }
+  .section-title { font-size: 1.9rem !important; }
+  .fab-group { bottom: .8rem; right: .8rem; }
+  .fab-cta   { font-size: .62rem; padding: .5rem .85rem; }
+  .fab-wa    { width: 42px; height: 42px; }
+}
