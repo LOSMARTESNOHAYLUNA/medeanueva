@@ -1940,3 +1940,101 @@ body {
 @media (max-width: 600px) {
   .hero-cat { min-height: max(45vh, 280px); }
 }
+
+/* ══════════════════════════════════════════
+   HERO FOTO — filtro escala de grises + tinte
+══════════════════════════════════════════ */
+.hero-cat .hero-photo-bg {
+  filter: grayscale(100%) brightness(.85) contrast(1.05);
+}
+.hero-cat .hero-overlay {
+  background: linear-gradient(
+    150deg,
+    rgba(93,19,26,.62) 0%,
+    rgba(28,22,20,.42) 55%,
+    rgba(93,19,26,.52) 100%
+  );
+}
+
+/* ══════════════════════════════════════════
+   STAT CARDS — tarjetas destacadas minimalistas
+══════════════════════════════════════════ */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border-n);
+  border-radius: calc(var(--r)*2);
+  padding: 2.2rem 1.4rem 1.8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+  transition: border-color .3s, box-shadow .3s, transform .3s;
+  box-shadow: var(--shadow-sm);
+}
+.stat-card:hover {
+  border-color: var(--border2);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.stat-num {
+  font-family: var(--ff-d);
+  font-size: 3.8rem;
+  font-weight: 300;
+  color: var(--brand);
+  line-height: 1;
+  letter-spacing: -.02em;
+  margin-bottom: .2rem;
+}
+.stat-unit {
+  font-size: .68rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--muted2);
+  margin-bottom: .15rem;
+}
+.stat-name {
+  font-family: var(--ff-d);
+  font-size: 1rem;
+  color: var(--ink2);
+  font-style: italic;
+}
+.stat-icon {
+  width: 44px; height: 44px;
+  stroke: var(--brand);
+  stroke-width: 1.3;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-bottom: .5rem;
+}
+@media (max-width: 600px) {
+  .stat-cards { grid-template-columns: 1fr; max-width: 300px; margin-left: auto; margin-right: auto; }
+}
+
+/* ══════════════════════════════════════════
+   CTA DOS COLUMNAS — info + mapa
+══════════════════════════════════════════ */
+.cta-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+.cta-info .section-title { font-size: 2.2rem; margin-bottom: 1.4rem; text-align: left; }
+.cta-info .contact-detail { display: flex; gap: 1.2rem; padding: 1rem 0; border-bottom: 1px solid var(--border-n); }
+.cta-info .contact-detail:first-of-type { border-top: 1px solid var(--border-n); }
+.cta-map .map-facade { height: 320px !important; min-height: 320px; border-radius: calc(var(--r)*2); }
+@media (max-width: 900px) {
+  .cta-two-col { grid-template-columns: 1fr; gap: 2rem; }
+  .cta-map .map-facade { height: 240px !important; min-height: 240px; }
+  .cta-info .section-title { text-align: center; }
+  .cta-info { text-align: center; }
+  .cta-info .contact-detail { justify-content: center; }
+}

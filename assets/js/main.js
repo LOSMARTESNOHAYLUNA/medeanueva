@@ -278,3 +278,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+/* ══════════════════════════════════════════
+   COUNTER ANIMATION — cuenta de 0 al valor objetivo
+══════════════════════════════════════════ */
+(function() {
+  var counters = document.querySelectorAll('.counter[data-target]');
+  if (!counters.length) return;
+
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      var target = parseInt(el.dataset.target, 10);
+      var duration = 1800;
+      var start = null;
+
+      function step(ts) {
+        if (!start) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        // easeOutCubic
+        var ease = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(ease * target);
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = target;
+        }
+      }
+      requestAnimationFrame(step);
+      obs.unobserve(el);
+    });
+  }, { threshold: 0.3 });
+
+  counters.forEach(function(el) { obs.observe(el); });
+})();
