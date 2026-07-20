@@ -1636,7 +1636,16 @@ body {
 
 /* Eliminar padding-top heredado de la generación anterior
    (ya lo maneja el body padding-top) */
-.hero { padding-top: 0 !important; }
+.hero {
+  padding-top: max(50px, 3rem) !important;
+  padding-bottom: max(50px, 3rem) !important;
+}
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+}
 
 /* BREADCRUMB dentro del hero: posición relativa al inicio de la section
    (que ahora empieza justo debajo del nav gracias al body padding-top) */
@@ -1803,4 +1812,9 @@ body {
 }
 @media (max-width: 580px) {
   .team-grid { grid-template-columns: 1fr; max-width: 440px; margin-left:auto; margin-right:auto; }
+}
+
+/* Map facade: altura flexible según el contexto */
+.map-facade:not(.loaded) {
+  min-height: 200px;
 }
