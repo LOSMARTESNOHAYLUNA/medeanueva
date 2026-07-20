@@ -1670,3 +1670,137 @@ body {
   .fab-cta   { font-size: .62rem; padding: .5rem .85rem; }
   .fab-wa    { width: 42px; height: 42px; }
 }
+
+/* ══════════════════════════════════════════
+   TEXTO CORRIDO: 18px uniforme en todo el sitio
+══════════════════════════════════════════ */
+.section-body,
+.prose p, .prose li,
+.faq-answer,
+.service-item-desc,
+.novio-body,
+.cd-value,
+.blog-author-bio,
+.contact-detail .cd-value {
+  font-size: 1.125rem;  /* 18px */
+  line-height: 1.85;
+}
+.review-text   { font-size: 1.0625rem; line-height: 1.8; }
+.card-desc     { font-size: 1rem;      line-height: 1.75; }
+.blog-card-excerpt { font-size: 1.0625rem; line-height: 1.75; }
+
+/* ══════════════════════════════════════════
+   BREADCRUMB CENTRADO DENTRO DE HERO-CONTENT
+══════════════════════════════════════════ */
+.hero-breadcrumb {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important; right: auto !important;
+  padding: 0 !important;
+  text-align: center;
+  margin-bottom: .9rem;
+  width: 100%;
+}
+.hero-breadcrumb .breadcrumb-inner {
+  justify-content: center;
+  font-size: .75rem;
+  color: var(--muted2);
+}
+.hero-breadcrumb .breadcrumb-inner a       { color: var(--muted); }
+.hero-breadcrumb .breadcrumb-inner a:hover { color: var(--brand); }
+.hero-breadcrumb .breadcrumb-sep           { color: var(--border2); opacity:.8; }
+.hero-breadcrumb .breadcrumb-current       { color: var(--brand); font-size:.75rem; }
+
+/* ══════════════════════════════════════════
+   EQUIPO — cards iguales en 3 columnas
+══════════════════════════════════════════ */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  align-items: stretch;
+}
+.team-card {
+  background: var(--card);
+  border: 1px solid var(--border-n);
+  border-radius: calc(var(--r)*2);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: border-color .3s, box-shadow .3s;
+}
+.team-card:hover { border-color: var(--border2); box-shadow: var(--shadow-md); }
+
+.team-photo {
+  width: 100%; height: 260px;
+  overflow: hidden; background: var(--surface);
+  flex-shrink: 0;
+}
+.team-photo img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block;
+  transition: transform .5s var(--ease);
+  filter: saturate(.9);
+}
+.team-card:hover .team-photo img { transform: scale(1.04); filter: saturate(1.05); }
+
+.team-info {
+  padding: 1.8rem 1.6rem;
+  flex: 1; display: flex; flex-direction: column;
+}
+.team-role {
+  font-size: .7rem; font-weight: 400;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: var(--brand); margin-bottom: .7rem;
+}
+.team-name {
+  font-family: var(--ff-d); font-size: 1.7rem;
+  color: var(--ink); margin-bottom: .2rem; line-height: 1.1;
+}
+.team-years {
+  font-size: .78rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--muted2); margin-bottom: .9rem;
+}
+.team-bio {
+  font-size: 1rem; color: var(--muted); line-height: 1.75;
+  margin-bottom: 1.2rem; flex: 1;
+}
+
+/* Lista de certificaciones con iconos elegantes */
+.cert-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: .45rem;
+}
+.cert-list li {
+  display: flex; align-items: flex-start; gap: .55rem;
+  font-size: .875rem; color: var(--ink2); line-height: 1.5;
+}
+.cert-icon {
+  width: 14px; height: 14px;
+  flex-shrink: 0; margin-top: 2px;
+  color: var(--gold); stroke: var(--gold);
+}
+
+/* Novio-list actualizado con iconos */
+.novio-list { list-style: none; padding: 0; }
+.novio-list li {
+  display: flex; align-items: flex-start; gap: .55rem;
+  font-size: 1rem; color: var(--muted); padding: .3rem 0;
+  line-height: 1.6;
+}
+.novio-list li::before { display: none !important; }
+.novio-list li svg {
+  width: 14px; height: 14px; flex-shrink: 0;
+  margin-top: 3px; stroke: var(--brand); opacity: .7;
+}
+
+@media (max-width: 900px) {
+  .team-grid { grid-template-columns: 1fr 1fr; }
+  .team-photo { height: 220px; }
+}
+@media (max-width: 580px) {
+  .team-grid { grid-template-columns: 1fr; max-width: 440px; margin-left:auto; margin-right:auto; }
+}
