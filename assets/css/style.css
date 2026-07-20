@@ -1818,3 +1818,125 @@ body {
 .map-facade:not(.loaded) {
   min-height: 200px;
 }
+
+/* ══════════════════════════════════════════
+   HERO CON FOTO — template categorías
+══════════════════════════════════════════ */
+.hero-cat {
+  position: relative;
+  min-height: max(60vh, 400px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+.hero-cat .hero-photo-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+  display: block;
+  transition: transform 8s ease-out;
+}
+.hero-cat:hover .hero-photo-bg { transform: scale(1.04); }
+.hero-cat .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    165deg,
+    rgba(28,22,20,.60) 0%,
+    rgba(28,22,20,.35) 55%,
+    rgba(93,19,26,.45) 100%
+  );
+  z-index: 1;
+}
+.hero-cat .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  padding-top: max(50px, 3rem);
+  padding-bottom: max(50px, 3rem);
+}
+/* Texto blanco sobre foto */
+.hero-cat .hero-eyebrow          { color: rgba(245,240,232,.75); }
+.hero-cat .hero-eyebrow::after   { background: rgba(245,240,232,.3); }
+.hero-cat .hero-title            { color: #fff; }
+.hero-cat .hero-title em         { color: var(--gold-lt); }
+.hero-cat .hero-sub              { color: rgba(245,240,232,.65); }
+.hero-cat .btn-brand             { background: var(--brand); color: #fff; box-shadow: 0 2px 16px rgba(93,19,26,.4); }
+.hero-cat .btn-brand:hover       { background: var(--brand-lt); }
+.hero-cat .btn-outline           { border-color: rgba(245,240,232,.4); color: #fff; background: rgba(255,255,255,.08); }
+.hero-cat .btn-outline:hover     { border-color: rgba(245,240,232,.75); background: rgba(255,255,255,.15); }
+/* Breadcrumb sobre foto */
+.hero-cat .hero-breadcrumb .breadcrumb-inner { color: rgba(245,240,232,.55); }
+.hero-cat .hero-breadcrumb .breadcrumb-inner a { color: rgba(245,240,232,.55); }
+.hero-cat .hero-breadcrumb .breadcrumb-inner a:hover { color: rgba(245,240,232,.9); }
+.hero-cat .hero-breadcrumb .breadcrumb-sep   { color: rgba(245,240,232,.25); }
+.hero-cat .hero-breadcrumb .breadcrumb-current { color: rgba(245,240,232,.9); }
+
+/* ══════════════════════════════════════════
+   INTRO CENTRADO — sin línea gold
+══════════════════════════════════════════ */
+.intro-centered {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro-centered .section-body {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.eyebrow-center {
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+  font-size: .75rem;
+  font-weight: 400;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 1.2rem;
+  justify-content: center;
+  width: 100%;
+}
+.eyebrow-center::before,
+.eyebrow-center::after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--brand);
+  opacity: .3;
+}
+
+/* ══════════════════════════════════════════
+   MAP FACADE — fix visibilidad
+══════════════════════════════════════════ */
+.map-facade {
+  background: var(--card) !important;
+  border: 1.5px solid var(--border2) !important;
+}
+.map-facade:not(.loaded) {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  cursor: pointer;
+  transition: border-color .2s, background .2s;
+}
+.map-facade:not(.loaded):hover {
+  border-color: var(--brand) !important;
+  background: var(--brand-bg) !important;
+}
+
+@media (max-width: 900px) {
+  .hero-cat { min-height: max(50vh, 320px); }
+}
+@media (max-width: 600px) {
+  .hero-cat { min-height: max(45vh, 280px); }
+}
