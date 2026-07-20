@@ -1303,3 +1303,163 @@ input, textarea, select, button { font-size: 16px; } /* Evita zoom iOS */
   display: block;
   border-radius: calc(var(--r)*2);
 }
+
+/* ══════════════════════════════════════════
+   NAV v2 — LOGO CENTRADO + MENÚ DEBAJO
+══════════════════════════════════════════ */
+
+/* Contenedor principal: columna */
+#nav {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  gap: 0;
+}
+
+/* Fila 1: sólo el logo, centrado */
+.nav-logo-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .7rem 2rem .55rem;
+  position: relative;
+}
+
+/* Logo más grande en la fila propia */
+.nav-logo-row .nav-logo {
+  gap: .8rem;
+}
+.nav-logo-row .nav-logo-img {
+  width: 44px;
+  height: 44px;
+}
+.nav-logo-row .nav-logo-text {
+  font-size: 1.5rem;
+  letter-spacing: .07em;
+}
+
+/* Hamburger en esquina derecha dentro del logo-row */
+.nav-logo-row .nav-hamburger {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+/* Fila 2: menú + CTA */
+.nav-menu-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+  border-top: 1px solid var(--border-n);
+  padding: .15rem 1.5rem .2rem;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+/* CTA dentro del menu-row */
+.nav-menu-row .nav-cta {
+  margin-left: .4rem;
+  flex-shrink: 0;
+  font-size: .7rem;
+  padding: .44rem 1rem;
+  white-space: nowrap;
+}
+
+/* Scrolled: comprimir fila del logo */
+#nav.scrolled .nav-logo-row {
+  padding: .45rem 2rem .35rem;
+}
+#nav.scrolled .nav-logo-row .nav-logo-text { font-size: 1.3rem; }
+#nav.scrolled .nav-logo-row .nav-logo-img  { width: 36px; height: 36px; }
+
+/* Links del menú más compactos */
+.nav-menu-row .nav-link {
+  font-size: .7rem;
+  padding: .4rem .6rem;
+  letter-spacing: .1em;
+}
+
+/* ── Responsive: móvil ── */
+@media (max-width: 1024px) {
+  .nav-menu-row .nav-link { font-size: .65rem; padding: .38rem .5rem; }
+}
+
+@media (max-width: 900px) {
+  .nav-menu-row        { display: none; }                   /* ocultar menú */
+  .nav-logo-row .nav-hamburger { display: flex !important; }/* mostrar hamburger */
+  .nav-logo-row { padding: .6rem 1.5rem .5rem; }
+}
+
+/* Mega-menu: ajuste de posición relativo al nuevo layout */
+.nav-item.has-mega .nav-dropdown {
+  top: calc(100% + .15rem);
+}
+
+/* ══════════════════════════════════════════
+   REVIEWS — Sección de reseñas en home
+══════════════════════════════════════════ */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.review-card {
+  background: var(--card);
+  border: 1px solid var(--border-n);
+  border-radius: calc(var(--r)*2);
+  padding: 1.8rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .3s, border-color .3s;
+}
+.review-card:hover { box-shadow: var(--shadow-md); border-color: var(--border); }
+.review-card::before {
+  content: '"';
+  position: absolute;
+  top: -.4rem;
+  left: 1.2rem;
+  font-family: var(--ff-d);
+  font-size: 5rem;
+  color: var(--brand);
+  opacity: .08;
+  line-height: 1;
+  pointer-events: none;
+}
+.review-stars {
+  color: var(--gold);
+  font-size: .9rem;
+  letter-spacing: .1em;
+  margin-bottom: .8rem;
+}
+.review-text {
+  font-size: .94rem;
+  color: var(--ink2);
+  line-height: 1.75;
+  font-style: italic;
+  margin-bottom: 1.2rem;
+}
+.review-author {
+  font-size: .78rem;
+  font-weight: 400;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.review-badge {
+  display: inline-block;
+  font-size: .68rem;
+  letter-spacing: .08em;
+  color: #4285F4;
+  margin-top: .2rem;
+}
+@media (max-width: 900px) {
+  .reviews-grid { grid-template-columns: 1fr; max-width: 540px; margin-left: auto; margin-right: auto; }
+}
+@media (max-width: 600px) {
+  .reviews-grid { max-width: 100%; }
+}

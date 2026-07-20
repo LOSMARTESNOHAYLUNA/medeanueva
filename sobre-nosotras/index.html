@@ -53,107 +53,111 @@
 </head>
 <body>
 <nav id="nav" aria-label="Navegación principal">
-  <a class="nav-logo" href="/" aria-label="Medea Estilistas — Inicio">
-    <img src="/assets/img/logo.png" alt="Logo Medea Estilistas" class="nav-logo-img" width="40" height="40" loading="eager" fetchpriority="high"/>
-    <span class="nav-logo-text">Medea <span class="nav-logo-accent">Estilistas</span></span>
-  </a>
-  <ul class="nav-menu" role="menubar">
-    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-    <li class="nav-item"><a class="nav-link" href="/sobre-nosotras/">Sobre nosotras</a></li>
-    <li class="nav-item">
-      <a class="nav-link" href="/peluqueria/" aria-haspopup="true">Peluquería <span class="nav-arrow" aria-hidden="true">▾</span></a>
-      <div class="nav-dropdown" role="menu">
-        <a href="/peluqueria/coloracion-gijon/">Coloración</a>
-        <a href="/peluqueria/mechas-balayage-gijon/">Mechas y balayage</a>
-        <a href="/peluqueria/alisado-keratina-gijon/">Alisado y keratina</a>
-        <a href="/peluqueria/moldeado-bodies-gijon/">Moldeado Bodies</a>
-        <a href="/peluqueria/tratamientos-capilares-gijon/">Tratamientos capilares</a>
-      </div>
-    </li>
-    <li class="nav-item has-mega">
-      <a class="nav-link" href="/tratamientos-faciales/" aria-haspopup="true">Tratamientos faciales <span class="nav-arrow" aria-hidden="true">▾</span></a>
-      <div class="nav-dropdown" role="menu">
-        <div class="nav-mega-col">
-          <a href="/tratamientos-faciales/tratamiento-longevidad-gijon/" class="star">Tratamiento Longevidad</a>
-          <a href="/tratamientos-faciales/vitamina-c-gijon/">Vitamina C</a>
-          <a href="/tratamientos-faciales/limpieza-facial-gijon/">Limpieza facial</a>
+  <!-- Fila 1: logo centrado -->
+  <div class="nav-logo-row">
+    <a class="nav-logo" href="/" aria-label="Medea Estilistas — Inicio">
+      <img src="/assets/img/logo.png" alt="Logo Medea Estilistas" class="nav-logo-img" width="44" height="44" loading="eager" fetchpriority="high"/>
+      <span class="nav-logo-text">Medea <span class="nav-logo-accent">Estilistas</span></span>
+    </a>
+    <button class="nav-hamburger" onclick="openMobileMenu()" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- Fila 2: menú + CTA -->
+  <div class="nav-menu-row">
+    <ul class="nav-menu" role="menubar">
+      <li class="nav-item"><a class="nav-link" href="/sobre-nosotras/">Sobre nosotras</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="/peluqueria/" aria-haspopup="true">Peluquería <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown" role="menu">
+          <a href="/peluqueria/coloracion-gijon/">Coloración</a>
+          <a href="/peluqueria/mechas-balayage-gijon/">Mechas y balayage</a>
+          <a href="/peluqueria/alisado-keratina-gijon/">Alisado y keratina</a>
+          <a href="/peluqueria/moldeado-bodies-gijon/">Moldeado Bodies</a>
+          <a href="/peluqueria/tratamientos-capilares-gijon/">Tratamientos capilares</a>
         </div>
-        <div class="nav-mega-col">
-          <a href="/tratamientos-faciales/pieles-grasas-acneicas-gijon/">Pieles grasas y acnéicas</a>
-          <a href="/tratamientos-faciales/regenerador-acidos-gijon/">Regenerador con ácidos</a>
-          <a href="/tratamientos-faciales/tratamiento-manchas-gijon/">Tratamiento de manchas</a>
+      </li>
+      <li class="nav-item has-mega">
+        <a class="nav-link" href="/tratamientos-faciales/" aria-haspopup="true">T. Faciales <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown" role="menu">
+          <div class="nav-mega-col">
+            <a href="/tratamientos-faciales/tratamiento-longevidad-gijon/" class="star">Tratamiento Longevidad</a>
+            <a href="/tratamientos-faciales/vitamina-c-gijon/">Vitamina C</a>
+            <a href="/tratamientos-faciales/limpieza-facial-gijon/">Limpieza facial</a>
+          </div>
+          <div class="nav-mega-col">
+            <a href="/tratamientos-faciales/pieles-grasas-acneicas-gijon/">Pieles grasas y acnéicas</a>
+            <a href="/tratamientos-faciales/regenerador-acidos-gijon/">Regenerador con ácidos</a>
+            <a href="/tratamientos-faciales/tratamiento-manchas-gijon/">Tratamiento de manchas</a>
+          </div>
+          <div class="nav-mega-col">
+            <a href="/tratamientos-faciales/pieles-sensibles-gijon/">Pieles sensibles</a>
+            <a href="/tratamientos-faciales/anti-edad-efecto-botox-gijon/">Anti edad efecto botox</a>
+            <a href="/tratamientos-faciales/higiene-facial-jovenes-gijon/">Higiene facial jóvenes</a>
+          </div>
         </div>
-        <div class="nav-mega-col">
-          <a href="/tratamientos-faciales/pieles-sensibles-gijon/">Pieles sensibles</a>
-          <a href="/tratamientos-faciales/anti-edad-efecto-botox-gijon/">Anti edad efecto botox</a>
-          <a href="/tratamientos-faciales/higiene-facial-jovenes-gijon/">Higiene facial jóvenes</a>
+      </li>
+      <li class="nav-item has-mega">
+        <a class="nav-link" href="/tratamientos-corporales/" aria-haspopup="true">T. Corporales <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown nav-mega-2col" role="menu">
+          <div class="nav-mega-col">
+            <a href="/tratamientos-corporales/presoterapia-gijon/">Presoterapia</a>
+            <a href="/tratamientos-corporales/mesoterapia-virtual-gijon/">Mesoterapia virtual</a>
+            <a href="/tratamientos-corporales/maderoterapia-gijon/">Maderoterapia</a>
+            <a href="/tratamientos-corporales/tratamiento-anticelulitico-gijon/">Tratamiento anticelulítico</a>
+          </div>
+          <div class="nav-mega-col">
+            <a href="/tratamientos-corporales/tratamiento-reductor-gijon/">Tratamiento reductor</a>
+            <a href="/tratamientos-corporales/reafirmante-senos-gijon/">Reafirmante de senos</a>
+            <a href="/tratamientos-corporales/higiene-espalda-gijon/">Higiene de espalda</a>
+          </div>
         </div>
-      </div>
-    </li>
-    <li class="nav-item has-mega">
-      <a class="nav-link" href="/tratamientos-corporales/" aria-haspopup="true">Tratamientos corporales <span class="nav-arrow" aria-hidden="true">▾</span></a>
-      <div class="nav-dropdown nav-mega-2col" role="menu">
-        <div class="nav-mega-col">
-          <a href="/tratamientos-corporales/presoterapia-gijon/">Presoterapia</a>
-          <a href="/tratamientos-corporales/mesoterapia-virtual-gijon/">Mesoterapia virtual</a>
-          <a href="/tratamientos-corporales/maderoterapia-gijon/">Maderoterapia</a>
-          <a href="/tratamientos-corporales/tratamiento-anticelulitico-gijon/">Tratamiento anticelulítico</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/masajes/" aria-haspopup="true">Masajes <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown" role="menu">
+          <a href="/masajes/masaje-relajante-gijon/">Masaje relajante</a>
+          <a href="/masajes/reflexologia-podal-gijon/">Reflexología podal</a>
+          <a href="/masajes/drenaje-linfatico-manual-gijon/">Drenaje linfático manual</a>
         </div>
-        <div class="nav-mega-col">
-          <a href="/tratamientos-corporales/tratamiento-reductor-gijon/">Tratamiento reductor</a>
-          <a href="/tratamientos-corporales/reafirmante-senos-gijon/">Reafirmante de senos</a>
-          <a href="/tratamientos-corporales/higiene-espalda-gijon/">Higiene de espalda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/depilacion/" aria-haspopup="true">Depilación <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown" role="menu">
+          <a href="/depilacion/pasta-de-caramelo-gijon/">Pasta de caramelo</a>
+          <a href="/depilacion/depilacion-electrica-gijon/">Depilación eléctrica</a>
         </div>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/masajes/" aria-haspopup="true">Masajes <span class="nav-arrow" aria-hidden="true">▾</span></a>
-      <div class="nav-dropdown" role="menu">
-        <a href="/masajes/masaje-relajante-gijon/">Masaje relajante</a>
-        <a href="/masajes/reflexologia-podal-gijon/">Reflexología podal</a>
-        <a href="/masajes/drenaje-linfatico-manual-gijon/">Drenaje linfático manual</a>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/depilacion/" aria-haspopup="true">Depilación <span class="nav-arrow" aria-hidden="true">▾</span></a>
-      <div class="nav-dropdown" role="menu">
-        <a href="/depilacion/pasta-de-caramelo-gijon/">Pasta de caramelo</a>
-        <a href="/depilacion/depilacion-electrica-gijon/">Depilación eléctrica</a>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/manicura-pedicura/" aria-haspopup="true">Manicura y pedicura <span class="nav-arrow" aria-hidden="true">▾</span></a>
-      <div class="nav-dropdown" role="menu">
-        <a href="/manicura-pedicura/unas-semipermanentes-gijon/">Uñas semipermanentes</a>
-        <a href="/manicura-pedicura/manicura-pedicura-clasica-gijon/">Manicura y pedicura clásica</a>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/maquillaje/" aria-haspopup="true">Maquillaje <span class="nav-arrow" aria-hidden="true">▾</span></a>
-      <div class="nav-dropdown" role="menu">
-        <a href="/maquillaje/maquillaje-social-gijon/">Maquillaje social</a>
-        <a href="/maquillaje/maquillaje-novias-gijon/">Maquillaje de novias</a>
-        <a href="/maquillaje/maquillaje-aerografo-gijon/">Maquillaje con aerógrafo</a>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/novios/" aria-haspopup="true">Novios <span class="nav-arrow" aria-hidden="true">▾</span></a>
-      <div class="nav-dropdown" role="menu">
-        <a href="/novios/novia/">Para ella</a>
-        <a href="/novios/novio/">Para él</a>
-      </div>
-    </li>
-    <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
-    <li class="nav-item"><a class="nav-link" href="/contacto/">Contacto</a></li>
-  </ul>
-  <a class="nav-cta" href="/contacto/">Reservar cita</a>
-  <button class="nav-hamburger" onclick="openMobileMenu()" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
-    <span></span><span></span><span></span>
-  </button>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/manicura-pedicura/" aria-haspopup="true">Manicura <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown" role="menu">
+          <a href="/manicura-pedicura/unas-semipermanentes-gijon/">Uñas semipermanentes</a>
+          <a href="/manicura-pedicura/manicura-pedicura-clasica-gijon/">Manicura y pedicura clásica</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/maquillaje/" aria-haspopup="true">Maquillaje <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown" role="menu">
+          <a href="/maquillaje/maquillaje-social-gijon/">Maquillaje social</a>
+          <a href="/maquillaje/maquillaje-novias-gijon/">Maquillaje de novias</a>
+          <a href="/maquillaje/maquillaje-aerografo-gijon/">Maquillaje con aerógrafo</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/novios/" aria-haspopup="true">Novios <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <div class="nav-dropdown" role="menu">
+          <a href="/novios/novia/">Para ella</a>
+          <a href="/novios/novio/">Para él</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+      <li class="nav-item"><a class="nav-link" href="/contacto/">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="/contacto/">Reservar cita</a>
+  </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menú de navegación">
   <button class="mm-close" onclick="closeMobileMenu()" aria-label="Cerrar menú">×</button>
-  <a href="/">Inicio</a>
   <a href="/sobre-nosotras/">Sobre nosotras</a>
   <a data-toggle="mm-pel" href="/peluqueria/">Peluquería</a>
   <div class="mm-sub" id="mm-pel">
