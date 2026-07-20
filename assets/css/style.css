@@ -1833,26 +1833,12 @@ body {
   padding: 0 2rem;
 }
 .hero-cat .hero-photo-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
-  z-index: 0;
-  display: block;
-  transition: transform 8s ease-out;
+  filter: grayscale(100%);
+  opacity: 0.15;
 }
 .hero-cat:hover .hero-photo-bg { transform: scale(1.04); }
 .hero-cat .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    165deg,
-    rgba(28,22,20,.60) 0%,
-    rgba(28,22,20,.35) 55%,
-    rgba(93,19,26,.45) 100%
-  );
-  z-index: 1;
+  background: transparent;
 }
 .hero-cat .hero-content {
   position: relative;
@@ -1862,21 +1848,21 @@ body {
   padding-bottom: max(50px, 3rem);
 }
 /* Texto blanco sobre foto */
-.hero-cat .hero-eyebrow          { color: rgba(245,240,232,.75); }
-.hero-cat .hero-eyebrow::after   { background: rgba(245,240,232,.3); }
-.hero-cat .hero-title            { color: #fff; }
-.hero-cat .hero-title em         { color: var(--gold-lt); }
-.hero-cat .hero-sub              { color: rgba(245,240,232,.65); }
-.hero-cat .btn-brand             { background: var(--brand); color: #fff; box-shadow: 0 2px 16px rgba(93,19,26,.4); }
+.hero-cat .hero-eyebrow          { color: var(--brand); }
+.hero-cat .hero-eyebrow::after   { background: var(--brand); opacity: .25; }
+.hero-cat .hero-title            { color: var(--ink); }
+.hero-cat .hero-title em         { color: var(--gold); }
+.hero-cat .hero-sub              { color: var(--muted); }
+.hero-cat .btn-brand             { background: var(--brand); color: #fff; box-shadow: 0 2px 16px rgba(93,19,26,.2); }
 .hero-cat .btn-brand:hover       { background: var(--brand-lt); }
-.hero-cat .btn-outline           { border-color: rgba(245,240,232,.4); color: #fff; background: rgba(255,255,255,.08); }
-.hero-cat .btn-outline:hover     { border-color: rgba(245,240,232,.75); background: rgba(255,255,255,.15); }
+.hero-cat .btn-outline           { border-color: var(--border2); color: var(--brand); background: transparent; }
+.hero-cat .btn-outline:hover     { border-color: var(--brand); background: var(--brand-bg); }
 /* Breadcrumb sobre foto */
-.hero-cat .hero-breadcrumb .breadcrumb-inner { color: rgba(245,240,232,.55); }
-.hero-cat .hero-breadcrumb .breadcrumb-inner a { color: rgba(245,240,232,.55); }
-.hero-cat .hero-breadcrumb .breadcrumb-inner a:hover { color: rgba(245,240,232,.9); }
-.hero-cat .hero-breadcrumb .breadcrumb-sep   { color: rgba(245,240,232,.25); }
-.hero-cat .hero-breadcrumb .breadcrumb-current { color: rgba(245,240,232,.9); }
+.hero-cat .hero-breadcrumb .breadcrumb-inner { color: var(--muted2); }
+.hero-cat .hero-breadcrumb .breadcrumb-inner a { color: var(--muted); }
+.hero-cat .hero-breadcrumb .breadcrumb-inner a:hover { color: var(--brand); }
+.hero-cat .hero-breadcrumb .breadcrumb-sep   { color: var(--border2); }
+.hero-cat .hero-breadcrumb .breadcrumb-current { color: var(--brand); }
 
 /* ══════════════════════════════════════════
    INTRO CENTRADO — sin línea gold
@@ -1949,12 +1935,7 @@ body {
   opacity: 0.15;
 }
 .hero-cat .hero-overlay {
-  background: linear-gradient(
-    to bottom,
-    rgba(10,8,6,.62) 0%,
-    rgba(10,8,6,.45) 55%,
-    rgba(10,8,6,.65) 100%
-  );
+  background: transparent;
 }
 
 /* ══════════════════════════════════════════
