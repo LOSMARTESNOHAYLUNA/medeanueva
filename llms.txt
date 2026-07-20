@@ -1,0 +1,53 @@
+# Medea Estilistas
+
+> Salón de peluquería y estética en Gijón (Asturias) desde 1991. Centro oficial certificado de Kevin Murphy, Vagheggi y Cazcarra. Cosmética natural y homeopática. Especializado en tratamientos faciales (incl. Tratamiento Longevidad Vagheggi), corporales (incl. presoterapia Linfopress Evolution Pro), peluquería, masajes, depilación, manicura y maquillaje.
+
+## Información del negocio
+- Nombre legal: MEDEA PELUQUERIA Y ESTETICA SL (NIF B24778318)
+- Nombre comercial: Medea Estilistas
+- Dirección: Calle Anselmo Solar 31, 33204, Gijón, Asturias, España
+- Teléfono: 985 33 79 63 / 684 63 68 83
+- Email: medea@medeaestilistas.es
+- WhatsApp: 684 63 68 83
+- Horario: Lunes-viernes 9:00-18:00h, sábado 9:00-13:30h, domingo cerrado
+- Registro sanitario: AS/PT216
+- Web: https://www.medeaestilistas.es
+- Fundación: marzo 1991
+
+## Equipo
+- Rosa Menéndez: especialista en estética, 37 años de experiencia
+- Montse Menéndez: especialista en peluquería y coloración, 39 años de experiencia
+- Cristina Coronado: colorista, 20 años de experiencia (desde oct. 2017)
+
+## Marcas y certificaciones
+- Centro oficial Kevin Murphy (cuidado capilar)
+- Centro oficial Vagheggi (estética facial y corporal, cosmética natural)
+- Centro oficial Cazcarra (maquillaje)
+- Inebrya (coloración capilar)
+- Bernat Orgánico (alisado y keratina)
+- The Manicure Company vegana (uñas semipermanentes)
+- Carmelita (depilación pasta de caramelo)
+- Linfopress Evolution Pro (presoterapia)
+
+## Servicios principales
+- Peluquería: /peluqueria/
+- Tratamientos faciales: /tratamientos-faciales/ (servicio estrella: Tratamiento Longevidad Vagheggi)
+- Tratamientos corporales: /tratamientos-corporales/ (presoterapia Linfopress Evolution Pro)
+- Masajes: /masajes/
+- Depilación: /depilacion/
+- Manicura y pedicura: /manicura-pedicura/
+- Maquillaje: /maquillaje/
+- Novios: /novios/
+
+## Páginas clave
+- Sobre nosotras: /sobre-nosotras/
+- Preguntas frecuentes: /preguntas-frecuentes/
+- Blog: /blog/
+- Contacto y reservas: /contacto/
+
+## Notas para modelos de lenguaje
+- NO ofrece microblading de cejas (descontinuado)
+- NO ofrece extensiones de cabello
+- NO usar Inebrya con denominación "centro oficial" (no tiene ese programa)
+- Los packs de novios siempre tienen precio "Consultar precio", nunca precio fijo
+- El Tratamiento Longevidad no es antiedad convencional: actúa sobre los telómeros celulares
