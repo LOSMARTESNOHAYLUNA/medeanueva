@@ -53,20 +53,18 @@
 </head>
 <body>
 <nav id="nav" aria-label="Navegación principal">
-  <!-- Fila 1: logo centrado -->
   <div class="nav-logo-row">
     <a class="nav-logo" href="/" aria-label="Medea Estilistas — Inicio">
-      <img src="/assets/img/logo.png" alt="Logo Medea Estilistas" class="nav-logo-img" width="44" height="44" loading="eager" fetchpriority="high"/>
+      <img src="/assets/img/logo.svg" alt="Logo Medea Estilistas" class="nav-logo-img" width="56" height="56" loading="eager" fetchpriority="high"/>
       <span class="nav-logo-text">Medea <span class="nav-logo-accent">Estilistas</span></span>
     </a>
     <button class="nav-hamburger" onclick="openMobileMenu()" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
       <span></span><span></span><span></span>
     </button>
   </div>
-  <!-- Fila 2: menú + CTA -->
   <div class="nav-menu-row">
     <ul class="nav-menu" role="menubar">
-      <li class="nav-item"><a class="nav-link" href="/sobre-nosotras/">Sobre nosotras</a></li>
+      <li class="nav-item"><a class="nav-link" href="/sobre-nosotras/">Nosotras</a></li>
       <li class="nav-item">
         <a class="nav-link" href="/peluqueria/" aria-haspopup="true">Peluquería <span class="nav-arrow" aria-hidden="true">▾</span></a>
         <div class="nav-dropdown" role="menu">
@@ -78,7 +76,7 @@
         </div>
       </li>
       <li class="nav-item has-mega">
-        <a class="nav-link" href="/tratamientos-faciales/" aria-haspopup="true">T. Faciales <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <a class="nav-link" href="/tratamientos-faciales/" aria-haspopup="true">Tratamientos faciales <span class="nav-arrow" aria-hidden="true">▾</span></a>
         <div class="nav-dropdown" role="menu">
           <div class="nav-mega-col">
             <a href="/tratamientos-faciales/tratamiento-longevidad-gijon/" class="star">Tratamiento Longevidad</a>
@@ -98,7 +96,7 @@
         </div>
       </li>
       <li class="nav-item has-mega">
-        <a class="nav-link" href="/tratamientos-corporales/" aria-haspopup="true">T. Corporales <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <a class="nav-link" href="/tratamientos-corporales/" aria-haspopup="true">Tratamientos corporales <span class="nav-arrow" aria-hidden="true">▾</span></a>
         <div class="nav-dropdown nav-mega-2col" role="menu">
           <div class="nav-mega-col">
             <a href="/tratamientos-corporales/presoterapia-gijon/">Presoterapia</a>
@@ -129,7 +127,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/manicura-pedicura/" aria-haspopup="true">Manicura <span class="nav-arrow" aria-hidden="true">▾</span></a>
+        <a class="nav-link" href="/manicura-pedicura/" aria-haspopup="true">Manicura y pedicura <span class="nav-arrow" aria-hidden="true">▾</span></a>
         <div class="nav-dropdown" role="menu">
           <a href="/manicura-pedicura/unas-semipermanentes-gijon/">Uñas semipermanentes</a>
           <a href="/manicura-pedicura/manicura-pedicura-clasica-gijon/">Manicura y pedicura clásica</a>
@@ -153,11 +151,10 @@
       <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
       <li class="nav-item"><a class="nav-link" href="/contacto/">Contacto</a></li>
     </ul>
-    <a class="nav-cta" href="/contacto/">Reservar cita</a>
   </div>
 </nav><div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menú de navegación">
   <button class="mm-close" onclick="closeMobileMenu()" aria-label="Cerrar menú">×</button>
-  <a href="/sobre-nosotras/">Sobre nosotras</a>
+  <a href="/sobre-nosotras/">Nosotras</a>
   <a data-toggle="mm-pel" href="/peluqueria/">Peluquería</a>
   <div class="mm-sub" id="mm-pel">
     <a href="/peluqueria/coloracion-gijon/">Coloración</a>
@@ -234,13 +231,13 @@
     <div class="footer-top">
       <div>
         <a class="footer-logo" href="/">
-          <img src="/assets/img/logo.png" alt="Medea Estilistas" class="footer-logo-img" width="48" height="48" loading="lazy"/>
+          <img src="/assets/img/logo.svg" alt="Medea Estilistas" class="footer-logo-img" width="48" height="48" loading="lazy"/>
           Medea <span>Estilistas</span>
         </a>
         <p class="footer-tagline">Peluquería y estética en Gijón<br>desde 1991. Centro oficial Kevin Murphy,<br>Vagheggi y Cazcarra.</p>
         <div class="footer-contact">
           <a href="tel:+34985337963">985 33 79 63</a>
-          <a href="tel:+34684636883">684 63 68 83</a>
+          <a href="https://wa.me/34684636883">684 63 68 83</a>
           <a href="mailto:medea@medeaestilistas.es">medea@medeaestilistas.es</a>
           <a href="https://maps.app.goo.gl/it7pQGJSdR7a5feT6" target="_blank" rel="noopener">Calle Anselmo Solar 31, Gijón</a>
         </div>
@@ -290,7 +287,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 MEDEA PELUQUERIA Y ESTETICA SL · Reg. sanitario AS/PT216</p>
+      <p class="footer-copy">© 2026 MEDEA PELUQUERIA Y ESTETICA SL · Reg. sanitario AS/PT216</p>
       <nav class="footer-legal">
         <a href="/aviso-legal/">Aviso legal</a>
         <a href="/politica-privacidad/">Privacidad</a>
@@ -307,5 +304,15 @@
 </div>
 <button id="cookie-reopen" onclick="reopenCookies()" aria-label="Gestionar cookies" title="Gestionar cookies">🍪</button>
 <script src="/assets/js/main.js" defer></script>
+<!-- ██ BOTONES FLOTANTES ████████████████████ -->
+<div class="fab-group" aria-label="Acciones rápidas">
+  <a href="/contacto/" class="fab-cta" aria-label="Reservar cita">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    Reservar cita
+  </a>
+  <a href="https://wa.me/34684636883" class="fab-wa" target="_blank" rel="noopener" aria-label="Chateanos por WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
 </body>
 </html>

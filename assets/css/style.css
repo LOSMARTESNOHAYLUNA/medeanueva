@@ -1463,3 +1463,143 @@ input, textarea, select, button { font-size: 16px; } /* Evita zoom iOS */
 @media (max-width: 600px) {
   .reviews-grid { max-width: 100%; }
 }
+
+/* ══════════════════════════════════════════
+   NAV v3 — SVG LOGO SIN FONDO, MÁS GRANDE
+══════════════════════════════════════════ */
+.nav-logo-img {
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 0 !important;
+  object-fit: contain !important;
+  background: none !important;
+}
+.nav-logo-row .nav-logo-img {
+  width: 56px !important;
+  height: 56px !important;
+}
+#nav.scrolled .nav-logo-row .nav-logo-img {
+  width: 44px !important;
+  height: 44px !important;
+}
+.footer-logo-img {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 0 !important;
+  object-fit: contain !important;
+  background: none !important;
+}
+
+/* ══════════════════════════════════════════
+   BREADCRUMB DENTRO DEL HERO
+══════════════════════════════════════════ */
+.hero-breadcrumb {
+  position: absolute;
+  top: 96px;  /* nav height: logo-row(~60px) + menu-row(~36px) */
+  left: 0; right: 0;
+  padding: 0 clamp(1.5rem, 5vw, 4rem);
+  z-index: 3;
+  text-align: left;
+}
+.hero-breadcrumb .breadcrumb-inner {
+  font-size: .78rem;
+  color: rgba(28,22,20,.45);
+  flex-wrap: wrap;
+}
+.hero-breadcrumb .breadcrumb-inner a {
+  color: rgba(28,22,20,.55);
+  transition: color .2s;
+}
+.hero-breadcrumb .breadcrumb-inner a:hover { color: var(--brand); }
+.hero-breadcrumb .breadcrumb-sep          { color: rgba(28,22,20,.25); }
+.hero-breadcrumb .breadcrumb-current      { color: var(--brand); font-size: .78rem; }
+
+/* ══════════════════════════════════════════
+   BOTONES FLOTANTES — WhatsApp + Reservar
+══════════════════════════════════════════ */
+.fab-group {
+  position: fixed;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  z-index: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .75rem;
+  pointer-events: none;
+}
+.fab-group > * { pointer-events: auto; }
+
+.fab-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  background: var(--brand);
+  color: #fff;
+  font-family: var(--ff-b);
+  font-size: .72rem;
+  font-weight: 400;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  padding: .65rem 1.3rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(93,19,26,.30);
+  transition: transform .2s, box-shadow .2s, background .2s;
+}
+.fab-cta:hover {
+  transform: translateY(-2px);
+  background: var(--brand-lt);
+  box-shadow: 0 6px 22px rgba(93,19,26,.40);
+}
+
+.fab-wa {
+  width: 52px; height: 52px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(37,211,102,.32);
+  transition: transform .2s, box-shadow .2s;
+}
+.fab-wa:hover {
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 6px 22px rgba(37,211,102,.44);
+}
+
+@media (max-width:600px) {
+  .fab-group { bottom: 1rem; right: 1rem; }
+  .fab-cta   { font-size: .65rem; padding: .55rem 1rem; }
+  .fab-wa    { width: 46px; height: 46px; }
+}
+
+/* ══════════════════════════════════════════
+   MAP — visible correctamente
+══════════════════════════════════════════ */
+.map-facade {
+  background: var(--surface);
+  border: 1px solid var(--border-n);
+  border-radius: calc(var(--r)*2);
+  overflow: hidden;
+  cursor: pointer;
+}
+.map-facade:not(.loaded) {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  transition: opacity .2s;
+}
+.map-facade:not(.loaded):hover { opacity: .88; }
+.map-facade.loaded { height: auto; cursor: default; }
+.map-facade.loaded iframe { display: block; width: 100%; border: 0; }
+
+/* ══════════════════════════════════════════
+   IMÁGENES EN CARDS DE HUBS (con imagen real)
+══════════════════════════════════════════ */
+.card-bg-img { border-radius: 0; }  /* heredado del card */
