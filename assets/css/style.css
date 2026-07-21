@@ -1955,6 +1955,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: .25rem;
   transition: border-color .3s, box-shadow .3s, transform .3s;
   box-shadow: var(--shadow-sm);
@@ -2055,3 +2056,132 @@ body {
 }
 
 .stat-name { font-size: 1.125rem !important; } /* 18px */
+
+/* ══════════════════════════════════════════
+   BRAND LOGOS GRID
+══════════════════════════════════════════ */
+.brand-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.brand-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 2rem 1.2rem 1.6rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  gap: .6rem;
+  transition: border-color .3s;
+}
+.brand-logo-item:hover { border-color: var(--gold); }
+.brand-logo-img {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: .4rem;
+}
+.brand-logo-img img {
+  max-height: 44px;
+  max-width: 140px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: .75;
+  transition: filter .3s, opacity .3s;
+}
+.brand-logo-item:hover .brand-logo-img img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+.brand-label {
+  font-family: var(--ff-b);
+  font-size: .68rem;
+  font-weight: 400;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+.brand-desc {
+  font-size: .88rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .brand-logos-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .brand-logos-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .brand-logo-item { padding: 1.4rem .8rem; }
+}
+
+/* ── MARCAS ─────────────────────────────────────────── */
+.brand-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.brand-logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--border2);
+}
+
+.brand-logo-img {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.brand-logo-img img {
+  max-height: 48px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.brand-logo-item:hover .brand-logo-img img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.brand-label {
+  font-family: var(--ff-b);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 0.4rem;
+}
+
+.brand-desc {
+  font-family: var(--ff-b);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .brand-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
