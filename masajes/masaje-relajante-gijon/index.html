@@ -53,6 +53,9 @@
 <style>
 #descripcion .section-body { text-align: center !important; margin: 0 auto !important; }
 #descripcion { text-align: center; }
+#descripcion .eyebrow::before { display:none; }
+.srv-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; }
+@media (max-width:768px) { .srv-grid { grid-template-columns:1fr; gap:2rem; } }
 </style>
 </head>
 <body>
@@ -221,29 +224,78 @@
   <a href="/contacto/" class="mm-cta">Reservar cita</a>
 </div>
 
+
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.medeaestilistas.es/"},{"@type":"ListItem","position":2,"name":"Masajes","item":"https://www.medeaestilistas.es/masajes/"},{"@type":"ListItem","position":3,"name":"Masaje Relajante en Gijón"}]}</script>
-<section class="hero-cat" aria-label="Masaje Relajante en Gijón">
-  <img class="hero-photo-bg"
-       src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-       alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080">
+
+<section class="hero-cat" aria-label="">
+  <img class="hero-photo-bg" src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+       alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080" style="filter:grayscale(1)">
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-content">
     <nav class="breadcrumb hero-breadcrumb" aria-label="Ruta de navegación"><div class="breadcrumb-inner"><a href="/">Inicio</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a href="/masajes/">Masajes</a><span class="breadcrumb-sep" aria-hidden="true">›</span><span class="breadcrumb-current" aria-current="page">Masaje Relajante en Gijón</span></div></nav>
     <p class="hero-eyebrow">Masajes · Rosa Menéndez</p>
-    <h1 class="hero-title">Masaje Relajante en Gijón</h1>
+    <h1 class="hero-title"><br><em class="italic"></em></h1>
     <p class="hero-sub">Consultar precio · Gijón, Asturias</p>
-    <div class="hero-actions">
-      <a class="btn btn-brand" href="/contacto/">Reservar cita</a>
-      <a class="btn btn-outline" href="#descripcion">Saber más</a>
-    </div>
+    <div class="hero-actions"><a class="btn btn-brand" href="/contacto/">Reservar cita</a>
+      <a class="btn btn-outline" href="#descripcion">Saber más</a></div>
   </div>
-</section><section id="descripcion" class="section-surface">
+</section>
+<section id="descripcion" class="section-surface">
   <div class="section-inner" style="display:flex;flex-direction:column;align-items:center;text-align:center">
-    <div style="max-width:800px;width:100%;margin:0 auto">
-    <h2 class="section-title reveal">El momento que tu cuerpo necesita</h2><div class="gold-bar reveal"></div><p class="section-body reveal" style="max-width:100%">Rosa Menéndez ha visto innumerables veces cómo sus clientas entran con el estrés acumulado de la semana y salen completamente transformadas: más ligeras, relajadas, con la sensación de haberse olvidado del mundo. Ese es el objetivo. Con aceites de Vagheggi y 37 años de experiencia trabajando el cuerpo, cada sesión es única.</p><div style="margin-top:2rem;padding:1.5rem 1.8rem;background:var(--gold-bg);border-radius:8px;border-left:3px solid var(--gold)" class="reveal"><p style="font-size:.95rem;color:var(--ink2);font-style:italic;line-height:1.8">"Cuando se levantó de la camilla me dijo que no se había acordado de ellos en toda la hora. Estaba mucho más relajada y lo disfrutó realmente."<br><span style="font-size:.85rem;color:var(--muted)">— Rosa, sobre una clienta habitual</span></p></div>
+    <div style="max-width:720px;width:100%;text-align:center;margin:0 auto">
+      <span class="eyebrow reveal" style="justify-content:center;display:flex">Masaje Relajante · Vagheggi · Rosa Menéndez</span>
+      <h2 class="section-title reveal" style="margin-top:1rem">El momento quetu<br><em class="italic text-gold">cuerpo necesita</em></h2>
+      <div class="gold-bar reveal" style="margin:1.2rem auto"></div>
+      <p class="section-body reveal" style="text-align:center">Rosa Menéndez ha visto innumerables veces cómo sus clientas entran con el estrés acumulado de la semana y salen completamente transformadas: más ligeras, relajadas, con la sensación de haberse olvidado del mundo. Ese es el objetivo. Con aceites de Vagheggi y 37 años de experiencia trabajando el cuerpo, cada sesión es única.</p>
     </div>
   </div>
-</section><section class="section-surface">
+</section>
+<section>
+  <div class="section-inner srv-grid">
+    <div class="reveal">
+      <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop" alt=" — Medea Estilistas"
+           loading="lazy" width="800" height="1000"
+           style="width:100%;height:auto;object-fit:cover;display:block;filter:grayscale(1)">
+    </div>
+    <div>
+      <span class="eyebrow reveal">La experiencia</span>
+      <h2 class="section-title reveal" style="margin-top:.8rem">Olvídate del mundo<br><em class="italic text-gold">durante una hora</em></h2>
+      <div class="gold-bar reveal"></div>
+      <div style="margin-top:2rem;display:flex;flex-direction:column;gap:1.5rem">
+        <div class="reveal" style="display:flex;gap:1.2rem;align-items:flex-start">
+          <span style="font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;min-width:2rem">01</span>
+          <div>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);margin-bottom:.3rem">Aceites Vagheggi</p>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">Cosmética natural italiana sin parabenos ni ingredientes artificiales.</p>
+          </div>
+        </div>
+        <div class="reveal" style="display:flex;gap:1.2rem;align-items:flex-start">
+          <span style="font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;min-width:2rem">02</span>
+          <div>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);margin-bottom:.3rem">37 años de experiencia</p>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">Rosa aplica cada maniobra con el conocimiento de décadas de práctica.</p>
+          </div>
+        </div>
+        <div class="reveal" style="display:flex;gap:1.2rem;align-items:flex-start">
+          <span style="font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;min-width:2rem">03</span>
+          <div>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);margin-bottom:.3rem">Adaptado a ti</p>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">Ajustamos la presión y las técnicas a tus necesidades en cada sesión.</p>
+          </div>
+        </div>
+        <div class="reveal" style="display:flex;gap:1.2rem;align-items:flex-start">
+          <span style="font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;min-width:2rem">04</span>
+          <div>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);margin-bottom:.3rem">Resultado inmediato</p>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">Al levantarte de la camilla notarás la diferencia: más ligera, más tú.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-surface">
   <div class="section-inner" style="max-width:760px">
     <span class="eyebrow reveal">Preguntas frecuentes</span>
     <h2 class="section-title reveal" style="margin-top:.8rem">Lo que más<br><em class="italic text-gold">nos preguntan</em></h2>
@@ -254,18 +306,19 @@
           ¿Cuánto dura el masaje?
           <span style="font-family:var(--ff-b);font-size:1.2rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
         </summary>
-        <p style="font-family:var(--ff-b);font-size:.95rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Un masaje de cuerpo completo dura entre 60 y 90 minutos. También ofrecemos masajes parciales de menor duración.</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Un masaje de cuerpo completo dura entre 60 y 90 minutos. También ofrecemos masajes parciales de menor duración.</p>
       </details>
       <details style="border-top:1px solid var(--border);padding:1.4rem 0;border-bottom:1px solid var(--border)">
         <summary style="font-family:var(--ff-d);font-size:1.25rem;font-weight:300;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">
           ¿Qué aceites se usan?
           <span style="font-family:var(--ff-b);font-size:1.2rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
         </summary>
-        <p style="font-family:var(--ff-b);font-size:.95rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Trabajamos con los aceites de masaje de Vagheggi, cosmética natural italiana sin parabenos ni ingredientes artificiales.</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Trabajamos con los aceites de masaje de Vagheggi, cosmética natural italiana sin parabenos ni ingredientes artificiales.</p>
       </details>
     </div>
   </div>
-</section><section>
+</section>
+<section>
   <div class="section-inner">
     <span class="eyebrow reveal">También puede interesarte</span>
     <div class="cards-grid reveal" style="margin-top:2rem;grid-template-columns:repeat(2,1fr)">
@@ -301,7 +354,7 @@
       <div class="cta-info reveal">
         <div class="contact-detail">
           <span class="cd-label">Horario</span>
-          <span class="cd-value">Lunes a viernes: 9:00–18:00h<br>Sábado: 9:00–13:30h<br><span style="font-size:.85rem;color:var(--muted2)">Mismo horario todo el año</span></span>
+          <span class="cd-value">Lunes a viernes: 9:00–18:00h<br>Sábado: 9:00–13:30h<br><span style="font-size:1.125rem;color:var(--muted2)">Mismo horario todo el año</span></span>
         </div>
         <div class="contact-detail">
           <span class="cd-label">Teléfono</span>
@@ -313,8 +366,7 @@
         </a>
       </div>
       <div class="reveal">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.7171271515685!2d-5.6439555!3d43.529091199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367b7d26c80e71%3A0xb96af5fea4f8b5ab!2sMedea%20Peluqueria%20y%20Est%C3%A9tica!5e0!3m2!1ses!2ses!4v1782292334474!5m2!1ses!2ses"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.7171271515685!2d-5.6439555!3d43.529091199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367b7d26c80e71%3A0xb96af5fea4f8b5ab!2sMedea%20Peluqueria%20y%20Est%C3%A9tica!5e0!3m2!1ses!2ses!4v1782292334474!5m2!1ses!2ses"
           class="cta-map-iframe" allowfullscreen loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
           title="Medea Estilistas en Google Maps"></iframe>

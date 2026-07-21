@@ -53,6 +53,9 @@
 <style>
 #descripcion .section-body { text-align: center !important; margin: 0 auto !important; }
 #descripcion { text-align: center; }
+#descripcion .eyebrow::before { display:none; }
+.srv-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; }
+@media (max-width:768px) { .srv-grid { grid-template-columns:1fr; gap:2rem; } }
 </style>
 </head>
 <body>
@@ -221,46 +224,144 @@
   <a href="/contacto/" class="mm-cta">Reservar cita</a>
 </div>
 
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.medeaestilistas.es/"},{"@type":"ListItem","position":2,"name":"Novios","item":"https://www.medeaestilistas.es/novios/"},{"@type":"ListItem","position":3,"name":"Para ella"}]}</script>
+
 <section class="hero-cat" aria-label="Servicios para la Novia en Gijón">
-  <img class="hero-photo-bg"
-       src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-       alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080">
+  <img class="hero-photo-bg" src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+       alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080" style="filter:grayscale(1)">
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-content">
     <nav class="breadcrumb hero-breadcrumb" aria-label="Ruta de navegación"><div class="breadcrumb-inner"><a href="/">Inicio</a><span class="breadcrumb-sep" aria-hidden="true">›</span><a href="/novios/">Novios</a><span class="breadcrumb-sep" aria-hidden="true">›</span><span class="breadcrumb-current" aria-current="page">Para ella</span></div></nav>
     <p class="hero-eyebrow">Novios · Para ella</p>
-    <h1 class="hero-title">Servicios para la Novia en Gijón</h1>
+    <h1 class="hero-title">Servicios para la<br><em class="italic">Novia en Gijón</em></h1>
     <p class="hero-sub">Peinado · Maquillaje · Tratamientos · Manicura · Nos desplazamos</p>
-    <div class="hero-actions">
-      <a class="btn btn-brand" href="/contacto/">Consultar disponibilidad</a>
-      <a class="btn btn-outline" href="/novios/">Ver todos los servicios</a>
+    <div class="hero-actions"><a class="btn btn-brand" href="/contacto/">Consultar disponibilidad</a>
+      <a class="btn btn-outline" href="/novios/">Ver todos los servicios</a></div>
+  </div>
+</section>
+<section id="descripcion" class="section-surface">
+  <div class="section-inner" style="display:flex;flex-direction:column;align-items:center;text-align:center">
+    <div style="max-width:720px;width:100%;text-align:center;margin:0 auto">
+      <span class="eyebrow reveal" style="justify-content:center;display:flex">Servicios para la Novia · Medea Estilistas</span>
+      <h2 class="section-title reveal" style="margin-top:1rem"><br><em class="italic text-gold"></em></h2>
+      <div class="gold-bar reveal" style="margin:1.2rem auto"></div>
+      <p class="section-body reveal" style="text-align:center">Consulta con nuestro equipo para más información sobre este tratamiento.</p>
     </div>
   </div>
 </section>
 <section>
-  <div class="section-inner service-grid">
-    <div>
-      <span class="eyebrow reveal">La novia</span>
-      <h2 class="section-title reveal">Radiante de la mañana a la última foto</h2>
-      <div class="gold-bar reveal"></div>
-      <p class="section-body reveal" style="max-width:100%;margin-bottom:1.2rem">En Medea Estilistas entendemos que el día de la boda es único e irrepetible. Rosa y Montse llevan décadas acompañando novias, y su experiencia se nota en cada detalle: la calma con la que trabajan, la precisión en el peinado, el maquillaje que dura todo el día sin perder frescura.</p>
-      <p class="section-body reveal" style="max-width:100%;margin-bottom:1.2rem">Trabajamos con los productos de las marcas de las que somos <strong>centro oficial certificado</strong>: Kevin Murphy para el cabello, Cazcarra y Vagheggi para el maquillaje, The Manicure Company para las uñas.</p>
-      <p class="section-body reveal" style="max-width:100%"><strong>Nos desplazamos al lugar de la celebración</strong>. Recomendamos reservar con al menos 2 meses de antelación y realizar la prueba de peinado y maquillaje con suficiente tiempo para ajustar cualquier detalle.</p>
-      <div style="margin-top:2rem;padding:1.5rem;background:var(--gold-bg);border-radius:8px" class="reveal">
-        <p style="font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand);margin-bottom:.5rem">Precio</p>
-        <p style="font-size:1rem;color:var(--ink2)">Consultar precio · Pack personalizado</p>
-        <p style="font-size:.88rem;color:var(--muted);margin-top:.3rem">Cada pack se presupuesta individualmente según los servicios elegidos.</p>
-      </div>
+  <div class="section-inner srv-grid">
+    <div class="reveal">
+      <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop" alt="Servicios para la Novia en Gijón — Medea Estilistas"
+           loading="lazy" width="800" height="1000"
+           style="width:100%;height:auto;object-fit:cover;display:block;filter:grayscale(1)">
     </div>
     <div>
-      <div class="service-list reveal">
-        <div class="service-item"><span class="service-item-num">01</span><div><p class="service-item-name">Prueba de peinado y maquillaje</p><p class="service-item-desc">Imprescindible. Realizamos la prueba con suficiente antelación para que el día de la boda todo esté perfecto.</p></div></div>
-        <div class="service-item"><span class="service-item-num">02</span><div><p class="service-item-name">Peinado de novia</p><p class="service-item-desc">Recogidos, semi-recogidos, ondas… el peinado que siempre soñaste, adaptado a tu vestido y personalidad.</p></div></div>
-        <div class="service-item"><span class="service-item-num">03</span><div><p class="service-item-name">Maquillaje de novia</p><p class="service-item-desc">Rosa tiene formación específica en maquillaje de novias con la Escuela Cazcarra. Natural, duradero y favorecedor.</p></div></div>
-        <div class="service-item"><span class="service-item-num">04</span><div><p class="service-item-name">Manicura semipermanente</p><p class="service-item-desc">Uñas impecables con The Manicure Company (vegana). Duran toda la luna de miel.</p></div></div>
-        <div class="service-item"><span class="service-item-num">05</span><div><p class="service-item-name">Tratamiento facial previo (opcional)</p><p class="service-item-desc">Para llegar al gran día con la piel en su mejor momento. Recomendamos empezar con suficiente antelación.</p></div></div>
+      <span class="eyebrow reveal">El gran día</span>
+      <h2 class="section-title reveal" style="margin-top:.8rem">Todo preparado<br><em class="italic text-gold">para que brilles</em></h2>
+      <div class="gold-bar reveal"></div>
+      <div style="margin-top:2rem;display:flex;flex-direction:column;gap:1.5rem">
+        <div class="reveal" style="display:flex;gap:1.2rem;align-items:flex-start">
+          <span style="font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;min-width:2rem">01</span>
+          <div>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);margin-bottom:.3rem">Prueba de peinado y maquillaje</p>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">Imprescindible para ajustar el look a tus expectativas. Recomendamos hacerla con al menos 2 meses de antelación.</p>
+          </div>
+        </div>
+        <div class="reveal" style="display:flex;gap:1.2rem;align-items:flex-start">
+          <span style="font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;min-width:2rem">02</span>
+          <div>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);margin-bottom:.3rem">Peinado el día de la boda</p>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">Recogido, semirecogido o melena: el peinado que te haga sentir tú misma en tu mejor versión.</p>
+          </div>
+        </div>
+        <div class="reveal" style="display:flex;gap:1.2rem;align-items:flex-start">
+          <span style="font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;min-width:2rem">03</span>
+          <div>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);margin-bottom:.3rem">Maquillaje nupcial</p>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">Duradero, fotogénico y natural con cosmética Cazcarra. Sin efecto máscara.</p>
+          </div>
+        </div>
+        <div class="reveal" style="display:flex;gap:1.2rem;align-items:flex-start">
+          <span style="font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;min-width:2rem">04</span>
+          <div>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);margin-bottom:.3rem">Pack personalizado</p>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">Adaptamos los servicios a tus necesidades y a las de tu entorno: madres, damas de honor, testigos.</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+<section class="section-surface">
+  <div class="section-inner" style="max-width:760px">
+    <span class="eyebrow reveal">Preguntas frecuentes</span>
+    <h2 class="section-title reveal" style="margin-top:.8rem">Lo que más<br><em class="italic text-gold">nos preguntan</em></h2>
+    <div class="gold-bar reveal"></div>
+    <div style="margin-top:2.5rem;display:flex;flex-direction:column;gap:0" class="reveal">
+      <details style="border-top:1px solid var(--border);padding:1.4rem 0">
+        <summary style="font-family:var(--ff-d);font-size:1.25rem;font-weight:300;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">
+          ¿Con cuánta antelación debo reservar?
+          <span style="font-family:var(--ff-b);font-size:1.25rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
+        </summary>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Al menos 2 meses antes de la boda para poder hacer la prueba de peinado y maquillaje con tiempo suficiente.</p>
+      </details>
+      <details style="border-top:1px solid var(--border);padding:1.4rem 0">
+        <summary style="font-family:var(--ff-d);font-size:1.25rem;font-weight:300;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">
+          ¿Hacéis pruebas de peinado y maquillaje?
+          <span style="font-family:var(--ff-b);font-size:1.25rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
+        </summary>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Sí, es un paso fundamental. En la prueba ajustamos el look hasta que sea exactamente lo que imaginas.</p>
+      </details>
+      <details style="border-top:1px solid var(--border);padding:1.4rem 0">
+        <summary style="font-family:var(--ff-d);font-size:1.25rem;font-weight:300;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">
+          ¿Os desplazáis al lugar de la boda?
+          <span style="font-family:var(--ff-b);font-size:1.25rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
+        </summary>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Sí, nos desplazamos si es necesario. Consúltanos las condiciones según tu ubicación.</p>
+      </details>
+      <details style="border-top:1px solid var(--border);padding:1.4rem 0;border-bottom:1px solid var(--border)">
+        <summary style="font-family:var(--ff-d);font-size:1.25rem;font-weight:300;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">
+          ¿Podéis atender también a la madre y las damas de honor?
+          <span style="font-family:var(--ff-b);font-size:1.25rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
+        </summary>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Por supuesto. Podemos preparar un pack personalizado para todo el grupo nupcial.</p>
+      </details>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="section-inner">
+    <span class="eyebrow reveal">También puede interesarte</span>
+    <div class="cards-grid reveal" style="margin-top:2rem;grid-template-columns:repeat(3,1fr)">
+      <a class="card" href="/novios/novio/" style="text-decoration:none;height:340px">
+        <img class="card-bg-img" src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&fit=crop" alt="Para el novio — Medea Estilistas" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <div class="card-title">Para el novio</div>
+          <div class="card-desc">Preparación completa para el día B.</div>
+          <span class="card-link">Ver servicio →</span>
+        </div>
+      </a>
+      <a class="card" href="/maquillaje/maquillaje-novias-gijon/" style="text-decoration:none;height:340px">
+        <img class="card-bg-img" src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&fit=crop" alt="Maquillaje de novia — Medea Estilistas" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <div class="card-title">Maquillaje de novia</div>
+          <div class="card-desc">Look nupcial duradero y fotogénico.</div>
+          <span class="card-link">Ver servicio →</span>
+        </div>
+      </a>
+      <a class="card" href="/peluqueria/" style="text-decoration:none;height:340px">
+        <img class="card-bg-img" src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&fit=crop" alt="Peluquería — Medea Estilistas" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <div class="card-title">Peluquería</div>
+          <div class="card-desc">Peinados y coloración profesional.</div>
+          <span class="card-link">Ver servicio →</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -275,7 +376,7 @@
       <div class="cta-info reveal">
         <div class="contact-detail">
           <span class="cd-label">Horario</span>
-          <span class="cd-value">Lunes a viernes: 9:00–18:00h<br>Sábado: 9:00–13:30h<br><span style="font-size:.85rem;color:var(--muted2)">Mismo horario todo el año</span></span>
+          <span class="cd-value">Lunes a viernes: 9:00–18:00h<br>Sábado: 9:00–13:30h<br><span style="font-size:1.125rem;color:var(--muted2)">Mismo horario todo el año</span></span>
         </div>
         <div class="contact-detail">
           <span class="cd-label">Teléfono</span>
@@ -287,8 +388,7 @@
         </a>
       </div>
       <div class="reveal">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.7171271515685!2d-5.6439555!3d43.529091199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367b7d26c80e71%3A0xb96af5fea4f8b5ab!2sMedea%20Peluqueria%20y%20Est%C3%A9tica!5e0!3m2!1ses!2ses!4v1782292334474!5m2!1ses!2ses"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.7171271515685!2d-5.6439555!3d43.529091199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367b7d26c80e71%3A0xb96af5fea4f8b5ab!2sMedea%20Peluqueria%20y%20Est%C3%A9tica!5e0!3m2!1ses!2ses!4v1782292334474!5m2!1ses!2ses"
           class="cta-map-iframe" allowfullscreen loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
           title="Medea Estilistas en Google Maps"></iframe>
@@ -296,6 +396,7 @@
     </div>
   </div>
 </section>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
