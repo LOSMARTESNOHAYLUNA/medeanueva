@@ -117,6 +117,14 @@
 .prose tr:hover td{background:#f5ede5}
 .blog-related-title{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
 </style>
+<style>
+.blog-faq-lista{margin-top:1.5rem;border-bottom:1px solid var(--border)}
+.blog-faq-item{border-top:1px solid var(--border)}
+.blog-faq-btn{width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.1rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-d);font-size:1.2rem;font-weight:400;color:var(--ink);line-height:1.4}
+.blog-faq-chevron{font-size:1rem;color:var(--brand);transition:transform .25s;flex-shrink:0;margin-top:.2rem}
+.blog-faq-btn[aria-expanded="true"] .blog-faq-chevron{transform:rotate(180deg)}
+.blog-faq-resp{padding:.2rem 0 1.4rem;font-family:var(--ff-b);font-size:1.125rem;color:var(--ink2);line-height:1.75}
+</style>
 </head>
 <body>
 <nav id="nav" aria-label="Navegación principal">
@@ -304,8 +312,9 @@
     <p class="hero-sub">4 min de lectura · Montse Menéndez, especialista en peluquería</p>
   </div>
 </section>
-<section style="padding:clamp(3rem,6vw,5rem) 0;overflow:visible">
-  <div class="section-inner">
+<section<section style="padding:clamp(3rem,6vw,5rem) 0;overflow:visible">
+  <div class="section-inner">>
+    <div class="section-inner" style="max-width:720px;margin:0 auto">
     <div class="blog-layout">
       <article id="contenido">
         <div class="blog-main-img reveal">
@@ -375,6 +384,53 @@
       <p>¿Tienes claro qué quieres pero no sabes si es posible en tu cabello? Cuéntanoslo.</p>
       <a href="/contacto/" class="btn">Consultar con Montse o Cris</a>
     </div>
+        <div class="blog-conclusion reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)">
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:1.2rem">Conclusión</h2>
+      <p class="section-body" style="margin-bottom:1rem">La coloración evoluciona cada temporada, pero en Medea Estilistas el criterio siempre es el mismo: el color que mejor sienta a cada clienta, que dure y que cuide el cabello. Montse y Cris siguen la formación continua con Inebrya y asisten a eventos del sector para estar al día.</p>
+      <p class="section-body" style="margin-bottom:1rem">Si quieres renovar tu color o explorar una técnica nueva esta temporada, pide cita para una consulta de coloración. Te asesoraremos sin compromiso sobre qué técnica encaja mejor con tu cabello y tu estilo.</p>
+      <p class="section-body" style="margin-bottom:1rem">Reserva en el 985 33 79 63 o por WhatsApp en el 684 63 68 83.</p>
+    </div>
+    <div class="blog-faqs reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)" itemscope itemtype="https://schema.org/FAQPage">
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:.5rem">Preguntas frecuentes</h2>
+      <div class="blog-faq-lista">
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Qué técnica de coloración está más de moda?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">El balayage y las babylights siguen siendo las técnicas más demandadas por su resultado natural y su bajo mantenimiento. En Medea también trabajamos mucho la corrección de color y los tonos cobrizos esta temporada.</p>
+        </div>
+      </div>
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Desde cuánto cuesta un balayage en Medea Estilistas?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Las mechas balayage y babylights parten desde 52,45 € en Medea Estilistas. El precio final depende de la longitud y la densidad del cabello.</p>
+        </div>
+      </div>
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Daña el balayage el cabello?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Con Inebrya y la técnica correcta, el daño es mínimo. La decoloración moderna permite hacer aclarados importantes sin sacrificar la salud del cabello. Siempre aplicamos tratamiento de mantenimiento al finalizar.</p>
+        </div>
+      </div>
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Cuánto dura un balayage?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">El balayage es una de las técnicas con mayor duración porque no tiene línea de crecimiento marcada. El retoque puede hacerse cada 4–6 meses según el resultado buscado.</p>
+        </div>
+      </div>
+      </div>
+    </div>
     <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">M</div>
       <div>
@@ -396,48 +452,7 @@
     </article>
     </div>
   </div>
-</section>
-
-
-<section class="section-surface" style="border-top:1px solid var(--border-n)">
-  <div class="section-inner" style="max-width:760px;margin:0 auto">
-    <h2 class="section-title" style="margin-bottom:1.5rem">Conclusión</h2>
-    <p class="section-body" style="margin-bottom:1rem">La coloración evoluciona cada temporada, pero en Medea Estilistas el criterio siempre es el mismo: el color que mejor sienta a cada clienta, que dure y que cuide el cabello. Montse y Cris siguen la formación continua con Inebrya y asisten a eventos del sector para estar al día.</p><p class="section-body" style="margin-bottom:1rem">Si quieres renovar tu color o explorar una técnica nueva esta temporada, pide cita para una consulta de coloración. Te asesoraremos sin compromiso sobre qué técnica encaja mejor con tu cabello y tu estilo.</p><p class="section-body" style="margin-bottom:1rem">Reserva en el 985 33 79 63 o por WhatsApp en el 684 63 68 83.</p>
-  </div>
-</section>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué técnica de coloración está más de moda?", "acceptedAnswer": {"@type": "Answer", "text": "El balayage y las babylights siguen siendo las técnicas más demandadas por su resultado natural y su bajo mantenimiento. En Medea también trabajamos mucho la corrección de color y los tonos cobrizos esta temporada."}}, {"@type": "Question", "name": "¿Desde cuánto cuesta un balayage en Medea Estilistas?", "acceptedAnswer": {"@type": "Answer", "text": "Las mechas balayage y babylights parten desde 52,45 € en Medea Estilistas. El precio final depende de la longitud y la densidad del cabello."}}, {"@type": "Question", "name": "¿Daña el balayage el cabello?", "acceptedAnswer": {"@type": "Answer", "text": "Con Inebrya y la técnica correcta, el daño es mínimo. La decoloración moderna permite hacer aclarados importantes sin sacrificar la salud del cabello. Siempre aplicamos tratamiento de mantenimiento al finalizar."}}, {"@type": "Question", "name": "¿Cuánto dura un balayage?", "acceptedAnswer": {"@type": "Answer", "text": "El balayage es una de las técnicas con mayor duración porque no tiene línea de crecimiento marcada. El retoque puede hacerse cada 4–6 meses según el resultado buscado."}}]}</script>
-<section class="faqs-articulo section-surface" style="border-top:1px solid var(--border-n)">
-  <div class="section-inner">
-    <h2 class="section-title" style="margin-bottom:1.5rem">Preguntas frecuentes</h2>
-    <div itemscope itemtype="https://schema.org/FAQPage">
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Qué técnica de coloración está más de moda?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">El balayage y las babylights siguen siendo las técnicas más demandadas por su resultado natural y su bajo mantenimiento. En Medea también trabajamos mucho la corrección de color y los tonos cobrizos esta temporada.</p>
-      </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Desde cuánto cuesta un balayage en Medea Estilistas?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Las mechas balayage y babylights parten desde 52,45 € en Medea Estilistas. El precio final depende de la longitud y la densidad del cabello.</p>
-      </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Daña el balayage el cabello?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Con Inebrya y la técnica correcta, el daño es mínimo. La decoloración moderna permite hacer aclarados importantes sin sacrificar la salud del cabello. Siempre aplicamos tratamiento de mantenimiento al finalizar.</p>
-      </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Cuánto dura un balayage?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">El balayage es una de las técnicas con mayor duración porque no tiene línea de crecimiento marcada. El retoque puede hacerse cada 4–6 meses según el resultado buscado.</p>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-<footer>
+</section><footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div>

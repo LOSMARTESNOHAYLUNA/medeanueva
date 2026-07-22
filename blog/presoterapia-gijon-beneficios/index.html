@@ -117,6 +117,14 @@
 .prose tr:hover td{background:#f5ede5}
 .blog-related-title{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
 </style>
+<style>
+.blog-faq-lista{margin-top:1.5rem;border-bottom:1px solid var(--border)}
+.blog-faq-item{border-top:1px solid var(--border)}
+.blog-faq-btn{width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.1rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-d);font-size:1.2rem;font-weight:400;color:var(--ink);line-height:1.4}
+.blog-faq-chevron{font-size:1rem;color:var(--brand);transition:transform .25s;flex-shrink:0;margin-top:.2rem}
+.blog-faq-btn[aria-expanded="true"] .blog-faq-chevron{transform:rotate(180deg)}
+.blog-faq-resp{padding:.2rem 0 1.4rem;font-family:var(--ff-b);font-size:1.125rem;color:var(--ink2);line-height:1.75}
+</style>
 </head>
 <body>
 <nav id="nav" aria-label="Navegación principal">
@@ -304,8 +312,9 @@
     <p class="hero-sub">5 min de lectura · Rosa Menéndez, especialista en estética</p>
   </div>
 </section>
-<section style="padding:clamp(3rem,6vw,5rem) 0">
-  <div class="section-inner">
+<section<section style="padding:clamp(3rem,6vw,5rem) 0">
+  <div class="section-inner">>
+    <div class="section-inner" style="max-width:720px;margin:0 auto">
     <div class="blog-layout">
       <article id="contenido">
         <div class="blog-main-img reveal">
@@ -398,6 +407,53 @@
       <p>¿Quieres empezar con la presoterapia? Escríbenos y te asesoramos sin compromiso.</p>
       <a href="/contacto/" class="btn">Reservar sesión de presoterapia</a>
     </div>
+        <div class="blog-conclusion reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)">
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:1.2rem">Conclusión</h2>
+      <p class="section-body" style="margin-bottom:1rem">La presoterapia con el equipo Linfopress Evolution Pro de Medea Estilistas es uno de los tratamientos más completos para mejorar la circulación linfática, reducir la retención de líquidos y aliviar las piernas cansadas. Rosa Menéndez lo aplica como tratamiento independiente o combinado con otros corporales.</p>
+      <p class="section-body" style="margin-bottom:1rem">Con un precio de 18,90 € por sesión, es uno de los tratamientos más accesibles del centro y con resultados muy apreciables desde la primera vez. Muchas clientas lo incorporan a su rutina mensual como mantenimiento.</p>
+      <p class="section-body" style="margin-bottom:1rem">Reserva tu sesión en la Calle Anselmo Solar 31 de Gijón o llámanos al 985 33 79 63.</p>
+    </div>
+    <div class="blog-faqs reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)" itemscope itemtype="https://schema.org/FAQPage">
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:.5rem">Preguntas frecuentes</h2>
+      <div class="blog-faq-lista">
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Cuánto cuesta una sesión de presoterapia en Medea Estilistas?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">La sesión de presoterapia tiene un precio de 18,90 € en Medea Estilistas. Trabajamos con la máquina Linfopress Evolution Pro.</p>
+        </div>
+      </div>
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Con qué frecuencia se recomienda hacer presoterapia?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Para resultados óptimos, se recomienda una sesión semanal durante el primer mes y luego una sesión mensual de mantenimiento. Rosa Menéndez te orientará según tu caso concreto.</p>
+        </div>
+      </div>
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿La presoterapia duele?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">No. La presoterapia es un tratamiento completamente indoloro. La sensación es de presión progresiva y muchas clientas lo describen como muy relajante.</p>
+        </div>
+      </div>
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Quién no puede hacerse presoterapia?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Está contraindicada en casos de trombosis activa, insuficiencia cardíaca grave, infecciones en las piernas o embarazo. Consulta con Rosa antes de la primera sesión si tienes alguna patología.</p>
+        </div>
+      </div>
+      </div>
+    </div>
     <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">R</div>
       <div>
@@ -419,48 +475,7 @@
     </article>
     </div>
   </div>
-</section>
-
-
-<section class="section-surface" style="border-top:1px solid var(--border-n)">
-  <div class="section-inner" style="max-width:760px;margin:0 auto">
-    <h2 class="section-title" style="margin-bottom:1.5rem">Conclusión</h2>
-    <p class="section-body" style="margin-bottom:1rem">La presoterapia con el equipo Linfopress Evolution Pro de Medea Estilistas es uno de los tratamientos más completos para mejorar la circulación linfática, reducir la retención de líquidos y aliviar las piernas cansadas. Rosa Menéndez lo aplica como tratamiento independiente o combinado con otros corporales.</p><p class="section-body" style="margin-bottom:1rem">Con un precio de 18,90 € por sesión, es uno de los tratamientos más accesibles del centro y con resultados muy apreciables desde la primera vez. Muchas clientas lo incorporan a su rutina mensual como mantenimiento.</p><p class="section-body" style="margin-bottom:1rem">Reserva tu sesión en la Calle Anselmo Solar 31 de Gijón o llámanos al 985 33 79 63.</p>
-  </div>
-</section>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuánto cuesta una sesión de presoterapia en Medea Estilistas?", "acceptedAnswer": {"@type": "Answer", "text": "La sesión de presoterapia tiene un precio de 18,90 € en Medea Estilistas. Trabajamos con la máquina Linfopress Evolution Pro."}}, {"@type": "Question", "name": "¿Con qué frecuencia se recomienda hacer presoterapia?", "acceptedAnswer": {"@type": "Answer", "text": "Para resultados óptimos, se recomienda una sesión semanal durante el primer mes y luego una sesión mensual de mantenimiento. Rosa Menéndez te orientará según tu caso concreto."}}, {"@type": "Question", "name": "¿La presoterapia duele?", "acceptedAnswer": {"@type": "Answer", "text": "No. La presoterapia es un tratamiento completamente indoloro. La sensación es de presión progresiva y muchas clientas lo describen como muy relajante."}}, {"@type": "Question", "name": "¿Quién no puede hacerse presoterapia?", "acceptedAnswer": {"@type": "Answer", "text": "Está contraindicada en casos de trombosis activa, insuficiencia cardíaca grave, infecciones en las piernas o embarazo. Consulta con Rosa antes de la primera sesión si tienes alguna patología."}}]}</script>
-<section class="faqs-articulo section-surface" style="border-top:1px solid var(--border-n)">
-  <div class="section-inner">
-    <h2 class="section-title" style="margin-bottom:1.5rem">Preguntas frecuentes</h2>
-    <div itemscope itemtype="https://schema.org/FAQPage">
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Cuánto cuesta una sesión de presoterapia en Medea Estilistas?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">La sesión de presoterapia tiene un precio de 18,90 € en Medea Estilistas. Trabajamos con la máquina Linfopress Evolution Pro.</p>
-      </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Con qué frecuencia se recomienda hacer presoterapia?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Para resultados óptimos, se recomienda una sesión semanal durante el primer mes y luego una sesión mensual de mantenimiento. Rosa Menéndez te orientará según tu caso concreto.</p>
-      </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿La presoterapia duele?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">No. La presoterapia es un tratamiento completamente indoloro. La sensación es de presión progresiva y muchas clientas lo describen como muy relajante.</p>
-      </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Quién no puede hacerse presoterapia?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Está contraindicada en casos de trombosis activa, insuficiencia cardíaca grave, infecciones en las piernas o embarazo. Consulta con Rosa antes de la primera sesión si tienes alguna patología.</p>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-<footer>
+</section><footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div>

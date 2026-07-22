@@ -117,6 +117,14 @@
 .prose tr:hover td{background:#f5ede5}
 .blog-related-title{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
 </style>
+<style>
+.blog-faq-lista{margin-top:1.5rem;border-bottom:1px solid var(--border)}
+.blog-faq-item{border-top:1px solid var(--border)}
+.blog-faq-btn{width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.1rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-d);font-size:1.2rem;font-weight:400;color:var(--ink);line-height:1.4}
+.blog-faq-chevron{font-size:1rem;color:var(--brand);transition:transform .25s;flex-shrink:0;margin-top:.2rem}
+.blog-faq-btn[aria-expanded="true"] .blog-faq-chevron{transform:rotate(180deg)}
+.blog-faq-resp{padding:.2rem 0 1.4rem;font-family:var(--ff-b);font-size:1.125rem;color:var(--ink2);line-height:1.75}
+</style>
 </head>
 <body>
 <nav id="nav" aria-label="Navegación principal">
@@ -304,8 +312,9 @@
     <p class="hero-sub">6 min de lectura · Rosa Menéndez, especialista en estética</p>
   </div>
 </section>
-<section style="padding:clamp(3rem,6vw,5rem) 0">
-  <div class="section-inner">
+<section<section style="padding:clamp(3rem,6vw,5rem) 0">
+  <div class="section-inner">>
+    <div class="section-inner" style="max-width:720px;margin:0 auto">
     <div class="blog-layout">
       <article id="contenido">
         <div class="blog-main-img reveal">
@@ -401,6 +410,53 @@
     </div>
     
     
+        <div class="blog-conclusion reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)">
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:1.2rem">Conclusión</h2>
+      <p class="section-body" style="margin-bottom:1rem">El tratamiento Longevidad de Vagheggi es la apuesta más completa de Medea Estilistas para frenar el envejecimiento de la piel de forma natural y sin agujas. Rosa Menéndez, con 37 años de experiencia en estética, aplica este protocolo de 5 sesiones adaptándolo a cada tipo de piel.</p>
+      <p class="section-body" style="margin-bottom:1rem">Los resultados son visibles desde la primera sesión y se consolidan con el protocolo completo: la piel recupera firmeza, luminosidad y una textura más joven. Una inversión en tu piel que marca la diferencia a largo plazo.</p>
+      <p class="section-body" style="margin-bottom:1rem">Si quieres saber si el tratamiento Longevidad es adecuado para ti, te esperamos en la Calle Anselmo Solar 31 de Gijón. Puedes reservar cita llamando al 985 33 79 63.</p>
+    </div>
+    <div class="blog-faqs reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)" itemscope itemtype="https://schema.org/FAQPage">
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:.5rem">Preguntas frecuentes</h2>
+      <div class="blog-faq-lista">
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Cuántas sesiones del tratamiento Longevidad necesito?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">El protocolo completo de Longevidad consta de 5 sesiones. Los resultados son visibles desde la primera, pero se consolidan con el ciclo completo. Rosa Menéndez te indicará la frecuencia más adecuada según el estado de tu piel.</p>
+        </div>
+      </div>
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿En qué se diferencia el tratamiento Longevidad de un facial antiedad convencional?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">El tratamiento Longevidad de Vagheggi trabaja la edad biológica de la piel, no solo su apariencia superficial. Combina activos naturales y homeopáticos para actuar desde el interior de la piel, con resultados más duraderos que un facial convencional.</p>
+        </div>
+      </div>
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Tiene contraindicaciones el tratamiento Longevidad?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Es un tratamiento muy suave al estar formulado con cosmética natural y homeopática Vagheggi. No obstante, Rosa Menéndez realiza siempre un análisis previo con Skin Analyzer Pro para confirmar que es el tratamiento adecuado para tu piel.</p>
+        </div>
+      </div>
+      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var open=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!open);d.hidden=open">
+          <span itemprop="name">¿Puedo combinar el tratamiento Longevidad con otros servicios de Medea?</span>
+          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Sí. Muchas clientas lo combinan con tratamientos corporales o sesiones de presoterapia. Rosa te orientará sobre la combinación más adecuada según tus objetivos.</p>
+        </div>
+      </div>
+      </div>
+    </div>
     <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">R</div>
       <div>
@@ -422,48 +478,7 @@
       </article>
     </div>
   </div>
-</section>
-
-
-<section class="section-surface" style="border-top:1px solid var(--border-n)">
-  <div class="section-inner" style="max-width:760px;margin:0 auto">
-    <h2 class="section-title" style="margin-bottom:1.5rem">Conclusión</h2>
-    <p class="section-body" style="margin-bottom:1rem">El tratamiento Longevidad de Vagheggi es la apuesta más completa de Medea Estilistas para frenar el envejecimiento de la piel de forma natural y sin agujas. Rosa Menéndez, con 37 años de experiencia en estética, aplica este protocolo de 5 sesiones adaptándolo a cada tipo de piel.</p><p class="section-body" style="margin-bottom:1rem">Los resultados son visibles desde la primera sesión y se consolidan con el protocolo completo: la piel recupera firmeza, luminosidad y una textura más joven. Una inversión en tu piel que marca la diferencia a largo plazo.</p><p class="section-body" style="margin-bottom:1rem">Si quieres saber si el tratamiento Longevidad es adecuado para ti, te esperamos en la Calle Anselmo Solar 31 de Gijón. Puedes reservar cita llamando al 985 33 79 63.</p>
-  </div>
-</section>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuántas sesiones del tratamiento Longevidad necesito?", "acceptedAnswer": {"@type": "Answer", "text": "El protocolo completo de Longevidad consta de 5 sesiones. Los resultados son visibles desde la primera, pero se consolidan con el ciclo completo. Rosa Menéndez te indicará la frecuencia más adecuada según el estado de tu piel."}}, {"@type": "Question", "name": "¿En qué se diferencia el tratamiento Longevidad de un facial antiedad convencional?", "acceptedAnswer": {"@type": "Answer", "text": "El tratamiento Longevidad de Vagheggi trabaja la edad biológica de la piel, no solo su apariencia superficial. Combina activos naturales y homeopáticos para actuar desde el interior de la piel, con resultados más duraderos que un facial convencional."}}, {"@type": "Question", "name": "¿Tiene contraindicaciones el tratamiento Longevidad?", "acceptedAnswer": {"@type": "Answer", "text": "Es un tratamiento muy suave al estar formulado con cosmética natural y homeopática Vagheggi. No obstante, Rosa Menéndez realiza siempre un análisis previo con Skin Analyzer Pro para confirmar que es el tratamiento adecuado para tu piel."}}, {"@type": "Question", "name": "¿Puedo combinar el tratamiento Longevidad con otros servicios de Medea?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Muchas clientas lo combinan con tratamientos corporales o sesiones de presoterapia. Rosa te orientará sobre la combinación más adecuada según tus objetivos."}}]}</script>
-<section class="faqs-articulo section-surface" style="border-top:1px solid var(--border-n)">
-  <div class="section-inner">
-    <h2 class="section-title" style="margin-bottom:1.5rem">Preguntas frecuentes</h2>
-    <div itemscope itemtype="https://schema.org/FAQPage">
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Cuántas sesiones del tratamiento Longevidad necesito?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">El protocolo completo de Longevidad consta de 5 sesiones. Los resultados son visibles desde la primera, pero se consolidan con el ciclo completo. Rosa Menéndez te indicará la frecuencia más adecuada según el estado de tu piel.</p>
-      </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿En qué se diferencia el tratamiento Longevidad de un facial antiedad convencional?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">El tratamiento Longevidad de Vagheggi trabaja la edad biológica de la piel, no solo su apariencia superficial. Combina activos naturales y homeopáticos para actuar desde el interior de la piel, con resultados más duraderos que un facial convencional.</p>
-      </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Tiene contraindicaciones el tratamiento Longevidad?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Es un tratamiento muy suave al estar formulado con cosmética natural y homeopática Vagheggi. No obstante, Rosa Menéndez realiza siempre un análisis previo con Skin Analyzer Pro para confirmar que es el tratamiento adecuado para tu piel.</p>
-      </div>
-    </div>
-    <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name">¿Puedo combinar el tratamiento Longevidad con otros servicios de Medea?</h3>
-      <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-        <p itemprop="text">Sí. Muchas clientas lo combinan con tratamientos corporales o sesiones de presoterapia. Rosa te orientará sobre la combinación más adecuada según tus objetivos.</p>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-<footer>
+</section><footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div>
