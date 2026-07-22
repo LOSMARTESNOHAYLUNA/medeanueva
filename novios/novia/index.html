@@ -56,6 +56,10 @@
 #descripcion .eyebrow::before { display:none; }
 .srv-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; }
 @media (max-width:768px) { .srv-grid { grid-template-columns:1fr; gap:2rem; } }
+.novia-gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:.75rem; }
+@media (max-width:768px) { .novia-gallery { grid-template-columns:repeat(2,1fr); } }
+.trust-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center; }
+@media (max-width:768px) { .trust-grid { grid-template-columns:repeat(2,1fr); } }
 </style>
 </head>
 <body>
@@ -227,6 +231,7 @@
 
 
 
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.medeaestilistas.es/"},{"@type":"ListItem","position":2,"name":"Novios","item":"https://www.medeaestilistas.es/novios/"},{"@type":"ListItem","position":3,"name":"Para ella"}]}</script>
 
 <section class="hero-cat" aria-label="Peluquería y Maquillaje de Novia en Gijón">
@@ -251,7 +256,8 @@
       <p class="section-body reveal" style="text-align:center">En Medea Estilistas llevamos más de 30 años acompañando a novias asturianas en uno de los días más importantes de su vida. Conocemos la importancia de cada detalle y trabajamos para que todo salga exactamente como lo imaginaste.</p>
     </div>
   </div>
-</section><section>
+</section>
+<section>
   <div class="section-inner srv-grid">
     <div class="reveal">
       <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=800&h=1000&fit=crop" alt="Peluquería y Maquillaje de Novia en Gijón — Medea Estilistas"
@@ -267,7 +273,7 @@
           <span style="font-family:var(--ff-d);font-size:2.2rem;font-weight:300;color:var(--gold);line-height:1;min-width:2rem">01</span>
           <div>
             <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--brand);margin-bottom:.3rem">Prueba de peinado y maquillaje</p>
-            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">La reunimos con antelación para definir el look que mejor encaje con tu vestido, tu personalidad y el estilo de la boda. Recomendamos hacerla entre 1 y 2 meses antes.</p>
+            <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.6">Consulta y análisis de imagen nupcial. Definimos juntas el look que mejor encaje con tu vestido, tu personalidad y el estilo de la boda. Recomendamos hacerla entre 1 y 2 meses antes.</p>
           </div>
         </div>
         <div class="reveal" style="display:flex;gap:1.2rem;align-items:flex-start">
@@ -295,6 +301,74 @@
     </div>
   </div>
 </section>
+
+<section class="section-surface">
+  <div class="section-inner">
+    <span class="eyebrow reveal">Antes de la boda</span>
+    <h2 class="section-title reveal" style="margin-top:.8rem">Tratamientos previos<br><em class="italic text-gold">a la boda</em></h2>
+    <div class="gold-bar reveal"></div>
+    <p class="section-body reveal" style="margin-top:1.5rem">Recomendamos empezar los tratamientos con 3-6 meses de antelación para llegar al día de la boda con la piel y el cabello en su mejor estado.</p>
+    <div class="cards-grid reveal" style="margin-top:2rem;grid-template-columns:repeat(3,1fr)">
+      <a class="card" href="/tratamientos-faciales/" style="text-decoration:none;height:340px">
+        <img class="card-bg-img" src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&fit=crop" alt="Tratamientos faciales novia Gijón — Medea Estilistas" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <div class="card-num">01</div>
+          <div class="card-title">Tratamientos faciales</div>
+          <div class="card-desc">Protocolo progresivo de hidratación, antiage o corrección de tono. Piel perfecta para el gran día.</div>
+          <span class="card-link">Ver tratamientos →</span>
+        </div>
+      </a>
+      <a class="card" href="/peluqueria/" style="text-decoration:none;height:340px">
+        <img class="card-bg-img" src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&fit=crop" alt="Peluquería capilar novia Gijón — Medea Estilistas" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <div class="card-num">02</div>
+          <div class="card-title">Tratamientos capilares</div>
+          <div class="card-desc">Nutrición, hidratación y reparación del cabello. El mejor estado capilar para el peinado nupcial.</div>
+          <span class="card-link">Ver peluquería →</span>
+        </div>
+      </a>
+      <a class="card" href="/depilacion/" style="text-decoration:none;height:340px">
+        <img class="card-bg-img" src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&fit=crop" alt="Depilaciones novia Gijón — Medea Estilistas" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <div class="card-num">03</div>
+          <div class="card-title">Depilaciones</div>
+          <div class="card-desc">Planificamos el calendario de depilaciones para que llegues perfecta a la boda.</div>
+          <span class="card-link">Ver depilación →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <span class="eyebrow reveal">Galería nupcial</span>
+    <h2 class="section-title reveal" style="margin-top:.8rem">Novias que han pasado<br><em class="italic text-gold">por Medea</em></h2>
+    <div class="gold-bar reveal"></div>
+    <div class="novia-gallery reveal" style="margin-top:2rem">
+      <img src="/assets/img/novia-horizontal-medea-gijon.webp"
+           alt="Peinado de novia Gijón — Medea Estilistas"
+           loading="lazy" width="600" height="450"
+           style="width:100%;height:280px;object-fit:cover;display:block">
+      <img src="/assets/img/novia-horizontal-2-medea-gijon.webp"
+           alt="Maquillaje de novia Gijón — Medea Estilistas"
+           loading="lazy" width="600" height="450"
+           style="width:100%;height:280px;object-fit:cover;display:block">
+      <img src="/assets/img/novia-horizontal-5-medea-gijon.webp"
+           alt="Recogido nupcial Gijón — Medea Estilistas"
+           loading="lazy" width="600" height="450"
+           style="width:100%;height:280px;object-fit:cover;display:block">
+      <img src="/assets/img/novia-horizontal-6-medea-gijon.webp"
+           alt="Novia Asturias peluquería — Medea Estilistas"
+           loading="lazy" width="600" height="450"
+           style="width:100%;height:280px;object-fit:cover;display:block">
+    </div>
+  </div>
+</section>
+
 <section class="section-surface">
   <div class="section-inner" style="max-width:760px">
     <span class="eyebrow reveal">Preguntas frecuentes</span>
@@ -306,40 +380,67 @@
           ¿Cuándo debo reservar la cita de novia?
           <span style="font-family:var(--ff-b);font-size:1.25rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
         </summary>
-        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Te recomendamos contactar con nosotras con al menos 6 meses de antelación, especialmente en primavera y verano. La prueba se suele hacer entre 1 y 2 meses antes de la boda.</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Te recomendamos contactar con nosotras con al menos 6 meses de antelación, especialmente en primavera y verano que son temporadas de alta demanda. La prueba se suele hacer entre 1 y 2 meses antes de la boda.</p>
       </details>
       <details style="border-top:1px solid var(--border);padding:1.4rem 0">
         <summary style="font-family:var(--ff-d);font-size:1.25rem;font-weight:300;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">
           ¿La prueba de novia es obligatoria?
           <span style="font-family:var(--ff-b);font-size:1.25rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
         </summary>
-        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">No es obligatoria, pero sí muy recomendable. Nos permite definir el look exacto, detectar posibles ajustes y llegar al día de la boda con toda la tranquilidad.</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">No es obligatoria, pero sí muy recomendable. La prueba nos permite definir el look exacto, detectar posibles ajustes y llegar al día de la boda con toda la tranquilidad. Además, el día de la boda el tiempo es muy limitado y es mejor no improvisar.</p>
       </details>
       <details style="border-top:1px solid var(--border);padding:1.4rem 0">
         <summary style="font-family:var(--ff-d);font-size:1.25rem;font-weight:300;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">
           ¿El precio del día de la boda incluye la prueba?
           <span style="font-family:var(--ff-b);font-size:1.25rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
         </summary>
-        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">La prueba y el servicio del día de la boda se presupuestan por separado. En la consulta inicial te damos toda la información sin compromiso.</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">La prueba y el servicio del día de la boda se presupuestan por separado. En la consulta inicial te damos toda la información de precios sin compromiso. También podemos incluir manicura y pedicura nupcial en el mismo servicio.</p>
       </details>
       <details style="border-top:1px solid var(--border);padding:1.4rem 0">
         <summary style="font-family:var(--ff-d);font-size:1.25rem;font-weight:300;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">
-          ¿Podéis ir al lugar de la boda?
+          ¿Podéis ir al lugar de la boda a maquillar y peinar?
           <span style="font-family:var(--ff-b);font-size:1.25rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
         </summary>
-        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">En algunos casos podemos desplazarnos. Consúltanos con antelación para verificar disponibilidad y las condiciones del servicio en el lugar del evento.</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">En algunos casos podemos desplazarnos. Consúltanos con antelación para verificar disponibilidad y las condiciones del servicio a domicilio o en el lugar del evento.</p>
       </details>
-      <details style="border-top:1px solid var(--border);padding:1.4rem 0;border-bottom:1px solid var(--border)">
+      <details style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.4rem 0">
         <summary style="font-family:var(--ff-d);font-size:1.25rem;font-weight:300;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem">
-          ¿Hacéis también damas de honor y la madre de la novia?
+          ¿Hacéis también peinado y maquillaje para las damas de honor y la madre de la novia?
           <span style="font-family:var(--ff-b);font-size:1.25rem;font-weight:300;color:var(--gold);flex-shrink:0">+</span>
         </summary>
-        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Sí, coordinamos todos los servicios para el grupo nupcial. Es importante indicárnoslo al reservar para planificar bien los tiempos.</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Sí, coordinamos todos los servicios para el grupo nupcial. Es importante indicárnoslo al reservar para planificar bien los tiempos y asegurarnos de que todo el equipo esté listo a la hora acordada.</p>
       </details>
     </div>
   </div>
 </section>
+
 <section>
+  <div class="section-inner">
+    <span class="eyebrow reveal" style="justify-content:center;display:flex">Por qué elegirnos</span>
+    <h2 class="section-title reveal" style="margin-top:.8rem;text-align:center">Más de 30 años<br><em class="italic text-gold">cuidándote</em></h2>
+    <div class="gold-bar reveal" style="margin:1.2rem auto"></div>
+    <div class="trust-grid reveal" style="margin-top:3rem">
+      <div>
+        <p style="font-family:var(--ff-d);font-size:3rem;font-weight:300;color:var(--gold);line-height:1">+30</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);margin-top:.5rem;line-height:1.5">Años de experiencia<br>en Gijón</p>
+      </div>
+      <div>
+        <p style="font-family:var(--ff-d);font-size:3rem;font-weight:300;color:var(--gold);line-height:1">100%</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);margin-top:.5rem;line-height:1.5">Productos<br>profesionales</p>
+      </div>
+      <div>
+        <p style="font-family:var(--ff-d);font-size:3rem;font-weight:300;color:var(--gold);line-height:1">2</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);margin-top:.5rem;line-height:1.5">Hermanas estilistas<br>al frente del salón</p>
+      </div>
+      <div>
+        <p style="font-family:var(--ff-d);font-size:3rem;font-weight:300;color:var(--gold);line-height:1">&infin;</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);margin-top:.5rem;line-height:1.5">Formación continua<br>en nuevas técnicas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-surface">
   <div class="section-inner">
     <span class="eyebrow reveal">También puede interesarte</span>
     <div class="cards-grid reveal" style="margin-top:2rem;grid-template-columns:repeat(3,1fr)">
