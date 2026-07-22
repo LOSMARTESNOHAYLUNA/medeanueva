@@ -2187,6 +2187,13 @@ body {
 }
 
 /* ── BLOG RESPONSIVE ─────────────────────────────────── */
+.blog-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 4rem;
+  align-items: start;
+}
+
 .blog-sidebar {
   position: sticky;
   top: 5rem;
