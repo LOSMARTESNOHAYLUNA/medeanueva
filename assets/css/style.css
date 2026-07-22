@@ -2185,3 +2185,69 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ── BLOG RESPONSIVE ─────────────────────────────────── */
+@media (max-width: 900px) {
+
+  /* Layout una columna */
+  .blog-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .blog-sidebar {
+    position: static !important;
+  }
+
+  /* Tablas con scroll horizontal */
+  .prose table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    font-size: .85rem;
+  }
+
+  /* Márgenes simétricos */
+  .prose {
+    padding: 0 !important;
+  }
+
+  .blog-main-img img,
+  .blog-img-block img {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .blog-cta-banner {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 1.5rem !important;
+  }
+
+  .blog-toc {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Ocultar avatar inicial en móvil */
+  .blog-author-avatar {
+    display: none !important;
+  }
+
+  .blog-author {
+    gap: 0 !important;
+  }
+
+  /* Share buttons */
+  .share-icon-wrap {
+    flex-wrap: wrap;
+    gap: .75rem;
+  }
+
+  /* Sidebar al final en móvil */
+  .blog-sidebar {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+  }
+}
