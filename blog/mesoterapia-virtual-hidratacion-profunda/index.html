@@ -50,6 +50,50 @@
   "priceRange":"€€"
 }</script>
 
+<style>
+.blog-hero-text{background:#fff;padding:clamp(2.5rem,5vw,4rem) 0;border-bottom:3px solid #5d131a}
+.blog-h1{font-family:var(--ff-d);font-size:clamp(2rem,4.5vw,3.5rem);font-weight:300;color:var(--ink);line-height:1.15;margin:1rem 0}
+.blog-meta{font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);margin-top:1rem}
+.blog-main-img{margin:0 0 2.5rem}
+.blog-main-img img{width:100%;height:auto;display:block;filter:grayscale(8%)}
+.blog-toc{background:var(--surface);border-left:3px solid #5d131a;padding:1.4rem 1.8rem;margin:2rem 0}
+.blog-toc-title{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:#5d131a;margin-bottom:.8rem}
+.blog-toc ol{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:.4rem}
+.blog-toc a{font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--ink-2);text-decoration:none}
+.blog-toc a:hover{color:#5d131a}
+.blog-cta-banner{background:var(--gold-bg);border:1px solid var(--border);padding:2rem 2.5rem;margin:2.5rem 0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.2rem}
+.blog-cta-banner p{font-family:var(--ff-d);font-size:1.4rem;font-weight:300;font-style:italic;color:var(--ink);margin:0}
+.blog-cta-banner .btn{background:#5d131a;color:#fff;border:1px solid #5d131a;padding:.75rem 2rem;font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:background .2s;display:inline-block}
+.blog-cta-banner .btn:hover{background:var(--gold);border-color:var(--gold)}
+.blog-share{margin:2.5rem 0;padding:1.5rem 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.blog-share-label{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.06em;color:var(--muted);margin-bottom:1rem;display:block}
+.share-icon-wrap{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.share-icon{width:46px;height:46px;border-radius:50%;border:2px solid #5d131a;display:flex;align-items:center;justify-content:center;color:#5d131a;text-decoration:none;transition:all .25s;flex-shrink:0;background:none;cursor:pointer}
+.share-icon:hover,.share-icon:focus{background:#5d131a;color:#fff}
+.share-icon svg{width:20px;height:20px;flex-shrink:0}
+.blog-author{display:flex;gap:1.4rem;align-items:flex-start;padding:1.8rem;background:var(--surface);margin:2.5rem 0}
+.blog-author-avatar{width:52px;height:52px;border-radius:50%;background:#5d131a;color:#fff;font-family:var(--ff-d);font-size:1.5rem;font-weight:300;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.blog-author-name{font-family:var(--ff-d);font-size:1.25rem;font-weight:400;color:var(--ink);margin:0 0 .2rem}
+.blog-author-role{font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:#5d131a;margin:0 0 .4rem}
+.blog-author-bio{font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.65;margin:0}
+.prose h2{font-family:var(--ff-d);font-size:clamp(1.5rem,3vw,2rem);font-weight:300;color:#5d131a;margin:2.5rem 0 1rem;padding-top:.5rem}
+.prose h3{font-family:var(--ff-d);font-size:1.4rem;font-weight:400;color:var(--ink);margin:2rem 0 .8rem}
+.prose h4{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:#5d131a;margin:1.5rem 0 .5rem}
+.prose p{font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--ink-2);line-height:1.8;margin:0 0 1.2rem}
+.prose ul,.prose ol{font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--ink-2);line-height:1.8;padding-left:1.4rem;margin:0 0 1.2rem}
+.prose li{margin-bottom:.4rem}
+.prose strong{font-weight:500;color:var(--ink)}
+.prose a{color:#5d131a;text-decoration:underline;text-underline-offset:3px}
+.prose a:hover{color:var(--gold)}
+.prose .blog-img-block{margin:2rem 0}
+.prose .blog-img-block img{width:100%;height:auto;display:block;filter:grayscale(8%)}
+.prose table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-family:var(--ff-b);font-size:1.125rem}
+.prose thead tr th{background:#5d131a;color:#fff;font-weight:700;padding:.85rem 1.1rem;text-align:left;font-size:1.125rem;letter-spacing:.04em;text-transform:uppercase;border:none}
+.prose td{padding:.8rem 1.1rem;border-bottom:1px solid #e0d6cf;font-weight:300;color:var(--ink-2)}
+.prose tr:nth-child(even) td{background:#faf6f0}
+.prose tr:hover td{background:#f5ede5}
+.blog-related-title{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
+</style>
 </head>
 <body>
 <nav id="nav" aria-label="Navegación principal">
@@ -220,35 +264,29 @@
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.medeaestilistas.es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.medeaestilistas.es/blog/"},{"@type":"ListItem","position":3,"name":"Mesoterapia virtual en Gijón"}]}</script>
 
-<section class="hero-cat" aria-label="Mesoterapia virtual: la hidratación que los cosméticos no pueden dar">
-  <img class="hero-photo-bg" src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-       alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080" style="filter:grayscale(1)">
-  <div class="hero-overlay" aria-hidden="true"></div>
-  <div class="hero-content">
-    <nav class="breadcrumb hero-breadcrumb" aria-label="Ruta de navegación">
+
+<header class="blog-hero-text">
+  <div class="section-inner" style="max-width:780px">
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
       <div class="breadcrumb-inner">
         <a href="/">Inicio</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
         <a href="/blog/">Blog</a><span class="breadcrumb-sep" aria-hidden="true">›</span>
         <span class="breadcrumb-current" aria-current="page">Mesoterapia virtual en Gijón</span>
       </div>
     </nav>
-    <p class="hero-eyebrow">Tratamientos Faciales y Corporales · Gijón</p>
-    <h1 class="hero-title" style="font-size:clamp(1.6rem,3.5vw,3rem)">Mesoterapia virtual:<br><em class="italic">la hidratación que los cosméticos no pueden dar</em></h1>
-    <p class="hero-sub">4 min de lectura · Rosa Menéndez, especialista en estética</p>
-    <div class="hero-actions">
-      <a class="btn btn-brand" href="/contacto/">Reservar cita</a>
-      <a class="btn btn-outline" href="#contenido">Leer artículo</a>
-    </div>
+    <p class="hero-eyebrow" style="margin-top:1.5rem">Tratamientos Faciales y Corporales · Gijón</p>
+    <h1 class="blog-h1">Mesoterapia virtual:<br><em class="italic">la hidratación que los cosméticos no pueden dar</em></h1>
+    <div class="gold-bar" style="margin:1.2rem 0"></div>
+    <p class="blog-meta">4 min de lectura · Rosa Menéndez, especialista en estética</p>
   </div>
-</section>
+</header>
 <article id="contenido">
   <div class="section-inner" style="max-width:780px;padding-top:3rem;padding-bottom:3rem">
 
-    <figure class="reveal" style="margin:0 0 2.5rem">
+    <div class="blog-main-img reveal">
       <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Mesoterapia virtual Gijón — Medea Estilistas"
            loading="eager" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)">
-      <figcaption>La mesoterapia virtual introduce activos en profundidad mediante corrientes eléctricas de baja frecuencia, sin agujas ni dolor.</figcaption>
-    </figure>
+    </div>
     <nav class="blog-toc reveal" aria-label="Tabla de contenido">
       <p class="blog-toc-title">Contenido del artículo</p>
       <ol>
@@ -300,11 +338,8 @@
       <p>En los <a href="/tratamientos-corporales/">tratamientos corporales</a>, la mesoterapia virtual introduce activos lipolíticos y drenantes directamente donde se necesitan, potenciando el efecto de la maderoterapia y complementando la presoterapia en los protocolos reductores.</p>
     </div>
     
-    <figure class="prose reveal" style="margin:2rem 0">
-      <img src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Tratamientos faciales Vagheggi Gijón — Medea Estilistas"
-           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)">
-      <figcaption>La mesoterapia virtual complementa los tratamientos faciales de Vagheggi para aumentar la penetración de los activos.</figcaption>
-    </figure>
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Tratamientos faciales Vagheggi Gijón — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="prose reveal">
       <h2 id="sesiones">¿Cuántas sesiones se necesitan?</h2>
       <p>El número de sesiones depende del objetivo y de la zona a tratar. Como orientación general:</p>
@@ -324,29 +359,24 @@
       </ul>
     </div>
     
-    <figure class="prose reveal" style="margin:2rem 0">
-      <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Tratamientos corporales Gijón Medea Estilistas — Medea Estilistas"
-           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)">
-      <figcaption>En los protocolos corporales, la mesoterapia virtual potencia el efecto de maderoterapia y presoterapia.</figcaption>
-    </figure>
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Tratamientos corporales Gijón Medea Estilistas — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="blog-cta-banner reveal">
       <p>¿Quieres una hidratación que los cosméticos en casa no pueden dar? Habla con Rosa.</p>
       <a href="/contacto/" class="btn">Reservar sesión de mesoterapia</a>
     </div>
+    
+    
     <div class="blog-share reveal">
-      <span class="blog-share-label">Compartir</span>
-      <a class="share-btn" href="https://wa.me/?text=Mesoterapia+virtual:+la+hidratación+que+los+cosméticos+no+pueden+dar+https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/" target="_blank" rel="noopener nofollow" aria-label="WhatsApp">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-        WhatsApp</a>
-      <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/" target="_blank" rel="noopener nofollow" aria-label="Facebook">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        Facebook</a>
-      <a class="share-btn" href="https://twitter.com/intent/tweet?text=Mesoterapia+virtual:+la+hidratación+que+los+cosméticos+no+pueden+dar+https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/" target="_blank" rel="noopener nofollow" aria-label="X">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631z"/></svg>
-        X</a>
-      <button class="share-btn" onclick="navigator.clipboard.writeText('https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/').then(function(){this.textContent='¡Copiado!'}.bind(this))" aria-label="Copiar enlace">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-        Copiar</button>
+      <span class="blog-share-label">¿Te resultó útil? Difúndelo:</span>
+      <div class="share-icon-wrap">
+        <a class="share-icon" href="https://wa.me/?text=Mesoterapia+virtual:+hidratación+profunda+sin+agujas+https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/" target="_blank" rel="noopener nofollow" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg></a>
+        <a class="share-icon" href="https://www.instagram.com/medeapeluqueriayestetica/" target="_blank" rel="noopener nofollow" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a class="share-icon" href="https://www.facebook.com/sharer/sharer.php?u=https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/" target="_blank" rel="noopener nofollow" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a class="share-icon" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/&title=Mesoterapia+virtual:+hidratación+profunda+sin+agujas" target="_blank" rel="noopener nofollow" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <button class="share-icon" onclick="navigator.clipboard.writeText('https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/').then(function(){this.style.background='#5d131a';this.style.color='#fff';this.title='Enlace copiado'}.bind(this))" aria-label="Copiar enlace"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
+      </div>
+    </div>
     </div>
     <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">R</div>
