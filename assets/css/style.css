@@ -2335,3 +2335,24 @@ p, li, td, th, span, a, label, input, textarea, button {
 .faq-icon { font-size: .75rem !important; }
 .faq-block-title { font-size: .72rem !important; }
 .landing-price-box .price-label { font-size: .72rem !important; }
+
+/* ── ACORDEÓN DE PRECIOS — tamaños mínimos 18px ── */
+.servicio-nombre       { font-size: 1.125rem !important; }   /* 18px */
+.servicio-precio       { font-size: 1.125rem !important; }
+.servicio-descripcion  { font-size: 1.125rem !important; line-height: 1.75 !important; }
+.servicio-duracion     { font-size: 1rem !important; }       /* 16px — etiqueta auxiliar, aceptable */
+.servicio-titulo       { font-size: 1.125rem !important; }
+
+/* ── FAQs BLOG — tamaños mínimos 18px ── */
+.faqs-articulo h3      { font-size: 1.125rem !important; line-height: 1.5 !important; }
+.faqs-articulo p       { font-size: 1.125rem !important; line-height: 1.8 !important; }
+
+/* ── CONTENIDO GENERAL — elevar clases de contenido que quedaron por debajo ── */
+.card-desc             { font-size: 1rem !important; }       /* tarjetas de servicios */
+.section-body          { font-size: 1.125rem !important; }
+.blog-card-excerpt     { font-size: 1.125rem !important; }
+.blog-content p        { font-size: 1.125rem !important; line-height: 1.85 !important; }
+.blog-content li       { font-size: 1.125rem !important; line-height: 1.8 !important; }
+.service-item-text     { font-size: 1.125rem !important; }
+.cd-value              { font-size: 1.125rem !important; }
+.trust-label           { font-size: 1rem !important; }
