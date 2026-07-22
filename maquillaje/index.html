@@ -6,14 +6,14 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6YTJRHNE4E');</script>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-<title>Maquillaje en Gijón · Social, Novias y Aerógrafo | Medea Estilistas</title>
+<title>Maquillaje profesional en Gijón — Medea Estilistas</title>
 <meta name="robots" content="index, follow"/>
-<meta name="description" content="Maquillaje profesional en Gijón: social, novias y aerógrafo. Centro oficial Cazcarra. Rosa Menéndez. Nos desplazamos. Medea Estilistas."/>
+<meta name="description" content="Maquillaje social, de novias y con aerógrafo en Gijón desde 37,90 €. Rosa Menéndez formada en Escuela Cazcarra. Centro oficial Cazcarra y Vagheggi en Gijón."/>
 <link rel="canonical" href="https://www.medeaestilistas.es/maquillaje/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.medeaestilistas.es/maquillaje/"/>
-<meta property="og:title" content="Maquillaje en Gijón · Social, Novias y Aerógrafo | Medea Estilistas"/>
-<meta property="og:description" content="Maquillaje profesional en Gijón: social, novias y aerógrafo. Centro oficial Cazcarra. Rosa Menéndez. Nos desplazamos. Medea Estilistas."/>
+<meta property="og:title" content="Maquillaje profesional en Gijón — Medea Estilistas"/>
+<meta property="og:description" content="Maquillaje social, de novias y con aerógrafo en Gijón desde 37,90 €. Rosa Menéndez formada en Escuela Cazcarra. Centro oficial Cazcarra y Vagheggi en Gijón."/>
 <meta property="og:image" content="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"/>
 <meta property="og:locale" content="es_ES"/>
 <meta property="og:site_name" content="Medea Estilistas"/>
@@ -259,6 +259,32 @@
   <a href="/contacto/" class="mm-cta">Reservar cita</a>
 </div>
 
+
+<!-- PRECIOS -->
+<section class="section-surface">
+  <div class="section-inner">
+    <span class="eyebrow">Precios</span>
+    <h2 class="section-title" style="margin-top:.5rem">Tarifas<br><em class="italic text-gold">orientativas</em></h2>
+    <div class="gold-bar"></div>
+    
+<div class="servicios-lista">
+  <div class="servicio-item">
+    <button class="servicio-titulo" aria-expanded="false">
+      <span class="servicio-nombre">Maquillaje</span>
+      <span class="servicio-precio">Desde 37,90 €</span>
+      <span class="servicio-chevron">▾</span>
+    </button>
+    <div class="servicio-detalle" hidden>
+      <p class="servicio-descripcion">Maquillaje social, de novias y con aerógrafo. Rosa Menéndez, formada en Escuela Cazcarra.</p>
+      <p class="servicio-duracion">Duración aproximada: 45-60 min</p>
+      <a href="/contacto/" class="btn-reserva">Reservar cita</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
 <section class="hero-cat" aria-label="Maquillaje en Gijón — Medea Estilistas">
   <img class="hero-photo-bg" src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080">
   <div class="hero-overlay" aria-hidden="true"></div>
@@ -498,5 +524,23 @@
 </div>
 
 
+
+<script>
+document.querySelectorAll('.servicio-titulo').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var expanded = this.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.servicio-titulo').forEach(function(b){
+      b.setAttribute('aria-expanded','false');
+      var d = b.nextElementSibling;
+      if(d) d.hidden = true;
+    });
+    if(!expanded){
+      this.setAttribute('aria-expanded','true');
+      var det = this.nextElementSibling;
+      if(det) det.hidden = false;
+    }
+  });
+});
+</script>
 </body>
 </html>

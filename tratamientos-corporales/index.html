@@ -6,14 +6,14 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6YTJRHNE4E');</script>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-<title>Tratamientos Corporales en Gijón · Presoterapia, Maderoterapia y más | Medea Estilistas</title>
+<title>Tratamientos corporales en Gijón — Medea Estilistas</title>
 <meta name="robots" content="index, follow"/>
-<meta name="description" content="Tratamientos corporales en Gijón: presoterapia Linfopress, maderoterapia, mesoterapia virtual, anticelulítico y más. Centro oficial Vagheggi. Medea Estilistas."/>
+<meta name="description" content="Presoterapia, maderoterapia, mesoterapia virtual, tratamiento reductor y anticelulítico en Gijón. Cosmética natural Vagheggi. Rosa Menéndez, 37 años de experiencia."/>
 <link rel="canonical" href="https://www.medeaestilistas.es/tratamientos-corporales/"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.medeaestilistas.es/tratamientos-corporales/"/>
-<meta property="og:title" content="Tratamientos Corporales en Gijón · Presoterapia, Maderoterapia y más | Medea Estilistas"/>
-<meta property="og:description" content="Tratamientos corporales en Gijón: presoterapia Linfopress, maderoterapia, mesoterapia virtual, anticelulítico y más. Centro oficial Vagheggi. Medea Estilistas."/>
+<meta property="og:title" content="Tratamientos corporales en Gijón — Medea Estilistas"/>
+<meta property="og:description" content="Presoterapia, maderoterapia, mesoterapia virtual, tratamiento reductor y anticelulítico en Gijón. Cosmética natural Vagheggi. Rosa Menéndez, 37 años de experiencia."/>
 <meta property="og:image" content="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"/>
 <meta property="og:locale" content="es_ES"/>
 <meta property="og:site_name" content="Medea Estilistas"/>
@@ -258,6 +258,32 @@
   <a href="/blog/">Blog</a>
   <a href="/contacto/" class="mm-cta">Reservar cita</a>
 </div>
+
+
+<!-- PRECIOS -->
+<section class="section-surface">
+  <div class="section-inner">
+    <span class="eyebrow">Precios</span>
+    <h2 class="section-title" style="margin-top:.5rem">Tarifas<br><em class="italic text-gold">orientativas</em></h2>
+    <div class="gold-bar"></div>
+    
+<div class="servicios-lista">
+  <div class="servicio-item">
+    <button class="servicio-titulo" aria-expanded="false">
+      <span class="servicio-nombre">Tratamiento corporal</span>
+      <span class="servicio-precio">Desde 42,00 €</span>
+      <span class="servicio-chevron">▾</span>
+    </button>
+    <div class="servicio-detalle" hidden>
+      <p class="servicio-descripcion">Tratamiento personalizado según tus objetivos: reductor, anticelulítico, reafirmante o drenante.</p>
+      <p class="servicio-duracion">Duración aproximada: 60 min</p>
+      <a href="/contacto/" class="btn-reserva">Reservar cita</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
 
 <section class="hero-cat" aria-label="Tratamientos Corporales en Gijón — Medea Estilistas">
   <img class="hero-photo-bg" src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080">
@@ -518,5 +544,23 @@
 </div>
 
 
+
+<script>
+document.querySelectorAll('.servicio-titulo').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var expanded = this.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.servicio-titulo').forEach(function(b){
+      b.setAttribute('aria-expanded','false');
+      var d = b.nextElementSibling;
+      if(d) d.hidden = true;
+    });
+    if(!expanded){
+      this.setAttribute('aria-expanded','true');
+      var det = this.nextElementSibling;
+      if(det) det.hidden = false;
+    }
+  });
+});
+</script>
 </body>
 </html>
