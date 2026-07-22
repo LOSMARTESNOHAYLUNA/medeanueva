@@ -54,8 +54,8 @@
 /* Blog layout */
 .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
 @media(max-width:900px){.blog-layout{grid-template-columns:1fr}}
-.blog-sidebar{position:-webkit-sticky;position:sticky;top:5.5rem;align-self:start;max-height:calc(100vh - 6rem);overflow-y:auto;display:flex;flex-direction:column;gap:1.5rem}
-@media(max-width:900px){.blog-sidebar{position:static;max-height:none;overflow-y:visible}}
+.blog-sidebar{position:-webkit-sticky;position:sticky;top:5.5rem;align-self:start;display:flex;flex-direction:column;gap:1.5rem}
+@media(max-width:900px){.blog-sidebar{position:static}}
 /* Sidebar CTA */
 .sidebar-cta-box{background:var(--surface);border-left:3px solid #5d131a;padding:1.5rem 1.5rem 1.8rem}
 .sidebar-cta-title{font-family:var(--ff-d);font-size:1.35rem;font-weight:300;color:var(--ink);margin:0 0 .5rem}
@@ -382,13 +382,14 @@
       <p>¿Buscas un corte o tratamiento capilar en Gijón? Reserva con Montse o Cris.</p>
       <a href="/contacto/" class="btn">Reservar cita</a>
     </div>
-        <div class="blog-author reveal">
+    <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">M</div>
       <div>
         <p class="blog-author-name">Montse Menéndez</p>
         <p class="blog-author-role">Especialista en Peluquería y Coloración · Medea Estilistas</p>
         <p class="blog-author-bio">39 años de experiencia en peluquería. Formación en tricología con Versum. Especialista en coloración y tratamientos capilares.</p>
-      
+      </div>
+    </div>
     <div class="blog-share reveal">
       <span class="blog-share-label">Comparte el bienestar con quien quieras:</span>
       <div class="share-icon-wrap">
@@ -400,7 +401,7 @@
       </div>
     </div>
     </article>
-      
+
     <aside class="blog-sidebar">
       <div class="sidebar-cta-box reveal">
         <p class="sidebar-cta-title">¿Buscas un buen corte en Gijón?</p>
@@ -410,7 +411,6 @@
       <div class="reveal">
         <p class="sidebar-related-title">También puede interesarte</p>
         <div class="sidebar-cards">
-          
         <a class="sidebar-card" href="/blog/kevin-murphy-cosmetica-capilar/">
           <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
           <div class="sidebar-card-overlay"></div>
