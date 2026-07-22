@@ -54,8 +54,8 @@
 /* Blog layout */
 .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
 @media(max-width:900px){.blog-layout{grid-template-columns:1fr}}
-.blog-sidebar{position:sticky;top:6rem;align-self:start;display:flex;flex-direction:column;gap:1.5rem}
-@media(max-width:900px){.blog-sidebar{position:static}}
+.blog-sidebar{position:-webkit-sticky;position:sticky;top:5.5rem;align-self:start;max-height:calc(100vh - 6rem);overflow-y:auto;display:flex;flex-direction:column;gap:1.5rem}
+@media(max-width:900px){.blog-sidebar{position:static;max-height:none;overflow-y:visible}}
 /* Sidebar CTA */
 .sidebar-cta-box{background:var(--surface);border-left:3px solid #5d131a;padding:1.5rem 1.5rem 1.8rem}
 .sidebar-cta-title{font-family:var(--ff-d);font-size:1.35rem;font-weight:300;color:var(--ink);margin:0 0 .5rem}
@@ -408,53 +408,13 @@
       <p>¿Lista para empezar tu preparación nupcial? Cuéntanos cuándo es tu boda.</p>
       <a href="/contacto/" class="btn">Hablar con Rosa y Montse</a>
     </div>
-    <div class="blog-author reveal">
+        <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">R</div>
       <div>
         <p class="blog-author-name">Rosa Menéndez</p>
         <p class="blog-author-role">Especialista en Estética · Medea Estilistas</p>
         <p class="blog-author-bio">37 años de experiencia en estética facial y corporal. Ha acompañado a cientos de novias asturianas en su preparación nupcial.</p>
-      </article>
       
-    <aside class="blog-sidebar">
-      <div class="sidebar-cta-box reveal">
-        <p class="sidebar-cta-title">¿Cuándo es tu boda?</p>
-        <p class="sidebar-cta-text">Cuéntanoslo y planificamos juntas tu preparación nupcial.</p>
-        <a href="/contacto/" class="btn">Consultar disponibilidad</a>
-      </div>
-      <div class="reveal">
-        <p class="sidebar-related-title">También puede interesarte</p>
-        <div class="sidebar-cards">
-          
-        <a class="sidebar-card" href="/blog/tratamiento-longevidad-facial-gijon/">
-          <img src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tratamiento Longevidad — Medea Estilistas" loading="lazy" width="300" height="140">
-          <div class="sidebar-card-overlay"></div>
-          <div class="sidebar-card-body">
-            <span class="sidebar-card-title">Tratamiento Longevidad</span>
-            <span class="sidebar-card-link">Leer artículo →</span>
-          </div>
-        </a>
-        <a class="sidebar-card" href="/blog/presoterapia-gijon-beneficios/">
-          <img src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Presoterapia en Gijón — Medea Estilistas" loading="lazy" width="300" height="140">
-          <div class="sidebar-card-overlay"></div>
-          <div class="sidebar-card-body">
-            <span class="sidebar-card-title">Presoterapia en Gijón</span>
-            <span class="sidebar-card-link">Leer artículo →</span>
-          </div>
-        </a>
-        <a class="sidebar-card" href="/blog/mesoterapia-virtual-hidratacion-profunda/">
-          <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Mesoterapia virtual — Medea Estilistas" loading="lazy" width="300" height="140">
-          <div class="sidebar-card-overlay"></div>
-          <div class="sidebar-card-body">
-            <span class="sidebar-card-title">Mesoterapia virtual</span>
-            <span class="sidebar-card-link">Leer artículo →</span>
-          </div>
-        </a>
-        </div>
-      </div>
-    </aside>
-    </div>
-  </div>
     <div class="blog-share reveal">
       <span class="blog-share-label">Comparte con quien pueda interesarle:</span>
       <div class="share-icon-wrap">

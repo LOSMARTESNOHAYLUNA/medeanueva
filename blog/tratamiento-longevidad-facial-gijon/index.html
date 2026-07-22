@@ -54,8 +54,8 @@
 /* Blog layout */
 .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
 @media(max-width:900px){.blog-layout{grid-template-columns:1fr}}
-.blog-sidebar{position:sticky;top:6rem;align-self:start;display:flex;flex-direction:column;gap:1.5rem}
-@media(max-width:900px){.blog-sidebar{position:static}}
+.blog-sidebar{position:-webkit-sticky;position:sticky;top:5.5rem;align-self:start;max-height:calc(100vh - 6rem);overflow-y:auto;display:flex;flex-direction:column;gap:1.5rem}
+@media(max-width:900px){.blog-sidebar{position:static;max-height:none;overflow-y:visible}}
 /* Sidebar CTA */
 .sidebar-cta-box{background:var(--surface);border-left:3px solid #5d131a;padding:1.5rem 1.5rem 1.8rem}
 .sidebar-cta-title{font-family:var(--ff-d);font-size:1.35rem;font-weight:300;color:var(--ink);margin:0 0 .5rem}
