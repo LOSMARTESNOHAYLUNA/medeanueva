@@ -2195,9 +2195,11 @@ body {
 }
 
 .blog-sidebar {
+  position: -webkit-sticky;
   position: sticky;
-  top: 5rem;
-  align-self: start;
+  top: 6rem;
+  max-height: calc(100vh - 7rem);
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
