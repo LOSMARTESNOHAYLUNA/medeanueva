@@ -363,13 +363,13 @@
 .servicios-lista{margin-top:2rem;border-bottom:1px solid var(--border)}
 .servicio-item{border-top:1px solid var(--border)}
 .servicio-titulo{width:100%;display:flex;align-items:center;gap:1rem;padding:1.2rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-b)}
-.servicio-nombre{flex:1;font-size:1rem;font-weight:400;color:var(--ink)}
-.servicio-precio{font-size:.95rem;color:var(--brand);font-weight:500;white-space:nowrap}
+.servicio-nombre{flex:1;font-weight:400;color:var(--ink)}
+.servicio-precio{color:var(--brand);font-weight:500;white-space:nowrap}
 .servicio-chevron{font-size:1.1rem;color:var(--muted);transition:transform .25s}
 .servicio-titulo[aria-expanded="true"] .servicio-chevron{transform:rotate(180deg)}
 .servicio-detalle{padding:.4rem 0 1.6rem}
-.servicio-descripcion{font-family:var(--ff-b);font-size:.95rem;color:var(--ink2);line-height:1.7;margin-bottom:.6rem}
-.servicio-duracion{font-family:var(--ff-b);font-size:.82rem;color:var(--muted);letter-spacing:.04em}
+.servicio-descripcion{font-family:var(--ff-b);color:var(--ink2);margin-bottom:.6rem}
+.servicio-duracion{font-family:var(--ff-b);color:var(--muted);letter-spacing:.04em}
 </style>
 <section class="section-surface" id="precios" style="border-top:1px solid var(--border-n)">
   <div class="section-inner">
@@ -391,7 +391,7 @@
     </div>
   </div>
     </div>
-    <p style="font-family:var(--ff-b);font-size:.8rem;color:var(--muted);margin-top:1.2rem;text-align:center">Los precios son orientativos y pueden variar según longitud, densidad y estado del cabello o la piel. Consulta tu caso concreto en el salón.</p>
+    <p class="nota-precios">Los precios son orientativos y pueden variar según longitud, densidad y estado del cabello o la piel. Consulta tu caso concreto en el salón.</p>
   </div>
 </section>
 <section class="section-card-bg" id="reservar" style="border-top:1px solid var(--border-n)">

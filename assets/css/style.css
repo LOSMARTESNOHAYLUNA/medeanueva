@@ -2356,3 +2356,39 @@ p, li, td, th, span, a, label, input, textarea, button {
 .service-item-text     { font-size: 1.125rem !important; }
 .cd-value              { font-size: 1.125rem !important; }
 .trust-label           { font-size: 1rem !important; }
+
+/* ══════════════════════════════════════════════════════════
+   TIPOGRAFÍA DEFINITIVA — control centralizado
+   Ningún bloque generado debe meter font-size inline.
+   Todo pasa por aquí.
+   ══════════════════════════════════════════════════════════ */
+
+/* — Nota de precios orientativos — */
+.nota-precios {
+  font-family: var(--ff-b);
+  font-size: 1rem;           /* 16px — nota auxiliar, acceptable */
+  color: var(--muted);
+  margin-top: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* — Acordeón de servicios (precios) — */
+.servicio-titulo  { font-size: 1.125rem; }   /* 18px */
+.servicio-nombre  { font-size: 1.125rem; font-weight: 400; color: var(--ink); }
+.servicio-precio  { font-size: 1.125rem; font-weight: 500; color: var(--brand); white-space: nowrap; }
+.servicio-chevron { font-size: 1.1rem; color: var(--muted); transition: transform .25s; }
+.servicio-titulo[aria-expanded="true"] .servicio-chevron { transform: rotate(180deg); }
+.servicio-descripcion { font-size: 1.125rem; line-height: 1.75; color: var(--ink2); margin-bottom: .6rem; }
+.servicio-duracion    { font-size: 1rem; color: var(--muted); letter-spacing: .04em; }
+
+/* — FAQs acordeón en páginas de servicio — */
+.faq-acordeon-titulo { font-size: 1.5rem !important; }   /* ~24px — preguntas */
+
+/* — FAQs acordeón en blog — */
+.blog-faq-btn  { font-size: 1.5rem; font-weight: 400; line-height: 1.4; }  /* 24px */
+.blog-faq-resp { font-size: 1.125rem; line-height: 1.75; color: var(--ink2); }
+
+/* — FAQs <details> en páginas de servicio (las que ya existían) — */
+details summary { font-size: 1.5rem !important; }   /* 24px */
+details p       { font-size: 1.125rem !important; line-height: 1.75 !important; }
