@@ -56,6 +56,8 @@
 #descripcion .eyebrow::before { display:none; }
 .srv-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; }
 @media (max-width:768px) { .srv-grid { grid-template-columns:1fr; gap:2rem; } }
+.trust-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:2rem; text-align:center; }
+@media (max-width:768px) { .trust-grid { grid-template-columns:repeat(2,1fr); } }
 </style>
 </head>
 <body>
@@ -309,7 +311,44 @@
     </div>
   </div>
 </section>
+
 <section class="section-surface">
+  <div class="section-inner">
+    <span class="eyebrow reveal">Para completar tu look</span>
+    <h2 class="section-title reveal" style="margin-top:.8rem">Servicios que puedes<br><em class="italic text-gold">combinar</em></h2>
+    <div class="gold-bar reveal"></div>
+    <div class="cards-grid reveal" style="margin-top:2rem;grid-template-columns:repeat(3,1fr)">
+      <a class="card" href="/peluqueria/" style="text-decoration:none;height:300px">
+        <img class="card-bg-img" src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&fit=crop" alt="Peluquería hombre Gijón — Medea Estilistas" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <div class="card-title">Peluquería</div>
+          <div class="card-desc">Color, corte y tratamientos capilares para el día a día.</div>
+          <span class="card-link">Ver peluquería →</span>
+        </div>
+      </a>
+      <a class="card" href="/tratamientos-faciales/" style="text-decoration:none;height:300px">
+        <img class="card-bg-img" src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&fit=crop" alt="Tratamientos faciales Gijón — Medea Estilistas" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <div class="card-title">Tratamientos faciales</div>
+          <div class="card-desc">Prepara tu piel para llegar con el mejor aspecto al gran día.</div>
+          <span class="card-link">Ver tratamientos →</span>
+        </div>
+      </a>
+      <a class="card" href="/manicura-pedicura/" style="text-decoration:none;height:300px">
+        <img class="card-bg-img" src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600&h=750&fit=crop" alt="Manicura Gijón — Medea Estilistas" loading="lazy">
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <div class="card-title">Manicura</div>
+          <div class="card-desc">Las manos del novio también salen en las fotos.</div>
+          <span class="card-link">Ver manicura →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<section>
   <div class="section-inner" style="max-width:760px">
     <span class="eyebrow reveal">Preguntas frecuentes</span>
     <h2 class="section-title reveal" style="margin-top:.8rem">Lo que más<br><em class="italic text-gold">nos preguntan</em></h2>
@@ -350,6 +389,32 @@
         </summary>
         <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);line-height:1.75;margin-top:1rem;padding-right:2rem">Sí, podemos atender al novio junto con el padrino y los testigos. Consúltanos para grupos y te preparamos un presupuesto adaptado.</p>
       </details>
+    </div>
+  </div>
+</section>
+
+<section class="section-surface">
+  <div class="section-inner">
+    <span class="eyebrow reveal" style="justify-content:center;display:flex">Por qué elegirnos</span>
+    <h2 class="section-title reveal" style="margin-top:.8rem;text-align:center">Más de 30 años<br><em class="italic text-gold">cuidándote</em></h2>
+    <div class="gold-bar reveal" style="margin:1.2rem auto"></div>
+    <div class="trust-grid reveal" style="margin-top:3rem">
+      <div>
+        <p style="font-family:var(--ff-d);font-size:3rem;font-weight:300;color:var(--gold);line-height:1">+30</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);margin-top:.5rem;line-height:1.5">Años de experiencia<br>en Gijón</p>
+      </div>
+      <div>
+        <p style="font-family:var(--ff-d);font-size:3rem;font-weight:300;color:var(--gold);line-height:1">100%</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);margin-top:.5rem;line-height:1.5">Productos<br>profesionales</p>
+      </div>
+      <div>
+        <p style="font-family:var(--ff-d);font-size:3rem;font-weight:300;color:var(--gold);line-height:1">2</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);margin-top:.5rem;line-height:1.5">Hermanas estilistas<br>al frente del salón</p>
+      </div>
+      <div>
+        <p style="font-family:var(--ff-d);font-size:3rem;font-weight:300;color:var(--gold);line-height:1">&infin;</p>
+        <p style="font-family:var(--ff-b);font-size:1.125rem;font-weight:300;color:var(--muted);margin-top:.5rem;line-height:1.5">Formación continua<br>en nuevas técnicas</p>
+      </div>
     </div>
   </div>
 </section>
