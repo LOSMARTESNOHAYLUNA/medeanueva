@@ -2187,6 +2187,15 @@ body {
 }
 
 /* ── BLOG RESPONSIVE ─────────────────────────────────── */
+.blog-sidebar {
+  position: sticky;
+  top: 5rem;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 @media (max-width: 900px) {
 
   /* Layout una columna */
