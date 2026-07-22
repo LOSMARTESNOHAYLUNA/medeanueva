@@ -54,7 +54,7 @@
 /* Blog layout */
 .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
 @media(max-width:900px){.blog-layout{grid-template-columns:1fr}}
-.blog-sidebar{position:sticky;top:6rem;display:flex;flex-direction:column;gap:1.5rem}
+.blog-sidebar{position:sticky;top:6rem;align-self:start;display:flex;flex-direction:column;gap:1.5rem}
 @media(max-width:900px){.blog-sidebar{position:static}}
 /* Sidebar CTA */
 .sidebar-cta-box{background:var(--surface);border-left:3px solid #5d131a;padding:1.5rem 1.5rem 1.8rem}
@@ -376,8 +376,53 @@
       <p>¿Tienes claro qué quieres pero no sabes si es posible en tu cabello? Cuéntanoslo.</p>
       <a href="/contacto/" class="btn">Consultar con Montse o Cris</a>
     </div>
-    
-    
+    <div class="blog-author reveal">
+      <div class="blog-author-avatar" aria-hidden="true">M</div>
+      <div>
+        <p class="blog-author-name">Montse Menéndez</p>
+        <p class="blog-author-role">Especialista en Peluquería y Coloración · Medea Estilistas</p>
+        <p class="blog-author-bio">39 años de experiencia. Especialista en coloración y técnicas de mechas. Formada con Versum y Creative Hair. Centro oficial Kevin Murphy.</p>
+      </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿No sabes qué técnica te queda mejor?</p>
+        <p class="sidebar-cta-text">Montse o Cris te asesoran para encontrar el color perfecto para ti.</p>
+        <a href="/contacto/" class="btn">Pedir asesoramiento</a>
+      </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/kevin-murphy-cosmetica-capilar/">
+          <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Kevin Murphy en Medea</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/guia-novias-tratamientos-antes-boda/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Guía para novias — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Guía para novias</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/peluqueria-masculina-gijon/">
+          <img src="https://images.pexels.com/photos/3065173/pexels-photo-3065173.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Peluquería masculina — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Peluquería masculina</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
+    </div>
+  </div>
     <div class="blog-share reveal">
       <span class="blog-share-label">¿Conoces a alguien a quien le venga bien?</span>
       <div class="share-icon-wrap">
@@ -388,15 +433,7 @@
         <button class="share-icon" onclick="navigator.clipboard.writeText('https://www.medeaestilistas.es/blog/tendencias-coloracion-temporada/').then(function(){this.style.background='#5d131a';this.style.color='#fff'}.bind(this))" aria-label="Copiar enlace"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
       </div>
     </div>
-    </div>
-    </div>
-    <div class="blog-author reveal">
-      <div class="blog-author-avatar" aria-hidden="true">M</div>
-      <div>
-        <p class="blog-author-name">Montse Menéndez</p>
-        <p class="blog-author-role">Especialista en Peluquería y Coloración · Medea Estilistas</p>
-        <p class="blog-author-bio">39 años de experiencia. Especialista en coloración y técnicas de mechas. Formada con Versum y Creative Hair. Centro oficial Kevin Murphy.</p>
-      </article>
+    </article>
       
     <aside class="blog-sidebar">
       <div class="sidebar-cta-box reveal">

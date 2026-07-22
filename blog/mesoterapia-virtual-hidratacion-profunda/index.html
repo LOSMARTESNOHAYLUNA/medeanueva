@@ -54,7 +54,7 @@
 /* Blog layout */
 .blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
 @media(max-width:900px){.blog-layout{grid-template-columns:1fr}}
-.blog-sidebar{position:sticky;top:6rem;display:flex;flex-direction:column;gap:1.5rem}
+.blog-sidebar{position:sticky;top:6rem;align-self:start;display:flex;flex-direction:column;gap:1.5rem}
 @media(max-width:900px){.blog-sidebar{position:static}}
 /* Sidebar CTA */
 .sidebar-cta-box{background:var(--surface);border-left:3px solid #5d131a;padding:1.5rem 1.5rem 1.8rem}
@@ -391,8 +391,53 @@
       <p>¿Quieres una hidratación que los cosméticos en casa no pueden dar? Habla con Rosa.</p>
       <a href="/contacto/" class="btn">Reservar sesión de mesoterapia</a>
     </div>
-    
-    
+    <div class="blog-author reveal">
+      <div class="blog-author-avatar" aria-hidden="true">R</div>
+      <div>
+        <p class="blog-author-name">Rosa Menéndez</p>
+        <p class="blog-author-role">Especialista en Estética · Medea Estilistas</p>
+        <p class="blog-author-bio">37 años de experiencia en estética facial y corporal. Especialista en tratamientos faciales, mesoterapia virtual y aparatología estética.</p>
+      </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿Quieres una hidratación profunda?</p>
+        <p class="sidebar-cta-text">Rosa te explica qué protocolo se adapta mejor a tu piel y tus objetivos.</p>
+        <a href="/contacto/" class="btn">Solicitar información</a>
+      </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/tratamiento-longevidad-facial-gijon/">
+          <img src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tratamiento Longevidad — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Tratamiento Longevidad</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/presoterapia-gijon-beneficios/">
+          <img src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Presoterapia en Gijón — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Presoterapia en Gijón</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/guia-novias-tratamientos-antes-boda/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Guía para novias — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Guía para novias</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
+    </div>
+  </div>
     <div class="blog-share reveal">
       <span class="blog-share-label">¿Te resultó útil? Difúndelo:</span>
       <div class="share-icon-wrap">
@@ -403,15 +448,7 @@
         <button class="share-icon" onclick="navigator.clipboard.writeText('https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/').then(function(){this.style.background='#5d131a';this.style.color='#fff'}.bind(this))" aria-label="Copiar enlace"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button>
       </div>
     </div>
-    </div>
-    </div>
-    <div class="blog-author reveal">
-      <div class="blog-author-avatar" aria-hidden="true">R</div>
-      <div>
-        <p class="blog-author-name">Rosa Menéndez</p>
-        <p class="blog-author-role">Especialista en Estética · Medea Estilistas</p>
-        <p class="blog-author-bio">37 años de experiencia en estética facial y corporal. Especialista en tratamientos faciales, mesoterapia virtual y aparatología estética.</p>
-      </article>
+    </article>
       
     <aside class="blog-sidebar">
       <div class="sidebar-cta-box reveal">
