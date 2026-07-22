@@ -14,7 +14,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.medeaestilistas.es/tratamientos-corporales/tratamiento-anticelulitico-gijon/"/>
 <meta property="og:title" content="Tratamiento anticelulítico en Gijón — Medea Estilistas"/>
-<meta property="og:description" content="Tratamiento anticelulítico drenante en Gijón con maderoterapia, mesoterapia virtual y presoterapia. Cosmética natural Vagheggi. Desde 42 €. Reserva en Medea Estilistas."/>
+<meta property="og:description" content="Tratamiento anticelulítico en Gijón. Protocolo drenante con maderoterapia, mesoterapia virtual y presoterapia Linfopress Evolution Pro. Con Vagheggi. Medea Estilistas."/>
 <meta property="og:image" content="https://www.medeaestilistas.es/assets/img/logo.png"/>
 <meta property="og:locale" content="es_ES"/>
 <meta property="og:site_name" content="Medea Estilistas"/>
@@ -352,6 +352,41 @@
         </div>
       </a>
     </div>
+  </div>
+</section>
+<style>
+.servicios-lista{margin-top:2rem;border-bottom:1px solid var(--border)}
+.servicio-item{border-top:1px solid var(--border)}
+.servicio-titulo{width:100%;display:flex;align-items:center;gap:1rem;padding:1.2rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-b)}
+.servicio-nombre{flex:1;font-size:1rem;font-weight:400;color:var(--ink)}
+.servicio-precio{font-size:.95rem;color:var(--brand);font-weight:500;white-space:nowrap}
+.servicio-chevron{font-size:1.1rem;color:var(--muted);transition:transform .25s}
+.servicio-titulo[aria-expanded="true"] .servicio-chevron{transform:rotate(180deg)}
+.servicio-detalle{padding:.4rem 0 1.6rem}
+.servicio-descripcion{font-family:var(--ff-b);font-size:.95rem;color:var(--ink2);line-height:1.7;margin-bottom:.6rem}
+.servicio-duracion{font-family:var(--ff-b);font-size:.82rem;color:var(--muted);letter-spacing:.04em}
+</style>
+<section class="section-surface" id="precios" style="border-top:1px solid var(--border-n)">
+  <div class="section-inner">
+    <div class="intro-centered reveal" style="margin-bottom:1rem">
+      <p class="eyebrow-center">Tarifas orientativas</p>
+      <h2 class="section-title">Precios</h2>
+    </div>
+    <div class="servicios-lista reveal">
+  <div class="servicio-item">
+    <button class="servicio-titulo" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+      <span class="servicio-nombre">Tratamiento anticelulítico</span>
+      <span class="servicio-precio">Desde 42,00 €</span>
+      <span class="servicio-chevron" aria-hidden="true">▾</span>
+    </button>
+    <div class="servicio-detalle" hidden>
+      <p class="servicio-descripcion">Tratamiento anticelulítico drenante con maderoterapia, mesoterapia virtual y presoterapia. Cosmética natural Vagheggi.</p>
+      <p class="servicio-duracion">Duración aproximada: 60–75 min</p>
+      <a href="/contacto/" class="btn btn-brand" style="margin-top:1rem;display:inline-block">Reservar cita</a>
+    </div>
+  </div>
+    </div>
+    <p style="font-family:var(--ff-b);font-size:.8rem;color:var(--muted);margin-top:1.2rem;text-align:center">Los precios son orientativos y pueden variar según longitud, densidad y estado del cabello o la piel. Consulta tu caso concreto en el salón.</p>
   </div>
 </section>
 <section class="section-card-bg" id="reservar" style="border-top:1px solid var(--border-n)">

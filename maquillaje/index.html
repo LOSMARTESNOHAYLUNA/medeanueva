@@ -13,7 +13,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.medeaestilistas.es/maquillaje/"/>
 <meta property="og:title" content="Maquillaje profesional en Gijón — Medea Estilistas"/>
-<meta property="og:description" content="Maquillaje social, de novias y con aerógrafo en Gijón desde 37,90 €. Rosa Menéndez formada en Escuela Cazcarra. Centro oficial Cazcarra y Vagheggi en Gijón."/>
+<meta property="og:description" content="Maquillaje profesional en Gijón: social, novias y aerógrafo. Centro oficial Cazcarra. Rosa Menéndez. Nos desplazamos. Medea Estilistas."/>
 <meta property="og:image" content="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"/>
 <meta property="og:locale" content="es_ES"/>
 <meta property="og:site_name" content="Medea Estilistas"/>
@@ -259,32 +259,6 @@
   <a href="/contacto/" class="mm-cta">Reservar cita</a>
 </div>
 
-
-<!-- PRECIOS -->
-<section class="section-surface">
-  <div class="section-inner">
-    <span class="eyebrow">Precios</span>
-    <h2 class="section-title" style="margin-top:.5rem">Tarifas<br><em class="italic text-gold">orientativas</em></h2>
-    <div class="gold-bar"></div>
-    
-<div class="servicios-lista">
-  <div class="servicio-item">
-    <button class="servicio-titulo" aria-expanded="false">
-      <span class="servicio-nombre">Maquillaje</span>
-      <span class="servicio-precio">Desde 37,90 €</span>
-      <span class="servicio-chevron">▾</span>
-    </button>
-    <div class="servicio-detalle" hidden>
-      <p class="servicio-descripcion">Maquillaje social, de novias y con aerógrafo. Rosa Menéndez, formada en Escuela Cazcarra.</p>
-      <p class="servicio-duracion">Duración aproximada: 45-60 min</p>
-      <a href="/contacto/" class="btn-reserva">Reservar cita</a>
-    </div>
-  </div>
-</div>
-
-  </div>
-</section>
-
 <section class="hero-cat" aria-label="Maquillaje en Gijón — Medea Estilistas">
   <img class="hero-photo-bg" src="https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="" aria-hidden="true" loading="eager" fetchpriority="high" width="1920" height="1080">
   <div class="hero-overlay" aria-hidden="true"></div>
@@ -371,6 +345,65 @@
   </div>
 </section>
 
+<style>
+.servicios-lista{margin-top:2rem;border-bottom:1px solid var(--border)}
+.servicio-item{border-top:1px solid var(--border)}
+.servicio-titulo{width:100%;display:flex;align-items:center;gap:1rem;padding:1.2rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-b)}
+.servicio-nombre{flex:1;font-size:1rem;font-weight:400;color:var(--ink)}
+.servicio-precio{font-size:.95rem;color:var(--brand);font-weight:500;white-space:nowrap}
+.servicio-chevron{font-size:1.1rem;color:var(--muted);transition:transform .25s}
+.servicio-titulo[aria-expanded="true"] .servicio-chevron{transform:rotate(180deg)}
+.servicio-detalle{padding:.4rem 0 1.6rem}
+.servicio-descripcion{font-family:var(--ff-b);font-size:.95rem;color:var(--ink2);line-height:1.7;margin-bottom:.6rem}
+.servicio-duracion{font-family:var(--ff-b);font-size:.82rem;color:var(--muted);letter-spacing:.04em}
+</style>
+<section class="section-surface" id="precios" style="border-top:1px solid var(--border-n)">
+  <div class="section-inner">
+    <div class="intro-centered reveal" style="margin-bottom:1rem">
+      <p class="eyebrow-center">Tarifas orientativas</p>
+      <h2 class="section-title">Precios</h2>
+    </div>
+    <div class="servicios-lista reveal">
+  <div class="servicio-item">
+    <button class="servicio-titulo" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+      <span class="servicio-nombre">Maquillaje social</span>
+      <span class="servicio-precio">Desde 37,90 €</span>
+      <span class="servicio-chevron" aria-hidden="true">▾</span>
+    </button>
+    <div class="servicio-detalle" hidden>
+      <p class="servicio-descripcion">Para eventos y el día a día.</p>
+      <p class="servicio-duracion">Duración aproximada: 60 min</p>
+      <a href="/contacto/" class="btn btn-brand" style="margin-top:1rem;display:inline-block">Reservar cita</a>
+    </div>
+  </div>
+  <div class="servicio-item">
+    <button class="servicio-titulo" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+      <span class="servicio-nombre">Maquillaje de novia</span>
+      <span class="servicio-precio">Pack personalizado — Consultar precio</span>
+      <span class="servicio-chevron" aria-hidden="true">▾</span>
+    </button>
+    <div class="servicio-detalle" hidden>
+      <p class="servicio-descripcion">Con prueba previa incluida.</p>
+      <p class="servicio-duracion">Duración aproximada: Según pack</p>
+      <a href="/contacto/" class="btn btn-brand" style="margin-top:1rem;display:inline-block">Reservar cita</a>
+    </div>
+  </div>
+  <div class="servicio-item">
+    <button class="servicio-titulo" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+      <span class="servicio-nombre">Maquillaje con aerógrafo</span>
+      <span class="servicio-precio">Desde 37,90 €</span>
+      <span class="servicio-chevron" aria-hidden="true">▾</span>
+    </button>
+    <div class="servicio-detalle" hidden>
+      <p class="servicio-descripcion">Acabado muy natural y duradero.</p>
+      <p class="servicio-duracion">Duración aproximada: 60–75 min</p>
+      <a href="/contacto/" class="btn btn-brand" style="margin-top:1rem;display:inline-block">Reservar cita</a>
+    </div>
+  </div>
+    </div>
+    <p style="font-family:var(--ff-b);font-size:.8rem;color:var(--muted);margin-top:1.2rem;text-align:center">Los precios son orientativos y pueden variar según longitud, densidad y estado del cabello o la piel. Consulta tu caso concreto en el salón.</p>
+  </div>
+</section>
 <section class="section-card-bg" id="reservar" style="border-top:1px solid var(--border-n)">
   <div class="section-inner">
 
@@ -524,23 +557,5 @@
 </div>
 
 
-
-<script>
-document.querySelectorAll('.servicio-titulo').forEach(function(btn){
-  btn.addEventListener('click', function(){
-    var expanded = this.getAttribute('aria-expanded') === 'true';
-    document.querySelectorAll('.servicio-titulo').forEach(function(b){
-      b.setAttribute('aria-expanded','false');
-      var d = b.nextElementSibling;
-      if(d) d.hidden = true;
-    });
-    if(!expanded){
-      this.setAttribute('aria-expanded','true');
-      var det = this.nextElementSibling;
-      if(det) det.hidden = false;
-    }
-  });
-});
-</script>
 </body>
 </html>

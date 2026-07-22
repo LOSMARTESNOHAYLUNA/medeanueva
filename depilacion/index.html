@@ -13,7 +13,7 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://www.medeaestilistas.es/depilacion/"/>
 <meta property="og:title" content="Depilación en Gijón — Medea Estilistas"/>
-<meta property="og:description" content="Depilación con pasta de caramelo Carmelita y depilación eléctrica en Gijón. Natural, suave e hipoalergénica. Calle Anselmo Solar 31. Llámanos al 985 33 79 63."/>
+<meta property="og:description" content="Depilación en Gijón: pasta de caramelo Carmelita y depilación eléctrica definitiva. Resultados duraderos y piel suave. Medea Estilistas."/>
 <meta property="og:image" content="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"/>
 <meta property="og:locale" content="es_ES"/>
 <meta property="og:site_name" content="Medea Estilistas"/>
@@ -340,6 +340,65 @@
   </div>
 </section>
 
+<style>
+.servicios-lista{margin-top:2rem;border-bottom:1px solid var(--border)}
+.servicio-item{border-top:1px solid var(--border)}
+.servicio-titulo{width:100%;display:flex;align-items:center;gap:1rem;padding:1.2rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-b)}
+.servicio-nombre{flex:1;font-size:1rem;font-weight:400;color:var(--ink)}
+.servicio-precio{font-size:.95rem;color:var(--brand);font-weight:500;white-space:nowrap}
+.servicio-chevron{font-size:1.1rem;color:var(--muted);transition:transform .25s}
+.servicio-titulo[aria-expanded="true"] .servicio-chevron{transform:rotate(180deg)}
+.servicio-detalle{padding:.4rem 0 1.6rem}
+.servicio-descripcion{font-family:var(--ff-b);font-size:.95rem;color:var(--ink2);line-height:1.7;margin-bottom:.6rem}
+.servicio-duracion{font-family:var(--ff-b);font-size:.82rem;color:var(--muted);letter-spacing:.04em}
+</style>
+<section class="section-surface" id="precios" style="border-top:1px solid var(--border-n)">
+  <div class="section-inner">
+    <div class="intro-centered reveal" style="margin-bottom:1rem">
+      <p class="eyebrow-center">Tarifas orientativas</p>
+      <h2 class="section-title">Precios</h2>
+    </div>
+    <div class="servicios-lista reveal">
+  <div class="servicio-item">
+    <button class="servicio-titulo" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+      <span class="servicio-nombre">Medias piernas y axilas</span>
+      <span class="servicio-precio">21,90 €</span>
+      <span class="servicio-chevron" aria-hidden="true">▾</span>
+    </button>
+    <div class="servicio-detalle" hidden>
+      <p class="servicio-descripcion">Pasta de caramelo Carmelita, 100% natural.</p>
+      <p class="servicio-duracion">Duración aproximada: 45 min</p>
+      <a href="/contacto/" class="btn btn-brand" style="margin-top:1rem;display:inline-block">Reservar cita</a>
+    </div>
+  </div>
+  <div class="servicio-item">
+    <button class="servicio-titulo" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+      <span class="servicio-nombre">Cejas</span>
+      <span class="servicio-precio">8,65 €</span>
+      <span class="servicio-chevron" aria-hidden="true">▾</span>
+    </button>
+    <div class="servicio-detalle" hidden>
+      <p class="servicio-descripcion">Depilación con pasta de caramelo.</p>
+      <p class="servicio-duracion">Duración aproximada: 15 min</p>
+      <a href="/contacto/" class="btn btn-brand" style="margin-top:1rem;display:inline-block">Reservar cita</a>
+    </div>
+  </div>
+  <div class="servicio-item">
+    <button class="servicio-titulo" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true');this.nextElementSibling.hidden=!this.nextElementSibling.hidden">
+      <span class="servicio-nombre">Depilación eléctrica</span>
+      <span class="servicio-precio">Consultar precio</span>
+      <span class="servicio-chevron" aria-hidden="true">▾</span>
+    </button>
+    <div class="servicio-detalle" hidden>
+      <p class="servicio-descripcion">Eliminación definitiva por electrólisis.</p>
+      <p class="servicio-duracion">Duración aproximada: Según zona</p>
+      <a href="/contacto/" class="btn btn-brand" style="margin-top:1rem;display:inline-block">Reservar cita</a>
+    </div>
+  </div>
+    </div>
+    <p style="font-family:var(--ff-b);font-size:.8rem;color:var(--muted);margin-top:1.2rem;text-align:center">Los precios son orientativos y pueden variar según longitud, densidad y estado del cabello o la piel. Consulta tu caso concreto en el salón.</p>
+  </div>
+</section>
 <section class="section-card-bg" id="reservar" style="border-top:1px solid var(--border-n)">
   <div class="section-inner">
 
