@@ -2401,3 +2401,21 @@ details p       { font-size: 1.125rem !important; line-height: 1.75 !important; 
   div[style*="grid-template-columns:1fr 1fr;gap:5rem"] { display: flex !important; flex-direction: column !important; gap: 2rem !important; }
   div[style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: repeat(2,1fr) !important; }
 }
+
+/* ── EYEBROW: centrado cuando está solo, izquierda en 2 columnas ── */
+/* Por defecto centrado */
+.eyebrow { display:block !important; text-align:center !important; }
+
+/* Dentro de grid de 2 columnas → izquierda */
+.section-inner[style*="grid-template-columns:1fr 1fr"] .eyebrow,
+.section-inner[style*="grid-template-columns:1fr 1fr"] .eyebrow-center,
+.srv-grid .eyebrow,
+[style*="display:grid"][style*="1fr 1fr"] .eyebrow { text-align:left !important; }
+
+/* En responsive siempre centrado */
+@media(max-width:768px){
+  .eyebrow,
+  .eyebrow-center,
+  .section-inner[style*="grid-template-columns:1fr 1fr"] .eyebrow { text-align:center !important; }
+  .section-title { text-align:center !important; }
+}
