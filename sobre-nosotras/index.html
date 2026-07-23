@@ -29,28 +29,14 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["BeautySalon","HairSalon","LocalBusiness"],"@id":"https://www.medeaestilistas.es/#local-business","name":"Medea Estilistas","url":"https://www.medeaestilistas.es","telephone":["+34985337963","+34684636883"],"address":{"@type":"PostalAddress","streetAddress":"Calle Anselmo Solar 31","addressLocality":"Gijón","addressRegion":"Asturias","postalCode":"33204","addressCountry":"ES"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.medeaestilistas.es/"},{"@type":"ListItem","position":2,"name":"Nosotras"}]}</script>
 <style>
-/* Bullets */
 .cert-arrow{display:inline-flex;align-items:center;flex-shrink:0;color:var(--brand);font-size:1.3rem;line-height:1;margin-right:.6rem;margin-top:.1rem}
-
-/* Galería 4x3 */
+.team-photo{height:auto!important;aspect-ratio:1/1!important}
+.team-photo img{width:100%!important;height:100%!important;aspect-ratio:1/1!important;object-fit:cover!important}
 .galeria-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
 .galeria-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px;display:block}
-
-/* Cards equipo — foto siempre cuadrada */
-.team-photo img{aspect-ratio:1/1;object-fit:cover;width:100%}
-
-/* Cards colaboraciones — imagen cuadrada */
-div[style*="aspect-ratio:4/3"]{aspect-ratio:1/1!important}
-
-/* Responsive móvil */
 @media(max-width:768px){
-  .section-inner[style*="grid-template-columns:1fr 1fr;gap:5rem"]{display:flex!important;flex-direction:column!important;gap:2rem!important}
-  .team-grid{grid-template-columns:1fr!important;max-width:480px;margin-left:auto;margin-right:auto}
-  div[style*="grid-template-columns:1fr 1fr;gap:3rem"]{grid-template-columns:1fr!important}
   .galeria-grid{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:480px){
-  .galeria-grid{grid-template-columns:1fr 1fr}
+  .team-grid{grid-template-columns:1fr!important}
 }
 </style>
 </head>
@@ -271,9 +257,10 @@ div[style*="aspect-ratio:4/3"]{aspect-ratio:1/1!important}
   </div>
 </section>
 
+<!-- EQUIPO — 3 COLUMNAS IGUALES -->
 <section>
   <div class="section-inner">
-    <span class="eyebrow reveal" >El equipo</span>
+    <span class="eyebrow reveal" style="display:flex;justify-content:center">El equipo</span>
     <h2 class="section-title reveal" style="text-align:center">Las personas<br><em class="italic text-gold">detrás de Medea</em></h2>
     <div class="team-grid">
 
@@ -339,14 +326,9 @@ div[style*="aspect-ratio:4/3"]{aspect-ratio:1/1!important}
         </div>
       </article>
 
-    </div>
-  </div>
-</section>
 
-<!-- GALERÍA -->
-<section style="padding-top:0">
-  <div class="section-inner">
-    <div class="galeria-grid">
+    <!-- GALERÍA -->
+    <div class="galeria-grid" style="margin-top:2rem">
       <img src="/assets/img/galeria-salon-sillas-medea-gijon.webp" alt="Interior salón Medea Estilistas" loading="lazy">
       <img src="/assets/img/galeria-salon-productos-medea-gijon.webp" alt="Productos profesionales" loading="lazy">
       <img src="/assets/img/galeria-salon-recepcion-medea-gijon.webp" alt="Recepción Medea Estilistas" loading="lazy">
