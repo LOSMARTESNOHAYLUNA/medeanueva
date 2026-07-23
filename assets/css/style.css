@@ -930,7 +930,7 @@ input, textarea, select, button { font-size: 18px; } /* Evita zoom iOS */
   color: rgba(245,240,232,.8);
   letter-spacing: .32em;
 }
-.hero-bg-photo .hero-eyebrow::after { background: rgba(245,240,232,.4); }
+.hero-bg-photo .hero-eyebrow::after { background: rgba(245,240,232,.4); display:none }
 .hero-bg-photo .hero-title { color: #fff; }
 .hero-bg-photo .hero-title em { color: var(--gold-lt); }
 .hero-bg-photo .hero-sub { color: rgba(245,240,232,.6); }
@@ -1857,7 +1857,7 @@ body {
 }
 /* Texto blanco sobre foto */
 .hero-cat .hero-eyebrow          { color: var(--brand); }
-.hero-cat .hero-eyebrow::after   { background: var(--brand); opacity: .25; }
+.hero-cat .hero-eyebrow::after   { background: var(--brand); opacity: .25; display:none }
 .hero-cat .hero-title            { color: var(--ink); }
 .hero-cat .hero-title em         { color: var(--gold); }
 .hero-cat .hero-sub              { color: var(--muted); }
@@ -2392,3 +2392,13 @@ p, li, td, th, span, a, label, input, textarea, button {
 /* — FAQs <details> en páginas de servicio (las que ya existían) — */
 details summary { font-size: 1.5rem !important; }   /* 24px */
 details p       { font-size: 1.125rem !important; line-height: 1.75 !important; }
+
+
+/* ── ELIMINAR LÍNEAS DECORATIVAS — todas las variantes ── */
+.eyebrow::after,
+.eyebrow-center::after,
+.hero-eyebrow::after,
+.hero-bg-photo .hero-eyebrow::after,
+.hero-cat .hero-eyebrow::after,
+.eyebrow-sm::after { display:none !important; content:none !important; }
+.gold-bar { display:none !important; }
