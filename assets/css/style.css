@@ -206,10 +206,10 @@ section { padding:clamp(4.5rem,9vw,8rem) clamp(1.5rem,5vw,4rem); }
 .section-surface { background:var(--surface); }
 .section-card-bg { background:var(--card); }
 
-.eyebrow { display:inline-flex; align-items:center; gap:.8rem; font-size:.75rem; font-weight:400; letter-spacing:.22em; text-transform:uppercase; color:var(--brand); margin-bottom:1.2rem; }
+.eyebrow { display:inline-flex; align-items:center; gap:.8rem; font-size:.75rem; font-weight:400; letter-spacing:.22em; text-transform:uppercase; color:var(--brand); margin-bottom:1.2rem; text-align:center; }
 .eyebrow::after { display:none }
 
-.section-title { font-size:clamp(2.2rem,4.5vw,3.8rem); color:var(--ink); margin-bottom:1.2rem; }
+.section-title { font-size:clamp(2.2rem,4.5vw,3.8rem); color:var(--ink); margin-bottom:1.2rem; text-align:center; }
 .section-body { font-size:1.125rem; color:var(--ink2); max-width:580px; line-height:1.85; opacity:.8; }
 .gold-bar { display:none }
 
@@ -2383,3 +2383,19 @@ p, li, td, th, span, a, label, input, textarea, button {
 /* — FAQs <details> en páginas de servicio (las que ya existían) — */
 details summary { font-size: 1.5rem !important; }   /* 24px */
 details p       { font-size: 1.125rem !important; line-height: 1.75 !important; }
+
+@media(max-width:768px){
+  div[style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:repeat(2,1fr)!important}
+}
+
+/* ── GALERÍA — ancho completo sin límite de section-inner ── */
+.galeria-wrap { width: 100%; }
+.galeria-wrap .section-inner { max-width: 100% !important; padding-left: clamp(1rem,3vw,2rem); padding-right: clamp(1rem,3vw,2rem); }
+
+/* ── TÍTULOS CENTRADOS EN TODA LA WEB ── */
+.section-title { text-align: center !important; }
+.eyebrow, .eyebrow-center, .hero-eyebrow { text-align: center !important; display: block !important; }
+
+/* ── FOTOS EQUIPO 1x1 ── */
+.team-photo { height: auto !important; aspect-ratio: 1/1 !important; }
+.team-photo img { width: 100% !important; height: 100% !important; aspect-ratio: 1/1 !important; object-fit: cover !important; }
