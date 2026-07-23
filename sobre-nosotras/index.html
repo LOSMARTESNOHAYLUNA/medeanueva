@@ -31,6 +31,16 @@
 <style>
 .cert-arrow{display:inline-flex;align-items:center;justify-content:center;width:1.2rem;flex-shrink:0;color:var(--brand);font-size:1.2rem;line-height:1;margin-right:.5rem}
 .cert-list li{display:flex;align-items:flex-start;gap:0;padding:.3rem 0}
+.galeria-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem}
+@media(max-width:768px){
+  .galeria-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .galeria-grid{grid-template-columns:1fr}
+}
+.team-grid{display:flex;flex-direction:column;gap:4rem}
+.team-card{display:flex;flex-direction:column;gap:1.5rem}
+.team-photo img{width:100%;max-width:480px;height:auto;border-radius:8px;object-fit:cover}
 </style>
 </head>
 <body>
@@ -217,7 +227,7 @@
 
 <!-- HISTORIA -->
 <section class="section-surface">
-  <div class="section-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center">
+  <div class="section-inner">
     <div>
       <span class="eyebrow reveal">La historia de Medea</span>
       <h2 class="section-title reveal">36 años con la<br><em class="italic text-gold">misma ilusión</em></h2>
@@ -257,7 +267,7 @@
     <span class="eyebrow reveal" style="display:flex;justify-content:center">El salón y nuestro trabajo</span>
     <h2 class="section-title reveal" style="text-align:center">Medea por<br><em class="italic text-gold">dentro</em></h2>
     <div class="gold-bar reveal"></div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem" class="reveal">
+    <div class="galeria-grid reveal">
       <img src="/assets/img/galeria-salon-sillas-medea-gijon.webp" alt="Interior salón Medea Estilistas Gijón" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px">
       <img src="/assets/img/galeria-salon-productos-medea-gijon.webp" alt="Productos profesionales en Medea Estilistas" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px">
       <img src="/assets/img/galeria-salon-recepcion-medea-gijon.webp" alt="Recepción de Medea Estilistas" loading="lazy" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px">
@@ -353,7 +363,7 @@
     <h2 class="section-title reveal">Más allá<br><em class="italic text-gold">del salón</em></h2>
     <div class="gold-bar reveal"></div>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:3rem">
+    <div style="display:flex;flex-direction:column;gap:3rem;margin-top:3rem">
 
       <div class="reveal" style="display:flex;flex-direction:column;gap:0">
         <div style="position:relative;overflow:hidden;aspect-ratio:4/3">
