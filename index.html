@@ -140,6 +140,12 @@
   "paymentAccepted": "Cash, Credit Card"
 }
 </script>
+<style>
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+.trust-marcas{display:block;font-family:var(--ff-b);font-size:.72rem;letter-spacing:.08em;color:var(--muted);margin-top:.3rem}
+.seccion-longevidad{border-top:1px solid var(--border-n)}
+@media(max-width:768px){.seccion-longevidad .section-inner{grid-template-columns:1fr!important;gap:2rem!important}}
+</style>
 </head>
 <body>
 <nav id="nav" aria-label="Navegación principal">
@@ -356,7 +362,7 @@
         <div class="card-overlay"></div>
         <div class="card-body">
           <div class="card-num">01</div>
-          <div class="card-title">Peluquería</div>
+          <h3 class="card-title">Peluquería en Gijón</h3>
           <div class="card-desc">Coloración, mechas, balayage, alisado, keratina y tratamientos capilares. Centro oficial Kevin Murphy.</div>
           <span class="card-link">Ver servicios →</span>
         </div>
@@ -367,7 +373,7 @@
         <div class="card-overlay"></div>
         <div class="card-body">
           <div class="card-num">02</div>
-          <div class="card-title">Tratamientos Faciales</div>
+          <h3 class="card-title">Tratamientos faciales en Gijón</h3>
           <div class="card-desc">Longevidad, Vitamina C, limpieza facial, manchas y más. Centro oficial Vagheggi.</div>
           <span class="card-link">Ver servicios →</span>
         </div>
@@ -378,7 +384,7 @@
         <div class="card-overlay"></div>
         <div class="card-body">
           <div class="card-num">03</div>
-          <div class="card-title">Tratamientos Corporales</div>
+          <h3 class="card-title">Tratamientos corporales en Gijón</h3>
           <div class="card-desc">Presoterapia Linfopress, maderoterapia, mesoterapia virtual, anticelulítico y más.</div>
           <span class="card-link">Ver servicios →</span>
         </div>
@@ -389,7 +395,7 @@
         <div class="card-overlay"></div>
         <div class="card-body">
           <div class="card-num">04</div>
-          <div class="card-title">Masajes</div>
+          <h3 class="card-title">Masajes en Gijón</h3>
           <div class="card-desc">Masaje relajante, reflexología podal y drenaje linfático manual sistema Voder.</div>
           <span class="card-link">Ver servicios →</span>
         </div>
@@ -400,7 +406,7 @@
         <div class="card-overlay"></div>
         <div class="card-body">
           <div class="card-num">05</div>
-          <div class="card-title">Depilación</div>
+          <h3 class="card-title">Depilación en Gijón</h3>
           <div class="card-desc">Pasta de caramelo Carmelita y depilación eléctrica definitiva.</div>
           <span class="card-link">Ver servicios →</span>
         </div>
@@ -411,7 +417,7 @@
         <div class="card-overlay"></div>
         <div class="card-body">
           <div class="card-num">06</div>
-          <div class="card-title">Manicura y Pedicura</div>
+          <h3 class="card-title">Manicura y pedicura en Gijón</h3>
           <div class="card-desc">Uñas semipermanentes con The Manicure Company (vegana) y manicura y pedicura clásica.</div>
           <span class="card-link">Ver servicios →</span>
         </div>
@@ -422,7 +428,7 @@
         <div class="card-overlay"></div>
         <div class="card-body">
           <div class="card-num">07</div>
-          <div class="card-title">Maquillaje</div>
+          <h3 class="card-title">Maquillaje profesional en Gijón</h3>
           <div class="card-desc">Maquillaje social, de novias y con aerógrafo. Centro oficial Cazcarra.</div>
           <span class="card-link">Ver servicios →</span>
         </div>
@@ -433,7 +439,7 @@
         <div class="card-overlay"></div>
         <div class="card-body">
           <div class="card-num">08</div>
-          <div class="card-title">Novios</div>
+          <h3 class="card-title">Servicios para novios en Gijón</h3>
           <div class="card-desc">Packs personalizables de peluquería y maquillaje para novia y novio. Nos desplazamos.</div>
           <span class="card-link">Ver servicios →</span>
         </div>
@@ -443,11 +449,35 @@
   </div>
 </section>
 
+<!-- ██ LONGEVIDAD DESTACADO ████████████████████████████████████████████████ -->
+<section class="seccion-longevidad section-surface" aria-label="Tratamiento estrella: Longevidad">
+  <div class="section-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center">
+    <div>
+      <span class="eyebrow reveal">Tratamiento estrella</span>
+      <h2 class="section-title reveal" style="text-align:left;margin-top:.8rem">Tratamiento Longevidad <em class="italic text-gold">en Gijón</em></h2>
+      <h3 class="reveal" style="font-family:var(--ff-b);font-size:1.125rem;font-weight:400;color:var(--muted);margin-bottom:1.2rem">Recupera hasta 8 años en la edad biológica de tu piel</h3>
+      <p class="section-body reveal">El Tratamiento de Longevidad de Vagheggi no es un antiedad convencional. Actúa sobre los telómeros de tus células gracias al activador de Nad+ y al extracto de Lapacho, regenerando las fibras que sujetan la piel desde dentro.</p>
+      <ul class="reveal" style="margin-top:1.2rem;font-family:var(--ff-b);font-size:1.125rem;color:var(--ink2);line-height:2;list-style:none;padding:0">
+        <li>› Redefine el óvalo facial</li>
+        <li>› Difumina arrugas visiblemente</li>
+        <li>› Reduce manchas sin tratamiento específico</li>
+        <li>› Resultados desde la primera sesión</li>
+        <li>› Protocolo de 5 sesiones + dispositivo doméstico 4 en 1 incluido</li>
+      </ul>
+      <a href="/tratamientos-faciales/tratamiento-longevidad-gijon/" class="btn btn-brand reveal" style="margin-top:1.8rem;display:inline-block">Conocer el tratamiento</a>
+    </div>
+    <div class="reveal">
+      <img src="/assets/img/faciales-longevidad-medea-gijon.webp" alt="Tratamiento Longevidad Vagheggi en Gijón — Medea Estilistas" loading="lazy" style="width:100%;border-radius:8px;object-fit:cover">
+    </div>
+  </div>
+</section>
+
 <!-- ██ SOBRE NOSOTRAS ████████████████████████████████████████████████████████ -->
 <section class="section-surface">
   <div class="section-inner" style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center">
     <div>
       <span class="eyebrow reveal">Quiénes somos</span>
+      <h3 class="sr-only">Un salón familiar con 36 años de historia en Gijón</h3>
       <h2 class="section-title reveal">Rosa y Montse Menéndez<br><em class="italic text-gold">36 años en Gijón</em></h2>
       <div class="gold-bar reveal"></div>
       <p class="section-body reveal">Medea Estilistas nació en 1991. Las hermanas Menéndez comenzaron juntas con mucha ilusión y mucho desconocimiento del mundo en el que se metían. Hoy, con más de 36 años de historia, el salón sigue siendo el mismo proyecto familiar que imaginaron — con Cris sumada al equipo desde 2017.</p>
@@ -465,7 +495,7 @@
     <div style="display:flex;flex-direction:column;gap:1.2rem" class="reveal">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
         <div class="trust-item"><div class="trust-num">36</div><div class="trust-label">Años de historia<br>en Gijón</div></div>
-        <div class="trust-item"><div class="trust-num">3</div><div class="trust-label">Centros oficiales<br>certificados</div></div>
+        <div class="trust-item"><div class="trust-num">3</div><div class="trust-label">Centros oficiales<br>certificados</div><span class="trust-marcas">Kevin Murphy · Vagheggi · Cazcarra</span></div>
         <div class="trust-item"><div class="trust-num">3</div><div class="trust-label">Profesionales<br>especializadas</div></div>
         <div class="trust-item"><div class="trust-num">8</div><div class="trust-label">Categorías de<br>servicios</div></div>
       </div>
@@ -491,6 +521,7 @@
           <article style="min-width:100%;padding:3rem;background:var(--surface);border:1px solid var(--border);text-align:center;box-sizing:border-box">
             <p style="font-size:1.1rem;color:var(--gold);letter-spacing:.1em;margin-bottom:1.5rem">★★★★★</p>
             <p style="font-family:var(--ff-d);font-size:1.15rem;font-weight:300;line-height:1.8;color:var(--ink2);font-style:italic;margin-bottom:1.5rem">"Atención excepcional y ambiente muy relajante. Entendieron perfectamente el estilo que buscaba y el resultado me gustó incluso más de lo que estoy acostumbrada. Utilizan productos naturales, algo que valoro mucho. Sin duda repetiré."</p>
+            <h3 class="sr-only">Reseña de Elena Huergo Cerra</h3>
             <p style="font-family:var(--ff-b);font-size:.8rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)">Elena Huergo Cerra</p>
             <p style="font-family:var(--ff-b);font-size:.72rem;font-weight:300;color:var(--muted);margin-top:.3rem">Local Guide · Google</p>
           </article>
@@ -498,6 +529,7 @@
           <article style="min-width:100%;padding:3rem;background:var(--surface);border:1px solid var(--border);text-align:center;box-sizing:border-box">
             <p style="font-size:1.1rem;color:var(--gold);letter-spacing:.1em;margin-bottom:1.5rem">★★★★★</p>
             <p style="font-family:var(--ff-d);font-size:1.15rem;font-weight:300;line-height:1.8;color:var(--ink2);font-style:italic;margin-bottom:1.5rem">"Desde el primer día que acudí a Medea Estilistas el cambio en el pelo fue brutal. Tienen los mejores productos y el masaje al lavar el pelo es un plus. Trato magnífico de Montse y Cris. Buena relación calidad-precio."</p>
+            <h3 class="sr-only">Reseña de Vanessa Iglesias</h3>
             <p style="font-family:var(--ff-b);font-size:.8rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)">Vanessa Iglesias</p>
             <p style="font-family:var(--ff-b);font-size:.72rem;font-weight:300;color:var(--muted);margin-top:.3rem">Google</p>
           </article>
@@ -505,6 +537,7 @@
           <article style="min-width:100%;padding:3rem;background:var(--surface);border:1px solid var(--border);text-align:center;box-sizing:border-box">
             <p style="font-size:1.1rem;color:var(--gold);letter-spacing:.1em;margin-bottom:1.5rem">★★★★★</p>
             <p style="font-family:var(--ff-d);font-size:1.15rem;font-weight:300;line-height:1.8;color:var(--ink2);font-style:italic;margin-bottom:1.5rem">"Fantástica la atención y el servicio. Secado de pelo, depilación con cera, estilismo capilar, coloración y manicura — todo perfecto."</p>
+            <h3 class="sr-only">Reseña de Elena González Velasco</h3>
             <p style="font-family:var(--ff-b);font-size:.8rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)">Elena González Velasco</p>
             <p style="font-family:var(--ff-b);font-size:.72rem;font-weight:300;color:var(--muted);margin-top:.3rem">Local Guide · 152 fotos · Google</p>
           </article>
