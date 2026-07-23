@@ -2388,24 +2388,16 @@ details p       { font-size: 1.125rem !important; line-height: 1.75 !important; 
   div[style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:repeat(2,1fr)!important}
 }
 
-/* ── FIXES SOBRE-NOSOTRAS ── */
-/* Fotos equipo 1x1 */
+
+/* ── FOTOS EQUIPO 1x1 ── */
 .team-photo { height: auto !important; aspect-ratio: 1/1 !important; }
 .team-photo img { width: 100% !important; height: 100% !important; aspect-ratio: 1/1 !important; object-fit: cover !important; }
 
-/* Títulos centrados */
-.section-title { text-align: center !important; }
-.eyebrow, .eyebrow-center, .hero-eyebrow { text-align: center !important; display: block !important; }
-
-/* Responsive */
+/* ── RESPONSIVE SOBRE-NOSOTRAS ── */
 @media(max-width:768px) {
-  /* Cards equipo — 1 columna */
   .team-grid { grid-template-columns: 1fr !important; }
   .team-card { max-width: 480px; margin-left: auto; margin-right: auto; }
-  /* Colaboraciones — 1 columna */
   div[style*="grid-template-columns:1fr 1fr;gap:3rem"] { grid-template-columns: 1fr !important; }
-  /* Historia — 1 columna */
   div[style*="grid-template-columns:1fr 1fr;gap:5rem"] { display: flex !important; flex-direction: column !important; gap: 2rem !important; }
-  /* Galería — 2 columnas (solo fotos) */
   div[style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: repeat(2,1fr) !important; }
 }
