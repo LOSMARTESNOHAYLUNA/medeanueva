@@ -930,7 +930,7 @@ input, textarea, select, button { font-size: 18px; } /* Evita zoom iOS */
   color: rgba(245,240,232,.8);
   letter-spacing: .32em;
 }
-.hero-bg-photo .hero-eyebrow::after { background: rgba(245,240,232,.4); }
+.hero-bg-photo .hero-eyebrow::after { display:none !important; content:none !important; }
 .hero-bg-photo .hero-title { color: #fff; }
 .hero-bg-photo .hero-title em { color: var(--gold-lt); }
 .hero-bg-photo .hero-sub { color: rgba(245,240,232,.6); }
@@ -1743,7 +1743,7 @@ body {
 .team-card:hover { border-color: var(--border2); box-shadow: var(--shadow-md); }
 
 .team-photo {
-  width: 100%; height: 260px;
+  width: 100%; height: auto; aspect-ratio:1/1;
   overflow: hidden; background: var(--surface);
   flex-shrink: 0;
 }
@@ -1857,7 +1857,7 @@ body {
 }
 /* Texto blanco sobre foto */
 .hero-cat .hero-eyebrow          { color: var(--brand); }
-.hero-cat .hero-eyebrow::after   { background: var(--brand); opacity: .25; }
+.hero-cat .hero-eyebrow::after   { display:none !important; content:none !important; }
 .hero-cat .hero-title            { color: var(--ink); }
 .hero-cat .hero-title em         { color: var(--gold); }
 .hero-cat .hero-sub              { color: var(--muted); }
@@ -1885,27 +1885,18 @@ body {
   max-width: 600px;
 }
 .eyebrow-center {
-  display: inline-flex;
-  align-items: center;
-  gap: .8rem;
+  display: block;
+  text-align: center;
   font-size: .75rem;
   font-weight: 400;
   letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--brand);
   margin-bottom: 1.2rem;
-  justify-content: center;
   width: 100%;
 }
 .eyebrow-center::before,
-.eyebrow-center::after {
-  content: '';
-  display: block;
-  width: 28px;
-  height: 1px;
-  background: var(--brand);
-  opacity: .3;
-}
+.eyebrow-center::after { content:none !important; display:none !important; }
 
 /* ══════════════════════════════════════════
    MAP FACADE — fix visibilidad
@@ -2392,21 +2383,3 @@ p, li, td, th, span, a, label, input, textarea, button {
 /* — FAQs <details> en páginas de servicio (las que ya existían) — */
 details summary { font-size: 1.5rem !important; }   /* 24px */
 details p       { font-size: 1.125rem !important; line-height: 1.75 !important; }
-
-/* ── ELIMINAR TODAS LAS LÍNEAS DECORATIVAS ── */
-.eyebrow::before,
-.eyebrow::after,
-.eyebrow-center::before,
-.eyebrow-center::after,
-.hero-eyebrow::before,
-.hero-eyebrow::after,
-.hero-bg-photo .hero-eyebrow::after,
-.hero-cat .hero-eyebrow::after { display:none !important; content:none !important; }
-.gold-bar { display:none !important; }
-
-/* ── FOTOS EQUIPO 1x1 EN TODOS LOS DISPOSITIVOS ── */
-.team-photo { height:auto !important; aspect-ratio:1/1 !important; }
-.team-photo img { aspect-ratio:1/1 !important; height:100% !important; object-fit:cover !important; }
-
-/* ── PADDING UNIFORME TODAS LAS SECCIONES ── */
-section { padding-top:clamp(3rem,6vw,5rem) !important; padding-bottom:clamp(3rem,6vw,5rem) !important; }
