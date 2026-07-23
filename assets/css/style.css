@@ -2403,23 +2403,22 @@ details p       { font-size: 1.125rem !important; line-height: 1.75 !important; 
 }
 
 
-/* ── EYEBROW Y SECTION-TITLE: alineación según contexto ── */
-/* Por defecto: izquierda */
-.eyebrow { display:block !important; text-align:left !important; }
-.section-title { text-align:left !important; }
+/* ── ALINEACIÓN EYEBROW Y TÍTULOS ── */
+/* Por defecto centrado — secciones de solo texto */
+.eyebrow { display:block !important; text-align:center !important; }
+.section-title { text-align:center !important; }
 
-/* Secciones de solo texto (sin grid de 2 columnas) → centrado */
-/* Se aplica mediante clase en el section-inner */
-.section-inner:not([style*="grid-template-columns:1fr 1fr"]):not([style*="display:grid"]):not(.srv-grid) > .eyebrow,
-.section-inner:not([style*="grid-template-columns:1fr 1fr"]):not([style*="display:grid"]):not(.srv-grid) > span.eyebrow,
-.section-inner:not([style*="grid-template-columns:1fr 1fr"]):not([style*="display:grid"]):not(.srv-grid) > .section-title { text-align:center !important; }
-
-/* eyebrow-center siempre centrado */
-.eyebrow-center { display:block !important; text-align:center !important; }
+/* En secciones de 2 columnas (foto + texto) → izquierda */
+/* El eyebrow y section-title van dentro de un div hijo del section-inner con grid */
+[style*="grid-template-columns:1fr 1fr"] .eyebrow,
+[style*="grid-template-columns:1fr 1fr"] .section-title,
+.srv-grid .eyebrow,
+.srv-grid .section-title { text-align:left !important; }
 
 /* En responsive siempre centrado */
 @media(max-width:768px){
-  .eyebrow,
-  .eyebrow-center,
-  .section-title { text-align:center !important; }
+  [style*="grid-template-columns:1fr 1fr"] .eyebrow,
+  [style*="grid-template-columns:1fr 1fr"] .section-title,
+  .srv-grid .eyebrow,
+  .srv-grid .section-title { text-align:center !important; }
 }
