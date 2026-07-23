@@ -2402,20 +2402,24 @@ details p       { font-size: 1.125rem !important; line-height: 1.75 !important; 
   div[style*="grid-template-columns:repeat(4,1fr)"] { grid-template-columns: repeat(2,1fr) !important; }
 }
 
-/* ── EYEBROW: centrado cuando está solo, izquierda en 2 columnas ── */
-/* Por defecto centrado */
-.eyebrow { display:block !important; text-align:center !important; }
 
-/* Dentro de grid de 2 columnas → izquierda */
-.section-inner[style*="grid-template-columns:1fr 1fr"] .eyebrow,
-.section-inner[style*="grid-template-columns:1fr 1fr"] .eyebrow-center,
-.srv-grid .eyebrow,
-[style*="display:grid"][style*="1fr 1fr"] .eyebrow { text-align:left !important; }
+/* ── EYEBROW Y SECTION-TITLE: alineación según contexto ── */
+/* Por defecto: izquierda */
+.eyebrow { display:block !important; text-align:left !important; }
+.section-title { text-align:left !important; }
+
+/* Secciones de solo texto (sin grid de 2 columnas) → centrado */
+/* Se aplica mediante clase en el section-inner */
+.section-inner:not([style*="grid-template-columns:1fr 1fr"]):not([style*="display:grid"]):not(.srv-grid) > .eyebrow,
+.section-inner:not([style*="grid-template-columns:1fr 1fr"]):not([style*="display:grid"]):not(.srv-grid) > span.eyebrow,
+.section-inner:not([style*="grid-template-columns:1fr 1fr"]):not([style*="display:grid"]):not(.srv-grid) > .section-title { text-align:center !important; }
+
+/* eyebrow-center siempre centrado */
+.eyebrow-center { display:block !important; text-align:center !important; }
 
 /* En responsive siempre centrado */
 @media(max-width:768px){
   .eyebrow,
   .eyebrow-center,
-  .section-inner[style*="grid-template-columns:1fr 1fr"] .eyebrow { text-align:center !important; }
   .section-title { text-align:center !important; }
 }
