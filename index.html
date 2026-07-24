@@ -333,7 +333,8 @@
 
 <!-- ██ STRIP FOTOS ████████████████████████████████████████████████████████ -->
 <section class="strip-section" aria-hidden="true">
-  <div class="photo-strip photo-strip-3" style="height:320px">
+  <!-- Escritorio: 3 columnas -->
+  <div class="photo-strip photo-strip-3 strip-desktop" style="height:320px">
     <a href="/peluqueria/">
       <img src="/assets/img/home-strip-peluqueria-medea-gijon.webp"
            alt="Peluquería en Gijón — Medea Estilistas" loading="lazy" style="height:320px">
@@ -347,7 +348,61 @@
            alt="Tratamientos faciales en Gijón — Medea Estilistas" loading="lazy" style="height:320px">
     </a>
   </div>
+  <!-- Móvil: carrusel -->
+  <div class="strip-carousel" style="position:relative;overflow:hidden;height:280px">
+    <div class="strip-track" style="display:flex;height:100%;transition:transform .4s ease">
+      <a href="/peluqueria/" style="min-width:100%;height:100%;display:block;flex-shrink:0">
+        <img src="/assets/img/home-strip-peluqueria-medea-gijon.webp"
+             alt="Peluquería en Gijón" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+      </a>
+      <a href="/novios/" style="min-width:100%;height:100%;display:block;flex-shrink:0">
+        <img src="/assets/img/home-strip-novios-medea-gijon.webp"
+             alt="Novios en Gijón" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+      </a>
+      <a href="/tratamientos-faciales/" style="min-width:100%;height:100%;display:block;flex-shrink:0">
+        <img src="/assets/img/home-strip-facial-medea-gijon.webp"
+             alt="Tratamientos faciales en Gijón" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+      </a>
+    </div>
+    <!-- Dots -->
+    <div style="position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px">
+      <button class="strip-dot active" data-idx="0" aria-label="Foto 1" style="width:8px;height:8px;border-radius:50%;border:none;background:white;opacity:.9;cursor:pointer;padding:0"></button>
+      <button class="strip-dot" data-idx="1" aria-label="Foto 2" style="width:8px;height:8px;border-radius:50%;border:none;background:white;opacity:.4;cursor:pointer;padding:0"></button>
+      <button class="strip-dot" data-idx="2" aria-label="Foto 3" style="width:8px;height:8px;border-radius:50%;border:none;background:white;opacity:.4;cursor:pointer;padding:0"></button>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var track = document.querySelector('.strip-track');
+    var dots = document.querySelectorAll('.strip-dot');
+    if(!track) return;
+    var idx = 0;
+    function goTo(n){
+      idx = n;
+      track.style.transform = 'translateX(-' + (n*100) + '%)';
+      dots.forEach(function(d,i){ d.style.opacity = i===n ? '.9' : '.4'; });
+    }
+    dots.forEach(function(d){ d.addEventListener('click', function(){ goTo(parseInt(this.dataset.idx)); }); });
+    // Touch swipe
+    var startX = 0;
+    track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, {passive:true});
+    track.addEventListener('touchend', function(e){
+      var dx = e.changedTouches[0].clientX - startX;
+      if(Math.abs(dx) > 40){ goTo(dx < 0 ? Math.min(idx+1,2) : Math.max(idx-1,0)); }
+    }, {passive:true});
+    // Auto-avance cada 4s
+    setInterval(function(){ goTo((idx+1)%3); }, 4000);
+  })();
+  </script>
 </section>
+<style>
+.strip-desktop { display:flex !important; }
+.strip-carousel { display:none !important; }
+@media(max-width:768px){
+  .strip-desktop { display:none !important; }
+  .strip-carousel { display:block !important; }
+}
+</style>
 
 <!-- ██ SERVICIOS — 8 CATEGORÍAS ████████████████████████████████████████████ -->
 <section id="servicios">
