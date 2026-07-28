@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://www.medeaestilistas.es/blog/tendencias-coloracion-temporada/"/>
 <meta property="og:title" content="Tendencias en coloración esta temporada: balayage, babylights y más | Medea Estilistas"/>
 <meta property="og:description" content="Medea Estilistas Gijón — Peluquería. Peluquería y estética en Gijón desde 1991."/>
-<meta property="og:image" content="https://medeanueva.vercel.app/assets/img/blog-coloracion-medea-gijon.webp"/>
+<meta property="og:image" content="https://www.medeaestilistas.es/assets/img/logo.png"/>
 <meta property="og:locale" content="es_ES"/>
 <meta property="og:site_name" content="Medea Estilistas"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -52,9 +52,10 @@
 
 <style>
 /* Blog layout */
-.blog-layout{display:block}
-
-
+.blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
+@media(max-width:900px){.blog-layout{grid-template-columns:1fr}}
+.blog-sidebar{position:sticky;top:6rem;align-self:start;display:flex;flex-direction:column;gap:1.5rem}
+@media(max-width:900px){.blog-sidebar{position:static}}
 /* Sidebar CTA */
 .sidebar-cta-box{background:var(--surface);border-left:3px solid #5d131a;padding:1.5rem 1.5rem 1.8rem}
 .sidebar-cta-title{font-family:var(--ff-d);font-size:1.35rem;font-weight:300;color:var(--ink);margin:0 0 .5rem}
@@ -116,14 +117,6 @@
 .prose tr:nth-child(even) td{background:#faf6f0}
 .prose tr:hover td{background:#f5ede5}
 .blog-related-title{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
-</style>
-<style>
-.blog-faq-lista{margin-top:1.5rem;border-bottom:1px solid var(--border)}
-.blog-faq-item{border-top:1px solid var(--border)}
-.blog-faq-btn{width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.1rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-d);font-weight:400;color:var(--ink);line-height:1.4}
-.blog-faq-chevron{color:var(--brand);transition:transform .25s;flex-shrink:0;margin-top:.2rem}
-.blog-faq-btn[aria-expanded="true"] .blog-faq-chevron{transform:rotate(180deg)}
-.blog-faq-resp{padding:.2rem 0 1.4rem;font-family:var(--ff-b);color:var(--ink2);line-height:1.75}
 </style>
 </head>
 <body>
@@ -313,11 +306,11 @@
   </div>
 </section>
 <section style="padding:clamp(3rem,6vw,5rem) 0;overflow:visible">
-  <div class="section-inner" style="max-width:720px;margin:0 auto">
+  <div class="section-inner">
     <div class="blog-layout">
       <article id="contenido">
         <div class="blog-main-img reveal">
-      <img src="/assets/img/blog-coloracion-medea-gijon.webp" alt="Tendencias coloración balayage Gijón — Medea Estilistas"
+      <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Tendencias coloración balayage Gijón — Medea Estilistas"
            loading="eager" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)">
     </div>
     <nav class="blog-toc reveal" aria-label="Tabla de contenido">
@@ -357,6 +350,9 @@
       <h2 id="mechas-clasicas">Mechas clásicas: siguen siendo tendencia</h2>
       <p>Las mechas tradicionales con papel no han desaparecido. Siguen siendo la opción preferida para quienes buscan un resultado más definido, con secciones de aclarado más concretas y homogéneas. En Medea las aplicamos con técnica actualizada y productos de Inebrya que minimizan el daño durante el proceso.</p>
     </div>
+    
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Coloración profesional con Inebrya Gijón — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="prose reveal">
       <h2 id="como-elegir">Cómo elegir la técnica según tu cabello</h2>
       <table>
@@ -373,57 +369,12 @@
       <p>Una de las transformaciones más importantes en la peluquería de los últimos años es la evolución de los productos de color. Cuando Medea Estilistas abrió sus puertas, el color podía dañar ciertos tipos de cabello frágiles. Hoy eso ha cambiado radicalmente.</p>
       <p>Con Inebrya para el color y <a href="/peluqueria/tratamientos-capilares-gijon/">Kevin Murphy</a> para el cuidado posterior, podemos hacer decoloraciones importantes sin dañar la fibra capilar. Quien conoce bien el proceso sabe exactamente hasta dónde puede llegar sin comprometer la salud del cabello.</p>
     </div>
+    
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3065173/pexels-photo-3065173.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Mechas y balayage profesional Gijón — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="blog-cta-banner reveal">
       <p>¿Tienes claro qué quieres pero no sabes si es posible en tu cabello? Cuéntanoslo.</p>
       <a href="/contacto/" class="btn">Consultar con Montse o Cris</a>
-    </div>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué técnica de coloración está más de moda?", "acceptedAnswer": {"@type": "Answer", "text": "El balayage y las babylights siguen siendo las técnicas más demandadas por su resultado natural y su bajo mantenimiento. En Medea también trabajamos mucho la corrección de color y los tonos cobrizos esta temporada."}}, {"@type": "Question", "name": "¿Desde cuánto cuesta un balayage en Medea Estilistas?", "acceptedAnswer": {"@type": "Answer", "text": "Las mechas balayage y babylights parten desde 52,45 € en Medea Estilistas. El precio final depende de la longitud y la densidad del cabello."}}, {"@type": "Question", "name": "¿Daña el balayage el cabello?", "acceptedAnswer": {"@type": "Answer", "text": "Con Inebrya y la técnica correcta, el daño es mínimo. La decoloración moderna permite hacer aclarados importantes sin sacrificar la salud del cabello. Siempre aplicamos tratamiento de mantenimiento al finalizar."}}, {"@type": "Question", "name": "¿Cuánto dura un balayage?", "acceptedAnswer": {"@type": "Answer", "text": "El balayage es una de las técnicas con mayor duración porque no tiene línea de crecimiento marcada. El retoque puede hacerse cada 4–6 meses según el resultado buscado."}}]}</script>
-    <div class="blog-conclusion reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)">
-      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:1.2rem">Conclusión</h2>
-      <p class="section-body" style="margin-bottom:1rem">La coloración evoluciona cada temporada, pero en Medea Estilistas el criterio siempre es el mismo: el color que mejor sienta a cada clienta, que dure y que cuide el cabello.</p>
-      <p class="section-body" style="margin-bottom:1rem">Si quieres renovar tu color o explorar una técnica nueva esta temporada, pide cita para una consulta de coloración. Te asesoraremos sin compromiso sobre qué técnica encaja mejor con tu cabello y tu estilo.</p>
-      <p class="section-body" style="margin-bottom:1rem">Reserva en el 985 33 79 63 o por WhatsApp en el 684 63 68 83.</p>
-    </div>
-    <div class="blog-faqs reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)" itemscope itemtype="https://schema.org/FAQPage">
-      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:.5rem">Preguntas frecuentes</h2>
-      <div class="blog-faq-lista">
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Qué técnica de coloración está más de moda?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">El balayage y las babylights siguen siendo las técnicas más demandadas por su resultado natural y su bajo mantenimiento. En Medea también trabajamos mucho la corrección de color y los tonos cobrizos esta temporada.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Desde cuánto cuesta un balayage en Medea Estilistas?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Las mechas balayage y babylights parten desde 52,45 € en Medea Estilistas. El precio final depende de la longitud y la densidad del cabello.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Daña el balayage el cabello?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Con Inebrya y la técnica correcta, el daño es mínimo. La decoloración moderna permite hacer aclarados importantes sin sacrificar la salud del cabello. Siempre aplicamos tratamiento de mantenimiento al finalizar.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Cuánto dura un balayage?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">El balayage es una de las técnicas con mayor duración porque no tiene línea de crecimiento marcada. El retoque puede hacerse cada 4–6 meses según el resultado buscado.</p>
-        </div>
-      </div>
-      </div>
     </div>
     <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">M</div>
@@ -431,8 +382,47 @@
         <p class="blog-author-name">Montse Menéndez</p>
         <p class="blog-author-role">Especialista en Peluquería y Coloración · Medea Estilistas</p>
         <p class="blog-author-bio">39 años de experiencia. Especialista en coloración y técnicas de mechas. Formada con Versum y Creative Hair. Centro oficial Kevin Murphy.</p>
+      </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿No sabes qué técnica te queda mejor?</p>
+        <p class="sidebar-cta-text">Montse o Cris te asesoran para encontrar el color perfecto para ti.</p>
+        <a href="/contacto/" class="btn">Pedir asesoramiento</a>
       </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/kevin-murphy-cosmetica-capilar/">
+          <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Kevin Murphy en Medea</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/guia-novias-tratamientos-antes-boda/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Guía para novias — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Guía para novias</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/peluqueria-masculina-gijon/">
+          <img src="https://images.pexels.com/photos/3065173/pexels-photo-3065173.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Peluquería masculina — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Peluquería masculina</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
     </div>
+  </div>
     <div class="blog-share reveal">
       <span class="blog-share-label">¿Conoces a alguien a quien le venga bien?</span>
       <div class="share-icon-wrap">
@@ -444,6 +434,44 @@
       </div>
     </div>
     </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿No sabes qué técnica te queda mejor?</p>
+        <p class="sidebar-cta-text">Montse o Cris te asesoran para encontrar el color perfecto para ti.</p>
+        <a href="/contacto/" class="btn">Pedir asesoramiento</a>
+      </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/kevin-murphy-cosmetica-capilar/">
+          <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Kevin Murphy en Medea</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/guia-novias-tratamientos-antes-boda/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Guía para novias — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Guía para novias</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/peluqueria-masculina-gijon/">
+          <img src="https://images.pexels.com/photos/3065173/pexels-photo-3065173.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Peluquería masculina — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Peluquería masculina</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
     </div>
   </div>
 </section>

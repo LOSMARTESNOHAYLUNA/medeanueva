@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://www.medeaestilistas.es/blog/kevin-murphy-cosmetica-capilar/"/>
 <meta property="og:title" content="Kevin Murphy: por qué es diferente al resto de cosméticas capilares | Medea Estilistas"/>
 <meta property="og:description" content="Medea Estilistas Gijón — Peluquería. Peluquería y estética en Gijón desde 1991."/>
-<meta property="og:image" content="https://medeanueva.vercel.app/assets/img/blog-kevinmurphy-medea-gijon.webp"/>
+<meta property="og:image" content="https://www.medeaestilistas.es/assets/img/logo.png"/>
 <meta property="og:locale" content="es_ES"/>
 <meta property="og:site_name" content="Medea Estilistas"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -52,9 +52,10 @@
 
 <style>
 /* Blog layout */
-.blog-layout{display:block}
-
-
+.blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
+@media(max-width:900px){.blog-layout{grid-template-columns:1fr}}
+.blog-sidebar{position:sticky;top:6rem;align-self:start;display:flex;flex-direction:column;gap:1.5rem}
+@media(max-width:900px){.blog-sidebar{position:static}}
 /* Sidebar CTA */
 .sidebar-cta-box{background:var(--surface);border-left:3px solid #5d131a;padding:1.5rem 1.5rem 1.8rem}
 .sidebar-cta-title{font-family:var(--ff-d);font-size:1.35rem;font-weight:300;color:var(--ink);margin:0 0 .5rem}
@@ -116,14 +117,6 @@
 .prose tr:nth-child(even) td{background:#faf6f0}
 .prose tr:hover td{background:#f5ede5}
 .blog-related-title{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
-</style>
-<style>
-.blog-faq-lista{margin-top:1.5rem;border-bottom:1px solid var(--border)}
-.blog-faq-item{border-top:1px solid var(--border)}
-.blog-faq-btn{width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.1rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-d);font-weight:400;color:var(--ink);line-height:1.4}
-.blog-faq-chevron{color:var(--brand);transition:transform .25s;flex-shrink:0;margin-top:.2rem}
-.blog-faq-btn[aria-expanded="true"] .blog-faq-chevron{transform:rotate(180deg)}
-.blog-faq-resp{padding:.2rem 0 1.4rem;font-family:var(--ff-b);color:var(--ink2);line-height:1.75}
 </style>
 </head>
 <body>
@@ -313,11 +306,11 @@
   </div>
 </section>
 <section style="padding:clamp(3rem,6vw,5rem) 0">
-  <div class="section-inner" style="max-width:720px;margin:0 auto">
+  <div class="section-inner">
     <div class="blog-layout">
       <article id="contenido">
         <div class="blog-main-img reveal">
-      <img src="/assets/img/blog-kevinmurphy-medea-gijon.webp" alt="Kevin Murphy cosmética capilar Gijón — Medea Estilistas"
+      <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Kevin Murphy cosmética capilar Gijón — Medea Estilistas"
            loading="eager" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)">
     </div>
     <nav class="blog-toc reveal" aria-label="Tabla de contenido">
@@ -357,6 +350,9 @@
         <li><strong>BLONDE.ANGEL:</strong> para mantener la neutralización de los rubios y evitar los tonos amarillos o anaranjados entre sesiones.</li>
       </ul>
     </div>
+    
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Tratamientos capilares Kevin Murphy Gijón — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="prose reveal">
       <h2 id="resultados">¿Qué resultados puedo esperar?</h2>
       <p>Los resultados de Kevin Murphy son acumulativos: mejoran con el uso continuado. Lo que observamos con más frecuencia en clientas que empiezan a usarla:</p>
@@ -373,57 +369,12 @@
       <p>Ser centro oficial también nos da acceso a los productos y tratamientos más recientes de la marca, incluidos los lanzamientos exclusivos para salones profesionales que no están disponibles en distribución masiva.</p>
       <p>Si quieres probar Kevin Murphy en tu cabello, lo más efectivo es empezar con una consulta capilar con Montse, que valorará el estado de tu cabello y te recomendará el protocolo más adecuado para tu caso.</p>
     </div>
+    
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3993450/pexels-photo-3993450.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Coloración capilar profesional Gijón — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="blog-cta-banner reveal">
       <p>¿Quieres conocer tu cabello de verdad? Montse te hace una consulta personalizada.</p>
       <a href="/contacto/" class="btn">Reservar consulta con Montse</a>
-    </div>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Medea Estilistas es centro oficial Kevin Murphy?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Medea Estilistas es centro oficial certificado de Kevin Murphy en Gijón. Esto nos permite usar toda la gama profesional y acceder a formación continua con la marca."}}, {"@type": "Question", "name": "¿Qué tratamientos capilares de Kevin Murphy ofrecéis?", "acceptedAnswer": {"@type": "Answer", "text": "Ofrecemos tratamientos de hidratación, restauración, anticaída y antiencrespamiento con Kevin Murphy. Hacemos un diagnóstico previo para elegir el más adecuado para cada cabello."}}, {"@type": "Question", "name": "¿Kevin Murphy es una marca sostenible?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Kevin Murphy es una marca australiana comprometida con la sostenibilidad: packaging reciclado, fórmulas sin sulfatos agresivos y activos naturales."}}, {"@type": "Question", "name": "¿Puedo comprar productos Kevin Murphy en Medea Estilistas?", "acceptedAnswer": {"@type": "Answer", "text": "Consulta disponibilidad en el salón. Como centro oficial, podemos orientarte sobre qué productos de la línea son más adecuados para tu tipo de cabello y cómo usarlos en casa."}}]}</script>
-    <div class="blog-conclusion reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)">
-      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:1.2rem">Conclusión</h2>
-      <p class="section-body" style="margin-bottom:1rem">Kevin Murphy es mucho más que una marca de peluquería: es un compromiso con la sostenibilidad, la salud capilar y los resultados a largo plazo. En Medea Estilistas somos centro oficial certificado desde hace años.</p>
-      <p class="section-body" style="margin-bottom:1rem">Montse y Cris utilizan Kevin Murphy en los tratamientos capilares, en el mantenimiento del color y en los acabados. Si quieres conocer qué producto es el más adecuado para tu cabello, te hacemos un diagnóstico personalizado sin compromiso.</p>
-      <p class="section-body" style="margin-bottom:1rem">Llámanos al 985 33 79 63 o pasa por la Calle Anselmo Solar 31.</p>
-    </div>
-    <div class="blog-faqs reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)" itemscope itemtype="https://schema.org/FAQPage">
-      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:.5rem">Preguntas frecuentes</h2>
-      <div class="blog-faq-lista">
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Medea Estilistas es centro oficial Kevin Murphy?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Sí. Medea Estilistas es centro oficial certificado de Kevin Murphy en Gijón. Esto nos permite usar toda la gama profesional y acceder a formación continua con la marca.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Qué tratamientos capilares de Kevin Murphy ofrecéis?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Ofrecemos tratamientos de hidratación, restauración, anticaída y antiencrespamiento con Kevin Murphy. Hacemos un diagnóstico previo para elegir el más adecuado para cada cabello.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Kevin Murphy es una marca sostenible?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Sí. Kevin Murphy es una marca australiana comprometida con la sostenibilidad: packaging reciclado, fórmulas sin sulfatos agresivos y activos naturales.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Puedo comprar productos Kevin Murphy en Medea Estilistas?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Consulta disponibilidad en el salón. Como centro oficial, podemos orientarte sobre qué productos de la línea son más adecuados para tu tipo de cabello y cómo usarlos en casa.</p>
-        </div>
-      </div>
-      </div>
     </div>
     <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">M</div>
@@ -431,8 +382,47 @@
         <p class="blog-author-name">Montse Menéndez</p>
         <p class="blog-author-role">Especialista en Peluquería y Coloración · Medea Estilistas</p>
         <p class="blog-author-bio">39 años de experiencia en peluquería. Centro oficial Kevin Murphy. Especialista en coloración, mechas y tratamientos capilares.</p>
+      </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿Quieres probar Kevin Murphy?</p>
+        <p class="sidebar-cta-text">Montse te hace una consulta capilar personalizada sin compromiso.</p>
+        <a href="/contacto/" class="btn">Reservar consulta</a>
       </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/tendencias-coloracion-temporada/">
+          <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tendencias en coloración — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Tendencias en coloración</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/peluqueria-masculina-gijon/">
+          <img src="https://images.pexels.com/photos/3065173/pexels-photo-3065173.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Peluquería masculina — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Peluquería masculina</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/guia-novias-tratamientos-antes-boda/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Guía para novias — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Guía para novias</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
     </div>
+  </div>
     <div class="blog-share reveal">
       <span class="blog-share-label">Si te ha ayudado, compártelo:</span>
       <div class="share-icon-wrap">
@@ -444,6 +434,44 @@
       </div>
     </div>
     </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿Quieres probar Kevin Murphy?</p>
+        <p class="sidebar-cta-text">Montse te hace una consulta capilar personalizada sin compromiso.</p>
+        <a href="/contacto/" class="btn">Reservar consulta</a>
+      </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/tendencias-coloracion-temporada/">
+          <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tendencias en coloración — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Tendencias en coloración</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/peluqueria-masculina-gijon/">
+          <img src="https://images.pexels.com/photos/3065173/pexels-photo-3065173.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Peluquería masculina — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Peluquería masculina</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/guia-novias-tratamientos-antes-boda/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Guía para novias — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Guía para novias</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
     </div>
   </div>
 </section>

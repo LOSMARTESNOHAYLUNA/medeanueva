@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://www.medeaestilistas.es/blog/mesoterapia-virtual-hidratacion-profunda/"/>
 <meta property="og:title" content="Mesoterapia virtual: la hidratación que los cosméticos en casa no pueden dar | Medea Estilistas"/>
 <meta property="og:description" content="Medea Estilistas Gijón — Tratamientos Corporales. Peluquería y estética en Gijón desde 1991."/>
-<meta property="og:image" content="https://medeanueva.vercel.app/assets/img/blog-mesoterapia-medea-gijon.webp"/>
+<meta property="og:image" content="https://www.medeaestilistas.es/assets/img/logo.png"/>
 <meta property="og:locale" content="es_ES"/>
 <meta property="og:site_name" content="Medea Estilistas"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -52,9 +52,10 @@
 
 <style>
 /* Blog layout */
-.blog-layout{display:block}
-
-
+.blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
+@media(max-width:900px){.blog-layout{grid-template-columns:1fr}}
+.blog-sidebar{position:sticky;top:6rem;align-self:start;display:flex;flex-direction:column;gap:1.5rem}
+@media(max-width:900px){.blog-sidebar{position:static}}
 /* Sidebar CTA */
 .sidebar-cta-box{background:var(--surface);border-left:3px solid #5d131a;padding:1.5rem 1.5rem 1.8rem}
 .sidebar-cta-title{font-family:var(--ff-d);font-size:1.35rem;font-weight:300;color:var(--ink);margin:0 0 .5rem}
@@ -116,14 +117,6 @@
 .prose tr:nth-child(even) td{background:#faf6f0}
 .prose tr:hover td{background:#f5ede5}
 .blog-related-title{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
-</style>
-<style>
-.blog-faq-lista{margin-top:1.5rem;border-bottom:1px solid var(--border)}
-.blog-faq-item{border-top:1px solid var(--border)}
-.blog-faq-btn{width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.1rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-d);font-weight:400;color:var(--ink);line-height:1.4}
-.blog-faq-chevron{color:var(--brand);transition:transform .25s;flex-shrink:0;margin-top:.2rem}
-.blog-faq-btn[aria-expanded="true"] .blog-faq-chevron{transform:rotate(180deg)}
-.blog-faq-resp{padding:.2rem 0 1.4rem;font-family:var(--ff-b);color:var(--ink2);line-height:1.75}
 </style>
 </head>
 <body>
@@ -313,11 +306,11 @@
   </div>
 </section>
 <section style="padding:clamp(3rem,6vw,5rem) 0">
-  <div class="section-inner" style="max-width:720px;margin:0 auto">
+  <div class="section-inner">
     <div class="blog-layout">
       <article id="contenido">
         <div class="blog-main-img reveal">
-      <img src="/assets/img/blog-mesoterapia-medea-gijon.webp" alt="Mesoterapia virtual Gijón — Medea Estilistas"
+      <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Mesoterapia virtual Gijón — Medea Estilistas"
            loading="eager" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)">
     </div>
     <nav class="blog-toc reveal" aria-label="Tabla de contenido">
@@ -370,6 +363,9 @@
       <h3>Aplicación corporal</h3>
       <p>En los <a href="/tratamientos-corporales/">tratamientos corporales</a>, la mesoterapia virtual introduce activos lipolíticos y drenantes directamente donde se necesitan, potenciando el efecto de la maderoterapia y complementando la presoterapia en los protocolos reductores.</p>
     </div>
+    
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Tratamientos faciales Vagheggi Gijón — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="prose reveal">
       <h2 id="sesiones">¿Cuántas sesiones se necesitan?</h2>
       <p>El número de sesiones depende del objetivo y de la zona a tratar. Como orientación general:</p>
@@ -388,57 +384,12 @@
         <li>Quieren una hidratación profunda sin tiempo de recuperación.</li>
       </ul>
     </div>
+    
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Tratamientos corporales Gijón Medea Estilistas — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="blog-cta-banner reveal">
       <p>¿Quieres una hidratación que los cosméticos en casa no pueden dar? Habla con Rosa.</p>
       <a href="/contacto/" class="btn">Reservar sesión de mesoterapia</a>
-    </div>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es la mesoterapia virtual y en qué se diferencia de la convencional?", "acceptedAnswer": {"@type": "Answer", "text": "La mesoterapia virtual introduce principios activos en la piel mediante corrientes eléctricas, sin agujas. La mesoterapia convencional usa microinyecciones. El resultado es similar pero sin dolor, sin morados y sin tiempo de recuperación."}}, {"@type": "Question", "name": "¿Para qué sirve la mesoterapia virtual en Medea Estilistas?", "acceptedAnswer": {"@type": "Answer", "text": "Rosa la aplica principalmente en tratamientos anticelulíticos, reductores y reafirmantes. También para hidratación profunda corporal y en combinación con maderoterapia."}}, {"@type": "Question", "name": "¿Cuántas sesiones de mesoterapia virtual necesito?", "acceptedAnswer": {"@type": "Answer", "text": "Depende del objetivo. Para tratamientos corporales de modelado se recomiendan entre 8 y 10 sesiones. Rosa te orientará tras la valoración inicial."}}, {"@type": "Question", "name": "¿Tiene efectos secundarios la mesoterapia virtual?", "acceptedAnswer": {"@type": "Answer", "text": "No. Al ser un tratamiento no invasivo, no tiene efectos secundarios. La sensación durante la sesión es de leve hormigueo y calor, completamente tolerable."}}]}</script>
-    <div class="blog-conclusion reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)">
-      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:1.2rem">Conclusión</h2>
-      <p class="section-body" style="margin-bottom:1rem">La mesoterapia virtual es una de las técnicas estrella de Rosa Menéndez en Medea Estilistas: permite introducir activos Vagheggi en profundidad sin agujas, sin dolor y sin tiempo de recuperación. Los resultados son visibles desde la primera sesión.</p>
-      <p class="section-body" style="margin-bottom:1rem">Es especialmente eficaz combinada con maderoterapia o presoterapia para tratamientos anticelulíticos o reductores. Rosa diseña el protocolo personalizado según tus objetivos.</p>
-      <p class="section-body" style="margin-bottom:1rem">Pide cita en la Calle Anselmo Solar 31 o llámanos al 985 33 79 63.</p>
-    </div>
-    <div class="blog-faqs reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)" itemscope itemtype="https://schema.org/FAQPage">
-      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:.5rem">Preguntas frecuentes</h2>
-      <div class="blog-faq-lista">
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Qué es la mesoterapia virtual y en qué se diferencia de la convencional?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">La mesoterapia virtual introduce principios activos en la piel mediante corrientes eléctricas, sin agujas. La mesoterapia convencional usa microinyecciones. El resultado es similar pero sin dolor, sin morados y sin tiempo de recuperación.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Para qué sirve la mesoterapia virtual en Medea Estilistas?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Rosa la aplica principalmente en tratamientos anticelulíticos, reductores y reafirmantes. También para hidratación profunda corporal y en combinación con maderoterapia.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Cuántas sesiones de mesoterapia virtual necesito?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Depende del objetivo. Para tratamientos corporales de modelado se recomiendan entre 8 y 10 sesiones. Rosa te orientará tras la valoración inicial.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Tiene efectos secundarios la mesoterapia virtual?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">No. Al ser un tratamiento no invasivo, no tiene efectos secundarios. La sensación durante la sesión es de leve hormigueo y calor, completamente tolerable.</p>
-        </div>
-      </div>
-      </div>
     </div>
     <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">R</div>
@@ -446,8 +397,47 @@
         <p class="blog-author-name">Rosa Menéndez</p>
         <p class="blog-author-role">Especialista en Estética · Medea Estilistas</p>
         <p class="blog-author-bio">37 años de experiencia en estética facial y corporal. Especialista en tratamientos faciales, mesoterapia virtual y aparatología estética.</p>
+      </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿Quieres una hidratación profunda?</p>
+        <p class="sidebar-cta-text">Rosa te explica qué protocolo se adapta mejor a tu piel y tus objetivos.</p>
+        <a href="/contacto/" class="btn">Solicitar información</a>
       </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/tratamiento-longevidad-facial-gijon/">
+          <img src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tratamiento Longevidad — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Tratamiento Longevidad</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/presoterapia-gijon-beneficios/">
+          <img src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Presoterapia en Gijón — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Presoterapia en Gijón</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/guia-novias-tratamientos-antes-boda/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Guía para novias — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Guía para novias</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
     </div>
+  </div>
     <div class="blog-share reveal">
       <span class="blog-share-label">¿Te resultó útil? Difúndelo:</span>
       <div class="share-icon-wrap">
@@ -459,6 +449,44 @@
       </div>
     </div>
     </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿Quieres una hidratación profunda?</p>
+        <p class="sidebar-cta-text">Rosa te explica qué protocolo se adapta mejor a tu piel y tus objetivos.</p>
+        <a href="/contacto/" class="btn">Solicitar información</a>
+      </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/tratamiento-longevidad-facial-gijon/">
+          <img src="https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tratamiento Longevidad — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Tratamiento Longevidad</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/presoterapia-gijon-beneficios/">
+          <img src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Presoterapia en Gijón — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Presoterapia en Gijón</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/guia-novias-tratamientos-antes-boda/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Guía para novias — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Guía para novias</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
     </div>
   </div>
 </section>

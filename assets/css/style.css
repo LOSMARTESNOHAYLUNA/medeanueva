@@ -2275,18 +2275,11 @@ body {
   font-size: 18px;
 }
 
-p, li, td, th, span, a, label, input, textarea, button {
+p, li, td, th, span, label, input, textarea, button {
   font-size: max(1rem, 18px);
 }
 
-.eyebrow, .blog-toc a, .card-desc, .card-link,
-.sidebar-card-link, .team-role, .team-years,
-.cert-list li, .cd-label, .cd-value,
-.footer-tagline, .footer-contact a,
-.nav-link, .nav-dropdown a, .breadcrumb a,
-.breadcrumb-current {
-  font-size: max(0.875rem, 18px) !important;
-}
+
 /* ── FORMULARIOS MEDEA ────────────────────────────────── */
 
 .contact-form {

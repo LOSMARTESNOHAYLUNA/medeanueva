@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://www.medeaestilistas.es/blog/peluqueria-masculina-gijon/"/>
 <meta property="og:title" content="Peluquería masculina en Gijón: corte, tratamientos y tendencias para hombres | Medea Estilistas"/>
 <meta property="og:description" content="Medea Estilistas Gijón — Peluquería. Peluquería y estética en Gijón desde 1991."/>
-<meta property="og:image" content="https://medeanueva.vercel.app/assets/img/blog-peluqueria-masculina-medea-gijon.webp"/>
+<meta property="og:image" content="https://www.medeaestilistas.es/assets/img/logo.png"/>
 <meta property="og:locale" content="es_ES"/>
 <meta property="og:site_name" content="Medea Estilistas"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -52,9 +52,10 @@
 
 <style>
 /* Blog layout */
-.blog-layout{display:block}
-
-
+.blog-layout{display:grid;grid-template-columns:1fr 300px;gap:4rem;align-items:start}
+@media(max-width:900px){.blog-layout{grid-template-columns:1fr}}
+.blog-sidebar{position:sticky;top:6rem;align-self:start;display:flex;flex-direction:column;gap:1.5rem}
+@media(max-width:900px){.blog-sidebar{position:static}}
 /* Sidebar CTA */
 .sidebar-cta-box{background:var(--surface);border-left:3px solid #5d131a;padding:1.5rem 1.5rem 1.8rem}
 .sidebar-cta-title{font-family:var(--ff-d);font-size:1.35rem;font-weight:300;color:var(--ink);margin:0 0 .5rem}
@@ -116,14 +117,6 @@
 .prose tr:nth-child(even) td{background:#faf6f0}
 .prose tr:hover td{background:#f5ede5}
 .blog-related-title{font-family:var(--ff-b);font-size:1.125rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.2rem}
-</style>
-<style>
-.blog-faq-lista{margin-top:1.5rem;border-bottom:1px solid var(--border)}
-.blog-faq-item{border-top:1px solid var(--border)}
-.blog-faq-btn{width:100%;display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.1rem 0;background:none;border:none;cursor:pointer;text-align:left;font-family:var(--ff-d);font-weight:400;color:var(--ink);line-height:1.4}
-.blog-faq-chevron{color:var(--brand);transition:transform .25s;flex-shrink:0;margin-top:.2rem}
-.blog-faq-btn[aria-expanded="true"] .blog-faq-chevron{transform:rotate(180deg)}
-.blog-faq-resp{padding:.2rem 0 1.4rem;font-family:var(--ff-b);color:var(--ink2);line-height:1.75}
 </style>
 </head>
 <body>
@@ -313,11 +306,11 @@
   </div>
 </section>
 <section style="padding:clamp(3rem,6vw,5rem) 0">
-  <div class="section-inner" style="max-width:720px;margin:0 auto">
+  <div class="section-inner">
     <div class="blog-layout">
       <article id="contenido">
         <div class="blog-main-img reveal">
-      <img src="/assets/img/blog-peluqueria-masculina-medea-gijon.webp" alt="Peluquería masculina Gijón — Medea Estilistas"
+      <img src="https://images.pexels.com/photos/3065173/pexels-photo-3065173.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Peluquería masculina Gijón — Medea Estilistas"
            loading="eager" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)">
     </div>
     <nav class="blog-toc reveal" aria-label="Tabla de contenido">
@@ -360,6 +353,9 @@
         <li><strong>Tricología con Versum:</strong> Montse y Cris tienen formación en tricología. Para casos de caída severa o problemas de cuero cabelludo, hacemos un diagnóstico específico.</li>
       </ul>
     </div>
+    
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Tratamientos capilares hombre Gijón — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="prose reveal">
       <h2 id="coloracion">Coloración masculina: natural y discreta</h2>
       <p>La coloración masculina ha crecido mucho en los últimos años. Los objetivos más frecuentes en el cliente masculino son:</p>
@@ -379,57 +375,12 @@
       <h2 id="novios">El novio también se prepara</h2>
       <p>Uno de los servicios masculinos más demandados en Medea es la preparación para el día de la boda. En el <a href="/novios/novio/">pack de novio</a> incluimos corte, arreglo de barba, tratamiento facial y manicura. Recomendamos una visita de prueba 1-2 semanas antes de la boda para definir el look definitivo.</p>
     </div>
+    
+    <div class="blog-img-block reveal"><img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=1200&h=500&fit=crop" alt="Peluquería para hombres Gijón Asturias — Medea Estilistas"
+           loading="lazy" width="1200" height="500" style="width:100%;height:auto;display:block;filter:grayscale(8%)"></div>
     <div class="blog-cta-banner reveal">
       <p>¿Buscas un corte o tratamiento capilar en Gijón? Reserva con Montse o Cris.</p>
       <a href="/contacto/" class="btn">Reservar cita</a>
-    </div>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuánto cuesta un corte de caballero en Medea Estilistas?", "acceptedAnswer": {"@type": "Answer", "text": "El corte de caballero con lavado cuesta 15,00 € en Medea Estilistas. Incluye el lavado y el secado."}}, {"@type": "Question", "name": "¿Medea Estilistas atiende a hombres?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Medea atiende tanto a mujeres como a hombres. Ofrecemos corte, lavado y todos los servicios de estética del centro."}}, {"@type": "Question", "name": "¿Necesito reservar cita para el corte de caballero?", "acceptedAnswer": {"@type": "Answer", "text": "Recomendamos reservar cita previa llamando al 985 33 79 63 o por WhatsApp al 684 63 68 83 para garantizar disponibilidad."}}, {"@type": "Question", "name": "¿En qué zona de Gijón está Medea Estilistas?", "acceptedAnswer": {"@type": "Answer", "text": "Medea Estilistas está en la Calle Anselmo Solar 31, en el centro de Gijón. Horario de lunes a viernes de 9:00 a 18:00h y sábados de 9:00 a 13:30h."}}]}</script>
-    <div class="blog-conclusion reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)">
-      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:1.2rem">Conclusión</h2>
-      <p class="section-body" style="margin-bottom:1rem">En Medea Estilistas atendemos también a hombres: corte, lavado y los servicios de estética que cada cliente necesite. El trato es el mismo de siempre — cercano, sin prisas y con más de 36 años de experiencia en Gijón.</p>
-      <p class="section-body" style="margin-bottom:1rem">Si buscas un corte de caballero en Gijón con un resultado que dure y una atención personalizada, estamos en la Calle Anselmo Solar 31. El corte de caballero con lavado tiene un precio de 15,00 €.</p>
-      <p class="section-body" style="margin-bottom:1rem">Llámanos al 985 33 79 63 o escríbenos por WhatsApp al 684 63 68 83.</p>
-    </div>
-    <div class="blog-faqs reveal" style="margin:2.5rem 0 0;padding-top:2rem;border-top:1px solid var(--border)" itemscope itemtype="https://schema.org/FAQPage">
-      <h2 class="section-title" style="font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:.5rem">Preguntas frecuentes</h2>
-      <div class="blog-faq-lista">
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Cuánto cuesta un corte de caballero en Medea Estilistas?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">El corte de caballero con lavado cuesta 15,00 € en Medea Estilistas. Incluye el lavado y el secado.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Medea Estilistas atiende a hombres?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Sí. Medea atiende tanto a mujeres como a hombres. Ofrecemos corte, lavado y todos los servicios de estética del centro.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿Necesito reservar cita para el corte de caballero?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Recomendamos reservar cita previa llamando al 985 33 79 63 o por WhatsApp al 684 63 68 83 para garantizar disponibilidad.</p>
-        </div>
-      </div>
-      <div class="blog-faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-        <button class="blog-faq-btn" aria-expanded="false" onclick="var d=this.nextElementSibling;var o=this.getAttribute('aria-expanded')==='true';this.setAttribute('aria-expanded',!o);d.hidden=o">
-          <span itemprop="name">¿En qué zona de Gijón está Medea Estilistas?</span>
-          <span class="blog-faq-chevron" aria-hidden="true">▾</span>
-        </button>
-        <div class="blog-faq-resp" hidden itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p itemprop="text">Medea Estilistas está en la Calle Anselmo Solar 31, en el centro de Gijón. Horario de lunes a viernes de 9:00 a 18:00h y sábados de 9:00 a 13:30h.</p>
-        </div>
-      </div>
-      </div>
     </div>
     <div class="blog-author reveal">
       <div class="blog-author-avatar" aria-hidden="true">M</div>
@@ -437,8 +388,47 @@
         <p class="blog-author-name">Montse Menéndez</p>
         <p class="blog-author-role">Especialista en Peluquería y Coloración · Medea Estilistas</p>
         <p class="blog-author-bio">39 años de experiencia en peluquería. Formación en tricología con Versum. Especialista en coloración y tratamientos capilares.</p>
+      </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿Buscas un buen corte en Gijón?</p>
+        <p class="sidebar-cta-text">Reserva con Montse o Cris y descubre la diferencia.</p>
+        <a href="/contacto/" class="btn">Reservar cita</a>
       </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/kevin-murphy-cosmetica-capilar/">
+          <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Kevin Murphy en Medea</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/tendencias-coloracion-temporada/">
+          <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tendencias en coloración — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Tendencias en coloración</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/novios/novio/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Para el novio — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Para el novio</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
     </div>
+  </div>
     <div class="blog-share reveal">
       <span class="blog-share-label">Comparte el bienestar con quien quieras:</span>
       <div class="share-icon-wrap">
@@ -450,6 +440,44 @@
       </div>
     </div>
     </article>
+      
+    <aside class="blog-sidebar">
+      <div class="sidebar-cta-box reveal">
+        <p class="sidebar-cta-title">¿Buscas un buen corte en Gijón?</p>
+        <p class="sidebar-cta-text">Reserva con Montse o Cris y descubre la diferencia.</p>
+        <a href="/contacto/" class="btn">Reservar cita</a>
+      </div>
+      <div class="reveal">
+        <p class="sidebar-related-title">También puede interesarte</p>
+        <div class="sidebar-cards">
+          
+        <a class="sidebar-card" href="/blog/kevin-murphy-cosmetica-capilar/">
+          <img src="https://images.pexels.com/photos/3993444/pexels-photo-3993444.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Kevin Murphy en Medea — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Kevin Murphy en Medea</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/blog/tendencias-coloracion-temporada/">
+          <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Tendencias en coloración — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Tendencias en coloración</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        <a class="sidebar-card" href="/novios/novio/">
+          <img src="https://images.pexels.com/photos/3997989/pexels-photo-3997989.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Para el novio — Medea Estilistas" loading="lazy" width="300" height="140">
+          <div class="sidebar-card-overlay"></div>
+          <div class="sidebar-card-body">
+            <span class="sidebar-card-title">Para el novio</span>
+            <span class="sidebar-card-link">Leer artículo →</span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </aside>
     </div>
   </div>
 </section>
