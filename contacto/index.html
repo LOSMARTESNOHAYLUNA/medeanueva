@@ -277,66 +277,80 @@
       <div>
         <div class="form-card reveal">
           <h2 style="font-family:var(--ff-d);font-size:1.8rem;margin-bottom:1.5rem">Solicitar cita</h2>
-          <form class="cita-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="nombre">Nombre <span class="req">*</span></label>
-                <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Tu nombre" required autocomplete="given-name"/>
-              </div>
-              <div class="form-group">
-                <label for="telefono">Teléfono</label>
-                <input class="form-control" id="telefono" name="telefono" type="tel" placeholder="984 000 000" autocomplete="tel"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Email <span class="req">*</span></label>
-              <input class="form-control" id="email" name="email" type="email" placeholder="tu@email.com" required autocomplete="email"/>
-            </div>
-            <div class="form-group">
-              <label for="servicio">Servicio de interés</label>
-              <select class="form-control" id="servicio" name="servicio">
-                <option value="">Seleccionar servicio…</option>
-                <optgroup label="Peluquería">
-                  <option>Coloración</option>
-                  <option>Mechas y balayage</option>
-                  <option>Alisado y keratina</option>
-                  <option>Moldeado Bodies</option>
-                  <option>Tratamientos capilares</option>
-                </optgroup>
-                <optgroup label="Tratamientos faciales">
-                  <option>Tratamiento Longevidad</option>
-                  <option>Vitamina C</option>
-                  <option>Limpieza facial</option>
-                  <option>Otro tratamiento facial</option>
-                </optgroup>
-                <optgroup label="Tratamientos corporales">
-                  <option>Presoterapia</option>
-                  <option>Maderoterapia</option>
-                  <option>Otro tratamiento corporal</option>
-                </optgroup>
-                <optgroup label="Otros">
-                  <option>Masajes</option>
-                  <option>Depilación</option>
-                  <option>Manicura y pedicura</option>
-                  <option>Maquillaje</option>
-                  <option>Servicios de novias/novios</option>
-                </optgroup>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="fecha">Fecha preferida</label>
-              <input class="form-control" id="fecha" name="fecha" type="date"/>
-            </div>
-            <div class="form-group">
-              <label for="notas">Notas adicionales</label>
-              <textarea class="form-control" id="notas" name="notas" placeholder="Cuéntanos algo más sobre lo que necesitas…"></textarea>
-            </div>
-            <div class="form-privacy">
-              <input type="checkbox" id="privacidad" name="privacidad" required/>
-              <label for="privacidad"><span>He leído y acepto la <a href="/politica-privacidad/">política de privacidad</a>. <span class="req">*</span></span></label>
-            </div>
-            <button type="submit" class="btn btn-brand btn-full">Solicitar cita</button>
-          </form>
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" novalidate>
+  <input type="hidden" name="access_key" value="b9288f49-085f-47d3-a786-ee58008c04b1">
+  <input type="hidden" name="subject" value="Nueva consulta — Formulario de contacto · Medea Estilistas">
+  <input type="hidden" name="from_name" value="Medea Estilistas Web">
+  <input type="hidden" name="redirect" value="https://www.medeaestilistas.es/contacto/?enviado=1">
+  <input type="checkbox" name="botcheck" style="display:none">
+  <div class="form-grid">
+    <div class="form-field">
+      <label for="cf-nombre" class="form-label">Nombre <span aria-hidden="true">*</span></label>
+      <input type="text" id="cf-nombre" name="nombre" placeholder="Ej. Ana García" required autocomplete="name" class="form-input">
+    </div>
+    <div class="form-field">
+      <label for="cf-telefono" class="form-label">Teléfono <span aria-hidden="true">*</span></label>
+      <input type="tel" id="cf-telefono" name="telefono" placeholder="Ej. 684 63 68 83" required autocomplete="tel" class="form-input">
+    </div>
+    <div class="form-field form-field--full">
+      <label for="cf-email" class="form-label">Correo electrónico <span aria-hidden="true">*</span></label>
+      <input type="email" id="cf-email" name="email" placeholder="Ej. ana@correo.com" required autocomplete="email" class="form-input">
+    </div>
+    <div class="form-field form-field--full">
+      <label for="cf-servicio" class="form-label">Servicio de interés <span aria-hidden="true">*</span></label>
+      <select id="cf-servicio" name="servicio" required class="form-input form-select">
+        <option value="" disabled selected>Selecciona un servicio…</option>
+        <optgroup label="Peluquería">
+          <option>Coloración</option><option>Mechas y Balayage</option>
+          <option>Alisado y Keratina</option><option>Moldeado con Bodies</option>
+          <option>Tratamientos Capilares</option>
+        </optgroup>
+        <optgroup label="Tratamientos Faciales">
+          <option>Tratamiento Longevidad</option><option>Vitamina C</option>
+          <option>Limpieza Facial</option><option>Higiene Facial (Jóvenes)</option>
+          <option>Pieles Grasas y Acneicas</option><option>Tratamiento Regenerador con Ácidos</option>
+          <option>Tratamiento de Manchas</option><option>Pieles Sensibles</option>
+          <option>Anti Edad Efecto Botox</option>
+        </optgroup>
+        <optgroup label="Tratamientos Corporales">
+          <option>Presoterapia</option><option>Mesoterapia Virtual</option>
+          <option>Maderoterapia</option><option>Tratamiento Anticelulítico</option>
+          <option>Tratamiento Reductor</option><option>Reafirmante de Senos</option>
+          <option>Higiene de Espalda</option>
+        </optgroup>
+        <optgroup label="Masajes">
+          <option>Masaje Relajante</option><option>Reflexología Podal</option>
+          <option>Drenaje Linfático Manual</option>
+        </optgroup>
+        <optgroup label="Depilación">
+          <option>Depilación con Pasta de Caramelo</option><option>Depilación Eléctrica</option>
+        </optgroup>
+        <optgroup label="Manicura y Pedicura">
+          <option>Uñas Semipermanentes</option><option>Manicura y Pedicura Clásica</option>
+        </optgroup>
+        <optgroup label="Maquillaje">
+          <option>Maquillaje Social</option><option>Maquillaje de Novia</option>
+          <option>Maquillaje con Aerógrafo</option>
+        </optgroup>
+        <optgroup label="Novios">
+          <option>Pack Novia</option><option>Pack Novio</option>
+        </optgroup>
+        <option value="Otro">Otro / No sé todavía</option>
+      </select>
+    </div>
+    <div class="form-field form-field--full">
+      <label for="cf-mensaje" class="form-label">Mensaje <span aria-hidden="true">*</span></label>
+      <textarea id="cf-mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas o cuándo quieres venir…" required class="form-input form-textarea"></textarea>
+    </div>
+    <div class="form-field form-field--full form-field--check">
+      <label class="form-check-label">
+        <input type="checkbox" name="politica" required class="form-check-input">
+        He leído y acepto la <a href="/politica-de-privacidad/" target="_blank" rel="noopener">política de privacidad</a>.
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-brand form-submit">Enviar consulta</button>
+</form>
         </div>
       </div>
     </div>
